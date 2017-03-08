@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://cyruschang.github.io/about/index.html</loc>
+    
+    <lastmod>2017-03-08T10:34:49.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://cyruschang.github.io/categories/index.html</loc>
+    
+    <lastmod>2017-03-08T10:24:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://cyruschang.github.io/2017/03/08/%E8%8B%B9%E6%9E%9C%E5%91%8A%E8%AD%A6%E9%82%AE%E4%BB%B6/</loc>
     
     <lastmod>2017-03-08T08:30:01.000Z</lastmod>
@@ -33,20 +47,6 @@
     <loc>https://cyruschang.github.io/tags/index.html</loc>
     
     <lastmod>2017-03-04T03:16:35.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cyruschang.github.io/about/index.html</loc>
-    
-    <lastmod>2017-03-04T02:48:04.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://cyruschang.github.io/categories/index.html</loc>
-    
-    <lastmod>2017-03-03T15:37:35.000Z</lastmod>
     
   </url>
   
