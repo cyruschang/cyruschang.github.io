@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2017-03-08T10:45:00.000Z</updated>
+  <updated>2017-03-08T10:46:39.000Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -17,14 +17,14 @@
   
   <entry>
     <title>苹果告警邮件</title>
-    <link href="https://cyruschang.github.io/2017/03/08/%E8%8B%B9%E6%9E%9C%E5%91%8A%E8%AD%A6%E9%82%AE%E4%BB%B6/"/>
-    <id>https://cyruschang.github.io/2017/03/08/苹果告警邮件/</id>
+    <link href="https://cyruschang.github.io/2017/03/08/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%8B%B9%E6%9E%9C%E8%AD%A6%E5%91%8A%E9%82%AE%E4%BB%B6/"/>
+    <id>https://cyruschang.github.io/2017/03/08/iOS开发之苹果警告邮件/</id>
     <published>2017-03-08T08:30:01.000Z</published>
-    <updated>2017-03-08T10:45:00.000Z</updated>
+    <updated>2017-03-08T10:46:39.000Z</updated>
     
     <content type="html"><![CDATA[<p>&#8194;&#8194;&#8194;&#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。</p>
-<p>&gt;<br>2017年3月8日 上午6:20<br>发件人 Apple<br>Dear Developer,</p>
 <blockquote>
+<p>2017年3月8日 上午6:20<br>发件人 Apple<br>Dear Developer,</p>
 <p>Your app, extension, and/or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with section 3.3.2 of the Apple Developer Program License Agreement and App Store Review Guideline 2.5.2. This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes. </p>
 <p>This includes any code which passes arbitrary parameters to dynamic methods such as dlopen(), dlsym(), respondsToSelector:, performSelector:, method_exchangeImplementations(), and running remote scripts in order to change app behavior or call SPI, based on the contents of the downloaded script. Even if the remote resource is not intentionally malicious, it could easily be hijacked via a Man In The Middle (MiTM) attack, which can pose a serious security vulnerability to users of your app.</p>
 <p>Please perform an in-depth review of your app and remove any code, frameworks, or SDKs that fall in line with the functionality described above before submitting the next update for your app for review.</p>
@@ -37,7 +37,8 @@
     <summary type="html">
     
       &lt;p&gt;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。&lt;/p&gt;
-&lt;p&gt;&amp;gt;&lt;br&gt;2017年3月8日 上午6:20&lt;br&gt;发件人 Apple&lt;br&gt;De
+&lt;blockquote&gt;
+&lt;p&gt;2017年3月8日 上午6:20&lt;br&gt;发件人 Apple&lt;
     
     </summary>
     

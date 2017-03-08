@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>关于 | cyruschang</title>
+  <title>苹果告警邮件 | cyruschang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
@@ -11,16 +11,25 @@
   
   
   
-  <meta name="description" content="Hi,我是一名来自河南的iOS开发者，就职于北京。在这里分享我工作和生活的点点滴滴~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于">
-<meta property="og:url" content="https://cyruschang.github.io/about/index.html">
+  <meta name="description" content="&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。
+
+2017年3月8日 上午6:20发件人 AppleDear Developer,
+Your app, extension, and/or linked framework appears to contain code de">
+<meta property="og:type" content="article">
+<meta property="og:title" content="苹果告警邮件">
+<meta property="og:url" content="https://cyruschang.github.io/2017/03/08/iOS开发之苹果警告邮件/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="Hi,我是一名来自河南的iOS开发者，就职于北京。在这里分享我工作和生活的点点滴滴~">
-<meta property="og:updated_time" content="2017-03-08T10:34:49.000Z">
+<meta property="og:description" content="&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。
+
+2017年3月8日 上午6:20发件人 AppleDear Developer,
+Your app, extension, and/or linked framework appears to contain code de">
+<meta property="og:updated_time" content="2017-03-08T10:46:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="关于">
-<meta name="twitter:description" content="Hi,我是一名来自河南的iOS开发者，就职于北京。在这里分享我工作和生活的点点滴滴~">
+<meta name="twitter:title" content="苹果告警邮件">
+<meta name="twitter:description" content="&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。
+
+2017年3月8日 上午6:20发件人 AppleDear Developer,
+Your app, extension, and/or linked framework appears to contain code de">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -49,7 +58,7 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   <header id="allheader" class="site-header" role="banner">
@@ -98,7 +107,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main"><article id="page-undefined"  class="article article-type-page" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-iOS开发之苹果警告邮件" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -106,7 +115,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      关于
+      苹果告警邮件
     </h1>
   
 
@@ -114,22 +123,41 @@
     
     <div class="article-meta">
       
+	Posted on <a href="/2017/03/08/iOS开发之苹果警告邮件/" class="article-date">
+	  <time datetime="2017-03-08T08:30:01.000Z" itemprop="datePublished">March 8, 2017</time>
+	</a>
+
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hi,我是一名来自河南的iOS开发者，就职于北京。在这里分享我工作和生活的点点滴滴~</p>
+        <p>&#8194;&#8194;&#8194;&#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。</p>
+<blockquote>
+<p>2017年3月8日 上午6:20<br>发件人 Apple<br>Dear Developer,</p>
+<p>Your app, extension, and/or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with section 3.3.2 of the Apple Developer Program License Agreement and App Store Review Guideline 2.5.2. This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes. </p>
+<p>This includes any code which passes arbitrary parameters to dynamic methods such as dlopen(), dlsym(), respondsToSelector:, performSelector:, method_exchangeImplementations(), and running remote scripts in order to change app behavior or call SPI, based on the contents of the downloaded script. Even if the remote resource is not intentionally malicious, it could easily be hijacked via a Man In The Middle (MiTM) attack, which can pose a serious security vulnerability to users of your app.</p>
+<p>Please perform an in-depth review of your app and remove any code, frameworks, or SDKs that fall in line with the functionality described above before submitting the next update for your app for review.</p>
+<p>Best regards,</p>
+<p>App Store Review</p>
+</blockquote>
+<p>&#8194;&#8194;&#8194;&#8194;随后发现各大论坛和iOS开发群都已经炸开了锅，甚至都上了今日头条。<a href="http://www.toutiao.com/i6394988770789163521/?tt_from=mobile_qq&amp;utm_campaign=client_share&amp;app=news_article&amp;utm_source=mobile_qq&amp;iid=7713776056&amp;utm_medium=toutiao_ios" target="_blank" rel="external">【链接】iOS原生开发迎来第二春jspathRNweexgg了</a>,开发者一致地把矛头指向了JSpatch, Reactive Native, Weex等热更新框架。然而我的内心OS是这样：苹果爸爸毕竟是苹果爸爸呀，最近七八次的上线审核都很顺利，以至于我认为上线-审核-通过，就是顺理成章的事情。苹果却实力打脸。毕竟在苹果的生态环境下，他就是老大，还是有着说一不二的分量的。对于广大原生开发者来说，这是一个好事情吧。<br>&#8194;&#8194;&#8194;&#8194;不好的方面也许就是：开发者更依赖苹果和苹果的AppStore了。<br>&#8194;&#8194;&#8194;&#8194;结合我之前的经验得到的一个技术结论：原生的效果还是最好的。混合编译毕竟不能相媲美。前阵子用OC和swift混编，连ipa包都大了一个量级。<br>谨以此记录今天苹果的邮件事件吧~</p>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
       
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
       
         
 	<div id="comment">
 	
 	<!-- 多说评论框 start -->
-	 <div class="ds-thread" data-thread-key="/about/index.html" data-title="关于" data-url="https://cyruschang.github.io/about/index.html"></div>
+	 <div class="ds-thread" data-thread-key="/2017/03/08/iOS开发之苹果警告邮件/" data-title="苹果告警邮件" data-url="https://cyruschang.github.io/2017/03/08/iOS开发之苹果警告邮件/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -154,189 +182,30 @@
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/06/iOS开发之小圆点角标变色问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">iOS开发之小圆点角标变色问题</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 <!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav">None</ol>
+    
+    </div>
+  </aside>
 </section>
-          <aside id="sidebar">
-  
-    <div class="widget-wrap" style="margin: 20px 0;">
-	<div id="search-form-wrap">
-
-    <form class="search-form">
-        <label style="width: 75%;">
-            <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" Suche…" value="" name="s" title="Search for:">
-        </label>
-        <input type="submit" class="search-form-submit" value="Suche">
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div>
-</div>
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Connect With Us</h3>
-    <div class="widget widget_athemes_social_icons">
-
-    	<ul class="clearfix widget-social-icons">   
-    	
-   			<li><a href="https://github.com/cyruschang" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="http://weibo.com/lovedearjing" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
-
-   		
-   		</ul>
-
-
-   		<!--
-   		<ul class="clearfix widget-social-icons">   		
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget_athemes_tabs">
-    <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>letzter Beitrag</a></li>
-    </ul>
-    <div class="widget">
-      <ul>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/03/08/iOS开发之苹果警告邮件/">苹果告警邮件</a></h6>
-              <span>March 8, 2017</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/03/06/iOS开发之小圆点角标变色问题/">iOS开发之小圆点角标变色问题</a></h6>
-              <span>March 6, 2017</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/03/04/教训/">花钱买教训</a></h6>
-              <span>March 4, 2017</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/03/03/第一次/">第一次的砰然心动</a></h6>
-              <span>March 3, 2017</span>
-            </div>
-
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Kategorien</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">1</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/iOS/" style="font-size: 20px;">iOS</a> <a href="/tags/stupid/" style="font-size: 10px;">二货</a> <a href="/tags/bestfeel/" style="font-size: 10px;">美好的</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">4</span></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
         
       </div>
       <footer id="footer" class="site-footer">
