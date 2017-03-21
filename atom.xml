@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>cyruschang</title>
   
-  <link href="/Blog/atom.xml" rel="self"/>
+  <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
   <updated>2017-03-21T02:10:40.000Z</updated>
