@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>cyruschang</title>
+  <title>Hexo</title>
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://cyruschang.github.io/"/>
-  <updated>2017-03-10T05:19:38.000Z</updated>
-  <id>https://cyruschang.github.io/</id>
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-21T02:10:40.000Z</updated>
+  <id>http://yoursite.com/</id>
   
   <author>
-    <name>cyruschang</name>
+    <name>John Doe</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>观《大明王朝1566》</title>
+    <link href="http://yoursite.com/2017/03/20/%E8%A7%82%E3%80%8A%E5%A4%A7%E6%98%8E%E7%8E%8B%E6%9C%9D1566%E3%80%8B/"/>
+    <id>http://yoursite.com/2017/03/20/观《大明王朝1566》/</id>
+    <published>2017-03-20T03:18:36.000Z</published>
+    <updated>2017-03-21T02:10:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>自我来北京，已三年矣！然每每接电话于老父者，未不尝语余之入仕也。今我观《嘉靖与海瑞》已毕，心中惶惶者甚。<br>蜀道之难，难于上青天。仕途之于吾，其难也与？</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;自我来北京，已三年矣！然每每接电话于老父者，未不尝语余之入仕也。今我观《嘉靖与海瑞》已毕，心中惶惶者甚。&lt;br&gt;蜀道之难，难于上青天。仕途之于吾，其难也与？&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="美好的" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%A5%BD%E7%9A%84/"/>
+    
+  </entry>
+  
+  <entry>
     <title>村上春树小说经典语录</title>
-    <link href="https://cyruschang.github.io/2017/03/10/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91%E5%B0%8F%E8%AF%B4%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/"/>
-    <id>https://cyruschang.github.io/2017/03/10/村上春树小说经典语录/</id>
+    <link href="http://yoursite.com/2017/03/10/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91%E5%B0%8F%E8%AF%B4%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/"/>
+    <id>http://yoursite.com/2017/03/10/村上春树小说经典语录/</id>
     <published>2017-03-10T04:58:26.000Z</published>
     <updated>2017-03-10T05:19:38.000Z</updated>
     
@@ -55,17 +79,17 @@
     
     </summary>
     
-      <category term="读书" scheme="https://cyruschang.github.io/categories/reading/"/>
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
     
     
-      <category term="村上春树" scheme="https://cyruschang.github.io/tags/MurakamiHaruki/"/>
+      <category term="村上春树" scheme="http://yoursite.com/tags/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91/"/>
     
   </entry>
   
   <entry>
     <title>iOS开发之苹果警告邮件</title>
-    <link href="https://cyruschang.github.io/2017/03/08/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%8B%B9%E6%9E%9C%E8%AD%A6%E5%91%8A%E9%82%AE%E4%BB%B6/"/>
-    <id>https://cyruschang.github.io/2017/03/08/iOS开发之苹果警告邮件/</id>
+    <link href="http://yoursite.com/2017/03/08/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%8B%B9%E6%9E%9C%E8%AD%A6%E5%91%8A%E9%82%AE%E4%BB%B6/"/>
+    <id>http://yoursite.com/2017/03/08/iOS开发之苹果警告邮件/</id>
     <published>2017-03-08T08:30:01.000Z</published>
     <updated>2017-03-08T10:58:43.000Z</updated>
     
@@ -89,17 +113,17 @@
     
     </summary>
     
-      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
   </entry>
   
   <entry>
     <title>iOS开发之小圆点角标变色问题</title>
-    <link href="https://cyruschang.github.io/2017/03/06/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E5%B0%8F%E5%9C%86%E7%82%B9%E8%A7%92%E6%A0%87%E5%8F%98%E8%89%B2%E9%97%AE%E9%A2%98/"/>
-    <id>https://cyruschang.github.io/2017/03/06/iOS开发之小圆点角标变色问题/</id>
+    <link href="http://yoursite.com/2017/03/06/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E5%B0%8F%E5%9C%86%E7%82%B9%E8%A7%92%E6%A0%87%E5%8F%98%E8%89%B2%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/03/06/iOS开发之小圆点角标变色问题/</id>
     <published>2017-03-06T09:20:11.000Z</published>
     <updated>2017-03-06T09:58:57.000Z</updated>
     
@@ -119,17 +143,17 @@
     
     </summary>
     
-      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+      <category term="编程" scheme="http://yoursite.com/categories/%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
+      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
     
   </entry>
   
   <entry>
     <title>花钱买教训</title>
-    <link href="https://cyruschang.github.io/2017/03/04/%E6%95%99%E8%AE%AD/"/>
-    <id>https://cyruschang.github.io/2017/03/04/教训/</id>
+    <link href="http://yoursite.com/2017/03/04/%E6%95%99%E8%AE%AD/"/>
+    <id>http://yoursite.com/2017/03/04/教训/</id>
     <published>2017-03-04T06:33:28.000Z</published>
     <updated>2017-03-04T06:46:33.000Z</updated>
     
@@ -143,17 +167,17 @@
     
     </summary>
     
-      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="二货" scheme="https://cyruschang.github.io/tags/stupid/"/>
+      <category term="二货" scheme="http://yoursite.com/tags/%E4%BA%8C%E8%B4%A7/"/>
     
   </entry>
   
   <entry>
     <title>第一次的砰然心动</title>
-    <link href="https://cyruschang.github.io/2017/03/03/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
-    <id>https://cyruschang.github.io/2017/03/03/第一次/</id>
+    <link href="http://yoursite.com/2017/03/03/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
+    <id>http://yoursite.com/2017/03/03/第一次/</id>
     <published>2017-03-03T14:54:36.000Z</published>
     <updated>2017-03-04T06:46:03.000Z</updated>
     
@@ -166,10 +190,10 @@
     
     </summary>
     
-      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="美好的" scheme="https://cyruschang.github.io/tags/bestfeel/"/>
+      <category term="美好的" scheme="http://yoursite.com/tags/%E7%BE%8E%E5%A5%BD%E7%9A%84/"/>
     
   </entry>
   
