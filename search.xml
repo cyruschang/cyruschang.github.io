@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title><![CDATA[夏日回忆]]></title>
+      <url>https://cyruschang.github.io/2017/04/08/%E5%A4%8F%E6%97%A5%E5%9B%9E%E5%BF%86/</url>
+      <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雪莱曾说：冬天到了，春天还会远吗？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 生活 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 随想 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[iOS开发int和NSInteger的区别]]></title>
       <url>https://cyruschang.github.io/2017/03/30/iOS%E5%BC%80%E5%8F%91%E4%B9%8Bint%E5%92%8CNSInteger%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
       <content type="html"><![CDATA[<p>总会遇到用int还是用NSInteger，而且总是忘了为什么。今天索性查完资料记下来。在苹果的源文件中，NSInteger是这样定义的：</p>
