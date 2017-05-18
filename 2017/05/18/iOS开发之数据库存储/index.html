@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>夏日回忆 | cyruschang</title>
+  <title>ios开发之数据库存储(fmdb) | cyruschang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
@@ -11,16 +11,31 @@
   
   
   
-  <meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;雪莱曾说：冬天到了，春天还会远吗？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;清明雨后，时光总是懒懒散散。我足不出户，却在微博">
+  <meta name="description" content="iOS开发常用的数据库存储的第三方库当属fmdb了,特将最近遇到的问题总结如下：
+
+存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。
+插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：
+
+123- (NSString *)replaceSymbolString:(NSString *)originalString &amp;#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="夏日回忆">
-<meta property="og:url" content="https://cyruschang.github.io/2017/04/08/夏日回忆/index.html">
+<meta property="og:title" content="iOS开发之数据库存储(fmdb)">
+<meta property="og:url" content="https://cyruschang.github.io/2017/05/18/iOS开发之数据库存储/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;雪莱曾说：冬天到了，春天还会远吗？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;清明雨后，时光总是懒懒散散。我足不出户，却在微博">
-<meta property="og:updated_time" content="2017-04-08T02:55:01.000Z">
+<meta property="og:description" content="iOS开发常用的数据库存储的第三方库当属fmdb了,特将最近遇到的问题总结如下：
+
+存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。
+插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：
+
+123- (NSString *)replaceSymbolString:(NSString *)originalString &amp;#">
+<meta property="og:updated_time" content="2017-05-18T15:40:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="夏日回忆">
-<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;雪莱曾说：冬天到了，春天还会远吗？&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;清明雨后，时光总是懒懒散散。我足不出户，却在微博">
+<meta name="twitter:title" content="iOS开发之数据库存储(fmdb)">
+<meta name="twitter:description" content="iOS开发常用的数据库存储的第三方库当属fmdb了,特将最近遇到的问题总结如下：
+
+存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。
+插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：
+
+123- (NSString *)replaceSymbolString:(NSString *)originalString &amp;#">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -98,7 +113,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-夏日回忆" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-iOS开发之数据库存储" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -106,7 +121,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      夏日回忆
+      iOS开发之数据库存储(fmdb)
     </h1>
   
 
@@ -114,25 +129,31 @@
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/04/08/夏日回忆/" class="article-date">
-	  <time datetime="2017-04-08T02:32:03.000Z" itemprop="datePublished">April 8, 2017</time>
+	Posted on <a href="/2017/05/18/iOS开发之数据库存储/" class="article-date">
+	  <time datetime="2017-05-18T15:40:13.000Z" itemprop="datePublished">May 18, 2017</time>
 	</a>
 
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雪莱曾说：冬天到了，春天还会远吗？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
+        <p>iOS开发常用的数据库存储的第三方库当属<a href="https://github.com/ccgus/fmdb" target="_blank" rel="external">fmdb</a>了,特将最近遇到的问题总结如下：</p>
+<ol>
+<li>存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。</li>
+<li>插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：</li>
+</ol>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>未完待续……</p>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/life/">生活</a>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/essay/">随想</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
 
       
     </footer>
@@ -141,19 +162,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/05/18/iOS开发之数据库存储/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          iOS开发之数据库存储(fmdb)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/03/30/iOS开发之int和NSInteger的区别/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/04/08/夏日回忆/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">iOS开发int和NSInteger的区别</div>
+      <div class="article-nav-title">夏日回忆</div>
     </a>
   
 </nav>
