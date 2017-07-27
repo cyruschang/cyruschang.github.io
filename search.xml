@@ -6,14 +6,11 @@
     <entry>
       <title><![CDATA[iOS开发之UITextView粘贴出现空白]]></title>
       <url>https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8BUITextView%E7%B2%98%E8%B4%B4%E5%87%BA%E7%8E%B0%E7%A9%BA%E7%99%BD/</url>
-      <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。
-终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+      <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
 <blockquote>
 <p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
 </blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。
-所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
 ]]></content>
       
         <categories>
@@ -39,7 +36,7 @@
 <li>存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。</li>
 <li>插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：</li>
 </ol>
-<p><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>未完待续……</p>
 ]]></content>
       
@@ -61,12 +58,7 @@
     <entry>
       <title><![CDATA[夏日回忆]]></title>
       <url>https://cyruschang.github.io/2017/04/08/%E5%A4%8F%E6%97%A5%E5%9B%9E%E5%BF%86/</url>
-      <content type="html"><![CDATA[<p>       雪莱曾说：冬天到了，春天还会远吗？
-       今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！
-       清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。
-       那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。
-       如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。
-       毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
+      <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;雪莱曾说：冬天到了，春天还会远吗？<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
 ]]></content>
       
         <categories>
@@ -88,7 +80,7 @@
       <title><![CDATA[iOS开发int和NSInteger的区别]]></title>
       <url>https://cyruschang.github.io/2017/03/30/iOS%E5%BC%80%E5%8F%91%E4%B9%8Bint%E5%92%8CNSInteger%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
       <content type="html"><![CDATA[<p>总会遇到用int还是用NSInteger，而且总是忘了为什么。今天索性查完资料记下来。在苹果的源文件中，NSInteger是这样定义的：</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#if __LP64__ || (TARGET_OS_EMBEDDED &amp;&amp; !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64</div><div class="line">typedef long NSInteger;</div><div class="line">typedef unsigned long NSUInteger;</div><div class="line">#else</div><div class="line">typedef int NSInteger;</div><div class="line">typedef unsigned int NSUInteger;</div><div class="line">#endif</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#if __LP64__ || (TARGET_OS_EMBEDDED &amp;&amp; !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64</div><div class="line">typedef long NSInteger;</div><div class="line">typedef unsigned long NSUInteger;</div><div class="line">#else</div><div class="line">typedef int NSInteger;</div><div class="line">typedef unsigned int NSUInteger;</div><div class="line">#endif</div></pre></td></tr></table></figure>
 <p>这个宏定义是什么意思呢？</p>
 <ul>
 <li><code>__LP64__</code>表示指针长度为64位</li>
@@ -117,9 +109,7 @@
     <entry>
       <title><![CDATA[一条无助的狗]]></title>
       <url>https://cyruschang.github.io/2017/03/28/%E4%B8%80%E6%9D%A1%E6%97%A0%E5%8A%A9%E7%9A%84%E7%8B%97/</url>
-      <content type="html"><![CDATA[<p>清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。
-车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜去，不时有刺耳的喇叭声想起。忽然一辆车在那狗面前停下了，就那么静静地等着，也顾不上后方车辆的急促喇叭声了。站台上的人们议论纷纷。
-一个老爷子蹒跚着走到了狗的身边，准备将它抱起。可是那狗却钻过路中间的栅栏，到对面的车道不知所措了……</p>
+      <content type="html"><![CDATA[<p>清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。<br>车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜去，不时有刺耳的喇叭声想起。忽然一辆车在那狗面前停下了，就那么静静地等着，也顾不上后方车辆的急促喇叭声了。站台上的人们议论纷纷。<br>一个老爷子蹒跚着走到了狗的身边，准备将它抱起。可是那狗却钻过路中间的栅栏，到对面的车道不知所措了……</p>
 ]]></content>
       
         <categories>
@@ -140,8 +130,7 @@
     <entry>
       <title><![CDATA[观《大明王朝1566》]]></title>
       <url>https://cyruschang.github.io/2017/03/20/%E8%A7%82%E3%80%8A%E5%A4%A7%E6%98%8E%E7%8E%8B%E6%9C%9D1566%E3%80%8B/</url>
-      <content type="html"><![CDATA[<p>自我来北京，已三年矣！然每每接电话于老父者，未不尝语余之入仕也。今我观《嘉靖与海瑞》已毕，心中惶惶者甚。
-蜀道之难，难于上青天。仕途之于吾，其难也与？</p>
+      <content type="html"><![CDATA[<p>自我来北京，已三年矣！然每每接电话于老父者，未不尝语余之入仕也。今我观《嘉靖与海瑞》已毕，心中惶惶者甚。<br>蜀道之难，难于上青天。仕途之于吾，其难也与？</p>
 ]]></content>
       
         <categories>
@@ -162,32 +151,27 @@
     <entry>
       <title><![CDATA[村上春树小说经典语录]]></title>
       <url>https://cyruschang.github.io/2017/03/10/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91%E5%B0%8F%E8%AF%B4%E7%BB%8F%E5%85%B8%E8%AF%AD%E5%BD%95/</url>
-      <content type="html"><![CDATA[<h2>《且听风吟》</h2>
-<ul>
+      <content type="html"><![CDATA[<h2 id="《且听风吟》"><a href="#《且听风吟》" class="headerlink" title="《且听风吟》"></a>《且听风吟》</h2><ul>
 <li>不存在十全十美的文章，如同不存在彻头彻尾的绝望。</li>
 <li>看海看久了想见人，见人见多了想看海。</li>
 </ul>
-<h2>《舞！舞！舞！》</h2>
-<ul>
+<h2 id="《舞！舞！舞！》"><a href="#《舞！舞！舞！》" class="headerlink" title="《舞！舞！舞！》"></a>《舞！舞！舞！》</h2><ul>
 <li>你要做一个不动声色的大人了。不准情绪化，不准偷偷想念，不准回头看。去过自己另外的生活。你要听话，不是所有的鱼都会生活在同一片海里。</li>
 <li>我一直以为人是慢慢变老的，其实不是，人是一瞬间变老的。</li>
 </ul>
-<h2>《挪威的森林》</h2>
-<ul>
+<h2 id="《挪威的森林》"><a href="#《挪威的森林》" class="headerlink" title="《挪威的森林》"></a>《挪威的森林》</h2><ul>
 <li>哪里会有人喜欢孤独，不过是不喜欢失望罢了。</li>
 <li>每个人都有属于自己的一片森林，也许我们 从来不曾去过，但它一直在那里，总会在那里。迷失的人迷失了，相逢的人会再相逢。</li>
 <li>希望你可以记住我，记住我这样活过，这样在你身边呆过。</li>
 <li>死并非生的对立面，而作为生的一部分永存。</li>
-<li>不要同情自己，同情自己是卑劣懦夫干的勾当。</li>
+<li>不要同情自己，同情自己是卑劣懦夫干的勾当。 </li>
 <li>我渐渐能意会到，深刻并不等于接近事实。</li>
 </ul>
-<h2>《1Q84》</h2>
-<ul>
+<h2 id="《1Q84》"><a href="#《1Q84》" class="headerlink" title="《1Q84》"></a>《1Q84》</h2><ul>
 <li>孤独一人也没关系，只要能发自内心地爱着一个人，人生就会有救。哪怕不能和他生活在一起。</li>
 <li>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</li>
 </ul>
-<h2>《世界尽头与冷酷仙境》</h2>
-<ul>
+<h2 id="《世界尽头与冷酷仙境》"><a href="#《世界尽头与冷酷仙境》" class="headerlink" title="《世界尽头与冷酷仙境》"></a>《世界尽头与冷酷仙境》</h2><ul>
 <li>世上存在着不能流泪的悲哀，这种悲哀无法向人解释，即使解释人家也不会理解。它永远一成不变，如无风夜晚的雪花静静沉积在心底。</li>
 </ul>
 ]]></content>
@@ -210,31 +194,16 @@
     <entry>
       <title><![CDATA[iOS开发之苹果警告邮件]]></title>
       <url>https://cyruschang.github.io/2017/03/08/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%8B%B9%E6%9E%9C%E8%AD%A6%E5%91%8A%E9%82%AE%E4%BB%B6/</url>
-      <content type="html"><![CDATA[<p>    今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。</p>
+      <content type="html"><![CDATA[<p>&#8194;&#8194;&#8194;&#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。</p>
 <blockquote>
-<p>2017年3月8日 上午6:20
-发件人 Apple
-Dear Developer,</p>
-</blockquote>
-<blockquote>
-<p>Your app, extension, and/or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with section 3.3.2 of the Apple Developer Program License Agreement and App Store Review Guideline 2.5.2. This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes.</p>
-</blockquote>
-<blockquote>
+<p>2017年3月8日 上午6:20<br>发件人 Apple<br>Dear Developer,</p>
+<p>Your app, extension, and/or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with section 3.3.2 of the Apple Developer Program License Agreement and App Store Review Guideline 2.5.2. This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes. </p>
 <p>This includes any code which passes arbitrary parameters to dynamic methods such as dlopen(), dlsym(), respondsToSelector:, performSelector:, method_exchangeImplementations(), and running remote scripts in order to change app behavior or call SPI, based on the contents of the downloaded script. Even if the remote resource is not intentionally malicious, it could easily be hijacked via a Man In The Middle (MiTM) attack, which can pose a serious security vulnerability to users of your app.</p>
-</blockquote>
-<blockquote>
 <p>Please perform an in-depth review of your app and remove any code, frameworks, or SDKs that fall in line with the functionality described above before submitting the next update for your app for review.</p>
-</blockquote>
-<blockquote>
 <p>Best regards,</p>
-</blockquote>
-<blockquote>
 <p>App Store Review</p>
 </blockquote>
-<p>    随后发现各大论坛和iOS开发群都已经炸开了锅，甚至都上了今日头条。<a href="http://www.toutiao.com/i6394988770789163521/?tt_from=mobile_qq&amp;utm_campaign=client_share&amp;app=news_article&amp;utm_source=mobile_qq&amp;iid=7713776056&amp;utm_medium=toutiao_ios" target="_blank" rel="external">【链接】iOS原生开发迎来第二春jspathRNweexgg了</a>,开发者一致地把矛头指向了JSpatch, Reactive Native, Weex等热更新框架。然而我的内心OS是这样：苹果爸爸毕竟是苹果爸爸呀，最近七八次的上线审核都很顺利，以至于我认为上线-审核-通过，就是顺理成章的事情。苹果却实力打脸。毕竟在苹果的生态环境下，他就是老大，还是有着说一不二的分量的。对于广大原生开发者来说，这是一个好事情吧。
-    不好的方面也许就是：开发者更依赖苹果和苹果的AppStore了。
-    结合我之前的经验得到的一个技术结论：原生的效果还是最好的。混合编译毕竟不能相媲美。前阵子用OC和swift混编，连ipa包都大了一个量级。
-谨以此记录今天苹果的邮件事件吧~</p>
+<p>&#8194;&#8194;&#8194;&#8194;随后发现各大论坛和iOS开发群都已经炸开了锅，甚至都上了今日头条。<a href="http://www.toutiao.com/i6394988770789163521/?tt_from=mobile_qq&amp;utm_campaign=client_share&amp;app=news_article&amp;utm_source=mobile_qq&amp;iid=7713776056&amp;utm_medium=toutiao_ios" target="_blank" rel="external">【链接】iOS原生开发迎来第二春jspathRNweexgg了</a>,开发者一致地把矛头指向了JSpatch, Reactive Native, Weex等热更新框架。然而我的内心OS是这样：苹果爸爸毕竟是苹果爸爸呀，最近七八次的上线审核都很顺利，以至于我认为上线-审核-通过，就是顺理成章的事情。苹果却实力打脸。毕竟在苹果的生态环境下，他就是老大，还是有着说一不二的分量的。对于广大原生开发者来说，这是一个好事情吧。<br>&#8194;&#8194;&#8194;&#8194;不好的方面也许就是：开发者更依赖苹果和苹果的AppStore了。<br>&#8194;&#8194;&#8194;&#8194;结合我之前的经验得到的一个技术结论：原生的效果还是最好的。混合编译毕竟不能相媲美。前阵子用OC和swift混编，连ipa包都大了一个量级。<br>谨以此记录今天苹果的邮件事件吧~</p>
 ]]></content>
       
         <categories>
@@ -256,11 +225,11 @@ Dear Developer,</p>
       <title><![CDATA[iOS开发之小圆点角标变色问题]]></title>
       <url>https://cyruschang.github.io/2017/03/06/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E5%B0%8F%E5%9C%86%E7%82%B9%E8%A7%92%E6%A0%87%E5%8F%98%E8%89%B2%E9%97%AE%E9%A2%98/</url>
       <content type="html"><![CDATA[<p>相信每一款IM中(Instance Message)类的App都有这样的UI吧！</p>
-<p>&lt;img src=&quot;http://ome0t4nzu.bkt.clouddn.com/UI.png&quot; width=298 height=70&gt;</p>
+<p><img src="http://ome0t4nzu.bkt.clouddn.com/UI.png" width="298" height="70"></p>
 <p><strong>遇到的问题</strong>：当push到别的页面的时候，红色角标会变色，颜色和tableviewcell选中状态的颜色一样。如下图：</p>
-<p>&lt;img src=&quot;http://ome0t4nzu.bkt.clouddn.com/UI_1.png&quot; width=298 height=70&gt;</p>
+<p><img src="http://ome0t4nzu.bkt.clouddn.com/UI_1.png" width="298" height="70"></p>
 <p><strong>解决办法</strong>：在cell的<code>- (void)layoutSubviews;</code>方法中，再次设置小红点的颜色，即可解决。</p>
-<p>&lt;img src=&quot;http://ome0t4nzu.bkt.clouddn.com/UI_2.png&quot; width=298 height=70&gt;</p>
+<p><img src="http://ome0t4nzu.bkt.clouddn.com/UI_2.png" width="298" height="70"></p>
 ]]></content>
       
         <categories>
