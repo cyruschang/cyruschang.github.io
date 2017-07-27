@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ios开发之数据库存储(fmdb) | cyruschang</title>
+  <title>ios开发之uitextview粘贴出现空白 | cyruschang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
@@ -11,31 +11,16 @@
   
   
   
-  <meta name="description" content="iOS开发常用的数据库存储的第三方库当属fmdb了,特将最近遇到的问题总结如下：
-
-存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。
-插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：
-
-123- (NSString *)replaceSymbolString:(NSString *)originalString &amp;#">
+  <meta name="description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrol">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS开发之数据库存储(fmdb)">
-<meta property="og:url" content="https://cyruschang.github.io/2017/05/18/iOS开发之数据库存储/index.html">
+<meta property="og:title" content="iOS开发之UITextView粘贴出现空白">
+<meta property="og:url" content="https://cyruschang.github.io/2017/07/27/iOS开发之UITextView粘贴出现空白/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="iOS开发常用的数据库存储的第三方库当属fmdb了,特将最近遇到的问题总结如下：
-
-存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。
-插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：
-
-123- (NSString *)replaceSymbolString:(NSString *)originalString &amp;#">
-<meta property="og:updated_time" content="2017-05-18T15:40:56.000Z">
+<meta property="og:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrol">
+<meta property="og:updated_time" content="2017-07-27T08:58:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS开发之数据库存储(fmdb)">
-<meta name="twitter:description" content="iOS开发常用的数据库存储的第三方库当属fmdb了,特将最近遇到的问题总结如下：
-
-存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。
-插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：
-
-123- (NSString *)replaceSymbolString:(NSString *)originalString &amp;#">
+<meta name="twitter:title" content="iOS开发之UITextView粘贴出现空白">
+<meta name="twitter:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrol">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -113,7 +98,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-iOS开发之数据库存储" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-iOS开发之UITextView粘贴出现空白" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -121,7 +106,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      iOS开发之数据库存储(fmdb)
+      iOS开发之UITextView粘贴出现空白
     </h1>
   
 
@@ -129,20 +114,18 @@
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/05/18/iOS开发之数据库存储/" class="article-date">
-	  <time datetime="2017-05-18T15:40:13.000Z" itemprop="datePublished">May 18, 2017</time>
+	Posted on <a href="/2017/07/27/iOS开发之UITextView粘贴出现空白/" class="article-date">
+	  <time datetime="2017-07-27T08:58:11.000Z" itemprop="datePublished">July 27, 2017</time>
 	</a>
 
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>iOS开发常用的数据库存储的第三方库当属<a href="https://github.com/ccgus/fmdb" target="_blank" rel="external">fmdb</a>了,特将最近遇到的问题总结如下：</p>
-<ol>
-<li>存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。</li>
-<li>插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：</li>
-</ol>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>未完待续……</p>
+        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。<br>终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+<blockquote>
+<p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
+</blockquote>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
 
       
     </div>
@@ -162,19 +145,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/07/27/iOS开发之UITextView粘贴出现空白/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          iOS开发之UITextView粘贴出现空白
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/04/08/夏日回忆/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/05/18/iOS开发之数据库存储/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">夏日回忆</div>
+      <div class="article-nav-title">iOS开发之数据库存储(fmdb)</div>
     </a>
   
 </nav>

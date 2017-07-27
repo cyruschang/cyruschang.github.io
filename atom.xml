@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2017-05-18T15:40:56.000Z</updated>
+  <updated>2017-07-27T08:58:11.000Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iOS开发之UITextView粘贴出现空白</title>
+    <link href="https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8BUITextView%E7%B2%98%E8%B4%B4%E5%87%BA%E7%8E%B0%E7%A9%BA%E7%99%BD/"/>
+    <id>https://cyruschang.github.io/2017/07/27/iOS开发之UITextView粘贴出现空白/</id>
+    <published>2017-07-27T08:58:11.000Z</published>
+    <updated>2017-07-27T08:58:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。<br>终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+<blockquote>
+<p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
+</blockquote>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴&lt;strong&gt;大量的文本&lt;/strong&gt;后，UITextView中会出现空白，通过界面调试发现，其contentView
+    
+    </summary>
+    
+      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+    
+    
+      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS开发之数据库存储(fmdb)</title>
