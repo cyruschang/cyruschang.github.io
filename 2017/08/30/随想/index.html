@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ios开发之uitextview粘贴出现空白 | cyruschang</title>
+  <title>随想 | cyruschang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
@@ -11,19 +11,16 @@
   
   
   
-  <meta name="description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScro">
+  <meta name="description" content="One week later, I write down those words.How lucky   I am. I met her.Just really met her.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="iOS开发之UITextView粘贴出现空白">
-<meta property="og:url" content="https://cyruschang.github.io/2017/07/27/iOS开发之UITextView粘贴出现空白/index.html">
+<meta property="og:title" content="随想">
+<meta property="og:url" content="https://cyruschang.github.io/2017/08/30/随想/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScro">
-<meta property="og:updated_time" content="2017-07-27T09:03:11.000Z">
+<meta property="og:description" content="One week later, I write down those words.How lucky   I am. I met her.Just really met her.">
+<meta property="og:updated_time" content="2017-08-30T12:28:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="iOS开发之UITextView粘贴出现空白">
-<meta name="twitter:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScro">
+<meta name="twitter:title" content="随想">
+<meta name="twitter:description" content="One week later, I write down those words.How lucky   I am. I met her.Just really met her.">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -101,7 +98,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-iOS开发之UITextView粘贴出现空白" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-随想" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -109,7 +106,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      iOS开发之UITextView粘贴出现空白
+      随想
     </h1>
   
 
@@ -117,31 +114,25 @@
     
     <div class="article-meta">
       
-	Posted on <a href="/2017/07/27/iOS开发之UITextView粘贴出现空白/" class="article-date">
-	  <time datetime="2017-07-27T08:58:11.000Z" itemprop="datePublished">July 27, 2017</time>
+	Posted on <a href="/2017/08/30/随想/" class="article-date">
+	  <time datetime="2017-08-30T12:28:39.000Z" itemprop="datePublished">August 30, 2017</time>
 	</a>
 
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
-<blockquote>
-<p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
-</blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。
-所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+        <p>One week later, I write down those words.How lucky   I am. I met her.Just really met her.</p>
 
       
     </div>
     <footer class="entry-meta entry-footer">
       
 	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/programming/">编程</a>
+    <a class="article-category-link" href="/categories/life/">生活</a>
 
       
   <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/essay/">随想</a></li></ul>
 
       
     </footer>
@@ -150,19 +141,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/07/28/new beginning/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          New Beginning
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/05/18/iOS开发之数据库存储/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/08/01/iOS开发之视频格式转换/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">iOS开发之数据库存储(fmdb)</div>
+      <div class="article-nav-title">iOS开发之MOV视频文件转mp4视频文件</div>
     </a>
   
 </nav>
