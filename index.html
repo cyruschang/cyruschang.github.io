@@ -99,6 +99,64 @@
         
           <section id="main">
   
+    <article id="post-iOS开发之模拟经纬度"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/12/07/iOS开发之模拟经纬度/">iOS开发之添加模拟器经纬度</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/12/07/iOS开发之模拟经纬度/" class="article-date">
+	  <time datetime="2017-12-07T06:36:15.000Z" itemprop="datePublished">December 7, 2017</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##iOS开发之添加模拟器经纬度</p>
+<p>现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。</p>
+<ol>
+<li><p><strong>直接为模拟器添加经纬度</strong></p>
+<p> 如下图所示：<br><img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
+</li>
+</ol>
+<p><img src="https://i.loli.net/2017/12/07/5a28dff564109.jpg" alt=""></p>
+<ol>
+<li><p><strong>通过创建gpx文件模拟经纬度</strong></p>
+<p> 如下图所示:<br><img src="https://i.loli.net/2017/12/07/5a28e10b58eca.jpg" alt=""></p>
+</li>
+</ol>
+<p>将文件里的经纬度坐标修改，放到工程中，打开Xcode后就可以愉快的使用自己定义的位置了。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-随想"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -167,8 +225,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+        <p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -214,8 +271,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://ac-HSNl7zbI.clouddn.com/zlKPsbXoGeJpjdwBdPqsH6y7wYJ3H48RDkaiIMea.jpg" alt=""></p>
-<p>A special day after a long time in Beijing,
-So I remember the day in my life.</p>
+<p>A special day after a long time in Beijing,<br>So I remember the day in my life.</p>
 
       
     </div>
@@ -260,13 +316,11 @@ So I remember the day in my life.</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
 <blockquote>
 <p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
 </blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。
-所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
 
       
     </div>
@@ -316,7 +370,7 @@ So I remember the day in my life.</p>
 <li>存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。</li>
 <li>插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：</li>
 </ol>
-<p><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>未完待续……</p>
 
       
@@ -362,12 +416,7 @@ So I remember the day in my life.</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>雪莱曾说：冬天到了，春天还会远吗？
-今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！
-清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。
-那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。
-如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。
-毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
+        <p>雪莱曾说：冬天到了，春天还会远吗？<br>今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！<br>清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。<br>那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。<br>如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。<br>毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
 
       
     </div>
@@ -413,7 +462,7 @@ So I remember the day in my life.</p>
     <div class="article-entry" itemprop="articleBody">
       
         <p>总会遇到用int还是用NSInteger，而且总是忘了为什么。今天索性查完资料记下来。在苹果的源文件中，NSInteger是这样定义的：</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#if __LP64__ || (TARGET_OS_EMBEDDED &amp;&amp; !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64</div><div class="line">typedef long NSInteger;</div><div class="line">typedef unsigned long NSUInteger;</div><div class="line">#else</div><div class="line">typedef int NSInteger;</div><div class="line">typedef unsigned int NSUInteger;</div><div class="line">#endif</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#if __LP64__ || (TARGET_OS_EMBEDDED &amp;&amp; !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64</div><div class="line">typedef long NSInteger;</div><div class="line">typedef unsigned long NSUInteger;</div><div class="line">#else</div><div class="line">typedef int NSInteger;</div><div class="line">typedef unsigned int NSUInteger;</div><div class="line">#endif</div></pre></td></tr></table></figure>
 <p>这个宏定义是什么意思呢？</p>
 <ul>
 <li><code>__LP64__</code>表示指针长度为64位</li>
@@ -466,9 +515,7 @@ So I remember the day in my life.</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。
-车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜去，不时有刺耳的喇叭声想起。忽然一辆车在那狗面前停下了，就那么静静地等着，也顾不上后方车辆的急促喇叭声了。站台上的人们议论纷纷。
-一个老爷子蹒跚着走到了狗的身边，准备将它抱起。可是那狗却钻过路中间的栅栏，到对面的车道不知所措了……</p>
+        <p>清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。<br>车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜去，不时有刺耳的喇叭声想起。忽然一辆车在那狗面前停下了，就那么静静地等着，也顾不上后方车辆的急促喇叭声了。站台上的人们议论纷纷。<br>一个老爷子蹒跚着走到了狗的身边，准备将它抱起。可是那狗却钻过路中间的栅栏，到对面的车道不知所措了……</p>
 
       
     </div>
@@ -513,8 +560,7 @@ So I remember the day in my life.</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>自我来北京，已三年矣！然每每接电话于老父者，未不尝语余之入仕也。今我观《嘉靖与海瑞》已毕，心中惶惶者甚。
-蜀道之难，难于上青天。仕途之于吾，其难也与？</p>
+        <p>自我来北京，已三年矣！然每每接电话于老父者，未不尝语余之入仕也。今我观《嘉靖与海瑞》已毕，心中惶惶者甚。<br>蜀道之难，难于上青天。仕途之于吾，其难也与？</p>
 
       
     </div>
@@ -536,83 +582,11 @@ So I remember the day in my life.</p>
 <!-- Table of Contents -->
 
   
-    <article id="post-村上春树小说经典语录"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/03/10/村上春树小说经典语录/">村上春树小说经典语录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/03/10/村上春树小说经典语录/" class="article-date">
-	  <time datetime="2017-03-10T04:58:26.000Z" itemprop="datePublished">March 10, 2017</time>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2>《且听风吟》</h2>
-<ul>
-<li>不存在十全十美的文章，如同不存在彻头彻尾的绝望。</li>
-<li>看海看久了想见人，见人见多了想看海。</li>
-</ul>
-<h2>《舞！舞！舞！》</h2>
-<ul>
-<li>你要做一个不动声色的大人了。不准情绪化，不准偷偷想念，不准回头看。去过自己另外的生活。你要听话，不是所有的鱼都会生活在同一片海里。</li>
-<li>我一直以为人是慢慢变老的，其实不是，人是一瞬间变老的。</li>
-</ul>
-<h2>《挪威的森林》</h2>
-<ul>
-<li>哪里会有人喜欢孤独，不过是不喜欢失望罢了。</li>
-<li>每个人都有属于自己的一片森林，也许我们 从来不曾去过，但它一直在那里，总会在那里。迷失的人迷失了，相逢的人会再相逢。</li>
-<li>希望你可以记住我，记住我这样活过，这样在你身边呆过。</li>
-<li>死并非生的对立面，而作为生的一部分永存。</li>
-<li>不要同情自己，同情自己是卑劣懦夫干的勾当。</li>
-<li>我渐渐能意会到，深刻并不等于接近事实。</li>
-</ul>
-<h2>《1Q84》</h2>
-<ul>
-<li>孤独一人也没关系，只要能发自内心地爱着一个人，人生就会有救。哪怕不能和他生活在一起。</li>
-<li>不必太纠结于当下，也不必太忧虑未来，当你经历过一些事情的时候，眼前的风景已经和从前不一样了。</li>
-</ul>
-<h2>《世界尽头与冷酷仙境》</h2>
-<ul>
-<li>世上存在着不能流泪的悲哀，这种悲哀无法向人解释，即使解释人家也不会理解。它永远一成不变，如无风夜晚的雪花静静沉积在心底。</li>
-</ul>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/reading/">读书</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a></li></ul>
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">weiter</a>
   </nav>
 
 </section>
@@ -624,9 +598,9 @@ So I remember the day in my life.</p>
     <form class="search-form">
         <label style="width: 75%;">
             <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" Search…" value="" name="s" title="Search for:">
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" Suche…" value="" name="s" title="Search for:">
         </label>
-        <input type="submit" class="search-form-submit" value="Search">
+        <input type="submit" class="search-form-submit" value="Suche">
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
@@ -695,10 +669,22 @@ So I remember the day in my life.</p>
     
   <div class="widget_athemes_tabs">
     <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>Recent Posts</a></li>
+      <li class="active"><a>letzter Beitrag</a></li>
     </ul>
     <div class="widget">
       <ul>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2017/12/07/iOS开发之模拟经纬度/">iOS开发之添加模拟器经纬度</a></h6>
+              <span>December 7, 2017</span>
+            </div>
+
+          </li>
         
           <li class="clearfix">
 
@@ -760,18 +746,6 @@ So I remember the day in my life.</p>
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/04/08/夏日回忆/">夏日回忆</a></h6>
-              <span>April 8, 2017</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -779,9 +753,9 @@ So I remember the day in my life.</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -791,7 +765,7 @@ So I remember the day in my life.</p>
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/essay/">随想</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/essay/">随想</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -808,10 +782,10 @@ So I remember the day in my life.</p>
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
