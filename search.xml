@@ -6,8 +6,7 @@
     <entry>
       <title><![CDATA[iOS开发之添加模拟器经纬度]]></title>
       <url>https://cyruschang.github.io/2017/12/07/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E6%A8%A1%E6%8B%9F%E7%BB%8F%E7%BA%AC%E5%BA%A6/</url>
-      <content type="html"><![CDATA[<p>##iOS开发之添加模拟器经纬度</p>
-<p>现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。</p>
+      <content type="html"><![CDATA[<p>现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。</p>
 <ol>
 <li><p><strong>直接为模拟器添加经纬度</strong></p>
 <p> 如下图所示：<br><img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
@@ -32,27 +31,6 @@
         <tags>
             
             <tag> iOS </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[随想]]></title>
-      <url>https://cyruschang.github.io/2017/08/30/%E9%9A%8F%E6%83%B3/</url>
-      <content type="html"><![CDATA[<p>One week later, I write down those words.How lucky   I am. I met her.Just really met her.</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 生活 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 随想 </tag>
             
         </tags>
         
