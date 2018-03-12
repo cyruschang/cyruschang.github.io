@@ -4,6 +4,52 @@
   
     
     <entry>
+      <title><![CDATA[svn终端常用命令使用]]></title>
+      <url>https://cyruschang.github.io/2018/03/12/%E5%BC%80%E5%8F%91%E4%B9%8Bsvn%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/</url>
+      <content type="html"><![CDATA[<p>多人共同开发项目无可避免的要用到版本控制。本人所在的公司使用的是svn。个人习惯使用终端来进行各种操作。一下是本人常用的svn命令，好多没有带参数（因为没怎么用到）如下：</p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>checkout 绝对地址路径 --username password```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">简化为</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>svn co<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- ```svn add 文件名```告知服务器要添加文件。之后需要使用```svn commit```提交到服务器。</div><div class="line">- ```svn commit -m&quot;提交描述&quot;```提交改动到服务器，</div><div class="line"> 简化为</div><div class="line"> ```svn ci -m&quot;&quot;</div></pre></td></tr></table></figure></p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>update```更新本地到当前最新，</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">简化为```svn up</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>svn delete 文件名</code>删除文件。之后需要使用<code>svn commit</code>提交到服务器。可简化为<code>svn del 文件名</code></p>
+</li>
+<li><p><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：</p>
+<ul>
+<li>M 有修改</li>
+<li>C 有冲突</li>
+<li>D 有删除</li>
+<li>R 有替换</li>
+<li>A 有增加</li>
+<li>其他不常见到的……</li>
+</ul>
+</li>
+<li><code>svn log 文件名</code>查看日志</li>
+<li><code>svn revert 文件名</code>恢复本地修改，所做的改动会回到未修改时的状态。</li>
+<li><code>svn resolved 本地绝对路径</code>解决冲突</li>
+</ul>
+<p>以上~记录之增加印象。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[被遗忘的老友]]></title>
       <url>https://cyruschang.github.io/2018/02/27/%E8%A2%AB%E9%81%97%E5%BF%98%E7%9A%84%E8%80%81%E5%8F%8B/</url>
       <content type="html"><![CDATA[<p>《肖申克的救赎》我看了很多遍，每一次都给我全新的感动。安迪说太平洋是没有回忆的海洋。昨日接到许久未曾联系的老友的电话，在过年那些应该聚首的日子，他竟然被我遗忘在太平洋里……他笑着说自己身体有恙，嗓子不舒服，我们来年再聚。随便侃了一会儿，谈资自然而然到了我们这个年纪的话题。相亲啦，工作啦，房子啦BlaBla……</p>

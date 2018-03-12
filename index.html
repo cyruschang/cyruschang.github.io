@@ -99,6 +99,76 @@
         
           <section id="main">
   
+    <article id="post-开发之svn终端常用命令使用"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/03/12/开发之svn终端常用命令使用/">svn终端常用命令使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2018/03/12/开发之svn终端常用命令使用/" class="article-date">
+	  <time datetime="2018-03-12T02:14:30.000Z" itemprop="datePublished">March 12, 2018</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>多人共同开发项目无可避免的要用到版本控制。本人所在的公司使用的是svn。个人习惯使用终端来进行各种操作。一下是本人常用的svn命令，好多没有带参数（因为没怎么用到）如下：</p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>checkout 绝对地址路径 --username password```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">简化为</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>svn co<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">- ```svn add 文件名```告知服务器要添加文件。之后需要使用```svn commit```提交到服务器。</div><div class="line">- ```svn commit -m&quot;提交描述&quot;```提交改动到服务器，</div><div class="line"> 简化为</div><div class="line"> ```svn ci -m&quot;&quot;</div></pre></td></tr></table></figure></p>
+<ul>
+<li><figure class="highlight plain"><figcaption><span>update```更新本地到当前最新，</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">简化为```svn up</div></pre></td></tr></table></figure>
+</li>
+<li><p><code>svn delete 文件名</code>删除文件。之后需要使用<code>svn commit</code>提交到服务器。可简化为<code>svn del 文件名</code></p>
+</li>
+<li><p><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：</p>
+<ul>
+<li>M 有修改</li>
+<li>C 有冲突</li>
+<li>D 有删除</li>
+<li>R 有替换</li>
+<li>A 有增加</li>
+<li>其他不常见到的……</li>
+</ul>
+</li>
+<li><code>svn log 文件名</code>查看日志</li>
+<li><code>svn revert 文件名</code>恢复本地修改，所做的改动会回到未修改时的状态。</li>
+<li><code>svn resolved 本地绝对路径</code>解决冲突</li>
+</ul>
+<p>以上~记录之增加印象。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-被遗忘的老友"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -540,51 +610,6 @@
 <!-- Table of Contents -->
 
   
-    <article id="post-一条无助的狗"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/03/28/一条无助的狗/">一条无助的狗</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/03/28/一条无助的狗/" class="article-date">
-	  <time datetime="2017-03-28T07:25:20.000Z" itemprop="datePublished">March 28, 2017</time>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。<br>车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜去，不时有刺耳的喇叭声想起。忽然一辆车在那狗面前停下了，就那么静静地等着，也顾不上后方车辆的急促喇叭声了。站台上的人们议论纷纷。<br>一个老爷子蹒跚着走到了狗的身边，准备将它抱起。可是那狗却钻过路中间的栅栏，到对面的车道不知所措了……</p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/life/">生活</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/essay/">随想</a></li></ul>
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
@@ -683,6 +708,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2018/03/12/开发之svn终端常用命令使用/">svn终端常用命令使用</a></h6>
+              <span>March 12, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/02/27/被遗忘的老友/">被遗忘的老友</a></h6>
               <span>February 27, 2018</span>
             </div>
@@ -737,18 +774,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2017/07/27/iOS开发之UITextView粘贴出现空白/">iOS开发之UITextView粘贴出现空白</a></h6>
-              <span>July 27, 2017</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -758,7 +783,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -768,7 +793,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">8</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/essay/">随想</a><span class="tag-list-count">3</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/essay/">随想</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -788,7 +813,7 @@
     <h3 class="widget-title">Archiv</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
