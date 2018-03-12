@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title><![CDATA[了不起的麦瑟尔夫人]]></title>
+      <url>https://cyruschang.github.io/2018/03/12/%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84%E9%BA%A6%E7%91%9F%E5%B0%94%E5%A4%AB%E4%BA%BA/</url>
+      <content type="html"><![CDATA[<p>昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。<br>地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。<br>随便说说第一集的感想吧。</p>
+<ul>
+<li><p>犹太人对世界的认知很深刻呢！也难怪世界舞台有他们一席。<br><img src="https://i.loli.net/2018/03/12/5aa5f403caca4.jpg" alt=""></p>
+</li>
+<li><p>麦瑟尔自己身上上演的悲剧放到舞台上以后，在别人眼里就是活生生的喜剧~看了有点难过。<br><img src="https://i.loli.net/2018/03/12/5aa5f46585497.jpg" alt=""></p>
+</li>
+<li><p>很好奇在剧场干了8年的那个女人，看起来很有故事。不知道她会和女主发生些什么有趣的故事。</p>
+</li>
+<li>有个细节。麦瑟尔在他丈夫入睡之后化妆，阳光照进屋子丈夫还没醒的时候卸妆。以前貌似在某个博主的文下看过这个桥段，博主说他妈妈也是如此。后面验证。</li>
+<li>我还没有经历婚姻，也许这剧会刷新我的婚姻的认知。</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 情感 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 美好的 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[svn终端常用命令使用]]></title>
       <url>https://cyruschang.github.io/2018/03/12/%E5%BC%80%E5%8F%91%E4%B9%8Bsvn%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<p>多人共同开发项目无可避免的要用到版本控制。本人所在的公司使用的是svn。个人习惯使用终端来进行各种操作。以下是本人常用的svn命令，好多没有带参数（因为没怎么用到）如下：</p>
