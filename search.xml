@@ -9,10 +9,8 @@
       <content type="html"><![CDATA[<p>多人共同开发项目无可避免的要用到版本控制。本人所在的公司使用的是svn。个人习惯使用终端来进行各种操作。以下是本人常用的svn命令，好多没有带参数（因为没怎么用到）如下：</p>
 <ul>
 <li><code>svn checkout 绝对地址路径 --username password</code>简化为<code>svn co</code></li>
-</ul>
-<ul>
 <li><code>svn add 文件名</code>告知服务器要添加文件。之后需要使用<code>svn commit</code>提交到服务器。</li>
-<li><code>svn commit -m&quot;提交描述&quot;</code>提交改动到服务器，简化为<code>svn ci -m&quot;&quot;</code></li>
+<li><code>svn commit -m&quot;提交描述&quot;</code>提交改动到服务器，简化为<code>svn ci -m</code></li>
 <li><code>svn update</code>更新本地到当前最新，简化为<code>svn up</code></li>
 <li><code>svn delete 文件名</code>删除文件。之后需要使用<code>svn commit</code>提交到服务器。可简化为<code>svn del 文件名</code></li>
 <li><p><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：</p>
