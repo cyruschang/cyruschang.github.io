@@ -13,8 +13,8 @@
 <ul>
 <li><code>svn add 文件名</code>告知服务器要添加文件。之后需要使用<code>svn commit</code>提交到服务器。</li>
 <li><code>svn commit -m&quot;提交描述&quot;</code>提交改动到服务器，简化为<code>svn ci -m&quot;&quot;</code></li>
-<li><p>`svn update<figure class="highlight plain"><figcaption><span>up`</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">- `svn delete 文件名`删除文件。之后需要使用`svn commit`提交到服务器。可简化为```svn del 文件名</div></pre></td></tr></table></figure></p>
-</li>
+<li><code>svn update</code>更新本地到当前最新，简化为<code>svn up</code></li>
+<li><code>svn delete 文件名</code>删除文件。之后需要使用<code>svn commit</code>提交到服务器。可简化为<code>svn del 文件名</code></li>
 <li><p><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：</p>
 <ul>
 <li>M 有修改</li>
