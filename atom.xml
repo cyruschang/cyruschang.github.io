@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2018-03-12T03:39:05.000Z</updated>
+  <updated>2018-03-13T07:28:35.000Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电脑实用——超大号字体打印</title>
+    <link href="https://cyruschang.github.io/2018/03/13/%E7%94%B5%E8%84%91%E5%AE%9E%E7%94%A8%E2%80%94%E2%80%94%E8%B6%85%E5%A4%A7%E5%8F%B7%E5%AD%97%E4%BD%93%E6%89%93%E5%8D%B0/"/>
+    <id>https://cyruschang.github.io/2018/03/13/电脑实用——超大号字体打印/</id>
+    <published>2018-03-13T07:16:57.000Z</published>
+    <updated>2018-03-13T07:28:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。<br>既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。<br>如图：<br><img src="https://i.loli.net/2018/03/13/5aa77cb5d9ceb.jpg" alt=""></p>
+<p>而且，四个字横着放最能完全使用一张A4纸，所以打印的时候，在“文件”-&gt;“页面设置…”中选择打印方向为横向即可。<br>如图：<br><img src="https://i.loli.net/2018/03/13/5aa77d77e43f0.jpg" alt=""><br>大功告成！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。&lt;br&gt;既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。&lt;br&gt;如图：&lt;br&gt;&lt;img src=&quot;https://i
+    
+    </summary>
+    
+      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
+    
+    
+      <category term="美好的" scheme="https://cyruschang.github.io/tags/bestfeel/"/>
+    
+  </entry>
   
   <entry>
     <title>了不起的麦瑟尔夫人</title>
