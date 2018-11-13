@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2018-11-13T13:49:04.161Z</updated>
+  <updated>2018-11-13T13:50:43.873Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="https://cyruschang.github.io/2018/11/13/iOS%E5%BC%80%E5%8F%91%E4%B9%8BSwift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://cyruschang.github.io/2018/11/13/iOS开发之Swift学习笔记/</id>
     <published>2018-11-13T13:40:18.948Z</published>
-    <updated>2018-11-13T13:49:04.161Z</updated>
+    <updated>2018-11-13T13:50:43.873Z</updated>
     
-    <content type="html"><![CDATA[<ul>
+    <content type="html"><![CDATA[<h1 id="Swift学习笔记"><a href="#Swift学习笔记" class="headerlink" title="Swift学习笔记"></a>Swift学习笔记</h1><h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ul>
 <li>定义数字变量的时候，如果数字很大，可以把数字用下划线隔开</li>
 </ul>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure>
@@ -33,10 +33,7 @@
     
     <summary type="html">
     
-      &lt;ul&gt;
-&lt;li&gt;定义数字变量的时候，如果数字很大，可以把数字用下划线隔开&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div
+      &lt;h1 id=&quot;Swift学习笔记&quot;&gt;&lt;a href=&quot;#Swift学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Swift学习笔记&quot;&gt;&lt;/a&gt;Swift学习笔记&lt;/h1&gt;&lt;h2 id=&quot;变量与常量&quot;&gt;&lt;a href=&quot;#变量与常量&quot; class=&quot;header
     
     </summary>
     
