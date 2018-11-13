@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title><![CDATA[iOS开发之Swift学习笔记]]></title>
+      <url>https://cyruschang.github.io/2018/11/13/iOS%E5%BC%80%E5%8F%91%E4%B9%8BSwift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>##Swift学习笔记</p>
+<p>###变量与常量</p>
+<ul>
+<li>定义数字变量的时候，如果数字很大，可以把数字用下划线隔开</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure>
+<ul>
+<li>可以用中文甚至emoji来作为变量名</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[iOS开发之命名规范]]></title>
       <url>https://cyruschang.github.io/2018/04/30/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/</url>
       <content type="html"><![CDATA[<p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。<br>问题如下:</p>

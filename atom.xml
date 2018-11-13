@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2018-04-30T03:33:03.936Z</updated>
+  <updated>2018-11-13T13:41:34.941Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>iOS开发之Swift学习笔记</title>
+    <link href="https://cyruschang.github.io/2018/11/13/iOS%E5%BC%80%E5%8F%91%E4%B9%8BSwift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://cyruschang.github.io/2018/11/13/iOS开发之Swift学习笔记/</id>
+    <published>2018-11-13T13:40:18.948Z</published>
+    <updated>2018-11-13T13:41:34.941Z</updated>
+    
+    <content type="html"><![CDATA[<p>##Swift学习笔记</p>
+<p>###变量与常量</p>
+<ul>
+<li>定义数字变量的时候，如果数字很大，可以把数字用下划线隔开</li>
+</ul>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure>
+<ul>
+<li>可以用中文甚至emoji来作为变量名</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##Swift学习笔记&lt;/p&gt;
+&lt;p&gt;###变量与常量&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;定义数字变量的时候，如果数字很大，可以把数字用下划线隔开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gu
+    
+    </summary>
+    
+      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+    
+    
+      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS开发之命名规范</title>
@@ -577,29 +613,6 @@
     
     
       <category term="二货" scheme="https://cyruschang.github.io/tags/stupid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一次的砰然心动</title>
-    <link href="https://cyruschang.github.io/2017/03/03/%E7%AC%AC%E4%B8%80%E6%AC%A1/"/>
-    <id>https://cyruschang.github.io/2017/03/03/第一次/</id>
-    <published>2017-03-03T14:54:36.000Z</published>
-    <updated>2017-03-04T06:46:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>经常会看到很精美的**.github.io域名的博客，然而并没有仔细深究是怎么做到的。偶然在简书iOS开发版块看到一篇文章介绍到了，索性就直接弄了一个。第一次的砰然心动总归比不上天长地久的喜欢，希望自己能够坚持下去。找这个主题花了相当长的时间，简约，简单，不失大气。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;经常会看到很精美的**.github.io域名的博客，然而并没有仔细深究是怎么做到的。偶然在简书iOS开发版块看到一篇文章介绍到了，索性就直接弄了一个。第一次的砰然心动总归比不上天长地久的喜欢，希望自己能够坚持下去。找这个主题花了相当长的时间，简约，简单，不失大气。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
-    
-    
-      <category term="美好的" scheme="https://cyruschang.github.io/tags/bestfeel/"/>
     
   </entry>
   
