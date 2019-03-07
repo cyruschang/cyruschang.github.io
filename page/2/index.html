@@ -99,6 +99,51 @@
         
           <section id="main">
   
+    <article id="post-iOS开发之视频格式转换"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/08/01/iOS开发之视频格式转换/">iOS开发之MOV视频文件转mp4视频文件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/08/01/iOS开发之视频格式转换/" class="article-date">
+	  <time datetime="2017-08-01T00:17:49.000Z" itemprop="datePublished">August 1, 2017</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-new beginning"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -555,56 +600,6 @@
 <!-- Table of Contents -->
 
   
-    <article id="post-iOS开发之小圆点角标变色问题"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/03/06/iOS开发之小圆点角标变色问题/">iOS开发之小圆点角标变色问题</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/03/06/iOS开发之小圆点角标变色问题/" class="article-date">
-	  <time datetime="2017-03-06T09:20:11.000Z" itemprop="datePublished">March 6, 2017</time>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>相信每一款IM中(Instance Message)类的App都有这样的UI吧！</p>
-<p><img src="http://ome0t4nzu.bkt.clouddn.com/UI.png" width="298" height="70"></p>
-<p><strong>遇到的问题</strong>：当push到别的页面的时候，红色角标会变色，颜色和tableviewcell选中状态的颜色一样。如下图：</p>
-<p><img src="http://ome0t4nzu.bkt.clouddn.com/UI_1.png" width="298" height="70"></p>
-<p><strong>解决办法</strong>：在cell的<code>- (void)layoutSubviews;</code>方法中，再次设置小红点的颜色，即可解决。</p>
-<p><img src="http://ome0t4nzu.bkt.clouddn.com/UI_2.png" width="298" height="70"></p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/programming/">编程</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
@@ -703,6 +698,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2019/03/07/iOS开发之App转让/">(no title)</a></h6>
+              <span>March 7, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2018/12/07/2018年小结/">2018年小结</a></h6>
               <span>December 7, 2018</span>
             </div>
@@ -757,18 +764,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/03/12/开发之svn终端常用命令使用/">svn终端常用命令使用</a></h6>
-              <span>March 12, 2018</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -808,7 +803,7 @@
     <h3 class="widget-title">Archiv</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
@@ -822,7 +817,7 @@
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2018 cyruschang All Rights Reserved.
+	      &copy; 2019 cyruschang All Rights Reserved.
       </div>
       <div class="site-credit">
         Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
