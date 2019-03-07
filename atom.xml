@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2019-03-07T15:49:59.247Z</updated>
+  <updated>2019-03-07T15:53:28.166Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -20,15 +20,15 @@
     <link href="https://cyruschang.github.io/2019/03/07/iOS%E5%BC%80%E5%8F%91%E4%B9%8BApp%E8%BD%AC%E8%AE%A9/"/>
     <id>https://cyruschang.github.io/2019/03/07/iOS开发之App转让/</id>
     <published>2019-03-07T15:49:59.246Z</published>
-    <updated>2019-03-07T15:49:59.247Z</updated>
+    <updated>2019-03-07T15:53:28.166Z</updated>
     
     <content type="html"><![CDATA[<h2 id="iOS开发之App转让"><a href="#iOS开发之App转让" class="headerlink" title="iOS开发之App转让"></a>iOS开发之App转让</h2><h3 id="1-前提"><a href="#1-前提" class="headerlink" title="1. 前提"></a>1. 前提</h3><ol>
 <li>必须是两个账号的账号持有者（主账号）进行操作。</li>
-<li>转让者的App信息栏里，需要删除TestFlight中所有的构建版本。</li>
-</ol>
-<pre><code>&gt; 删除方法：针对某一构建版本,将其设置为过期即可。如图所示：
-![](https://i.loli.net/2019/03/06/5c7f937d7e795.jpg)
-</code></pre><ol>
+<li><p>转让者的App信息栏里，需要删除TestFlight中所有的构建版本。</p>
+<blockquote>
+<p>删除方法：针对某一构建版本,将其设置为过期即可。如图所示：<br><img src="https://i.loli.net/2019/03/06/5c7f937d7e795.jpg" alt=""></p>
+</blockquote>
+</li>
 <li><p>需要删除App信息-测试信息里的所有相关字段。包括测试员的信息也需要删除。</p>
 <blockquote>
 <p>注意：需要登录那一栏，需要点开看看是否填写了测试登录账号和密码，需要登录本身勾选不勾选都可以。</p>
