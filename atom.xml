@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2019-03-07T16:00:56.736Z</updated>
+  <updated>2019-03-07T16:03:09.085Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>iOS开发之UITextView粘贴出现空白</title>
+    <title>iOS开发之App转让</title>
     <link href="https://cyruschang.github.io/2019/03/07/iOS%E5%BC%80%E5%8F%91%E4%B9%8BApp%E8%BD%AC%E8%AE%A9/"/>
     <id>https://cyruschang.github.io/2019/03/07/iOS开发之App转让/</id>
     <published>2019-03-07T15:49:59.246Z</published>
-    <updated>2019-03-07T16:00:56.736Z</updated>
+    <updated>2019-03-07T16:03:09.085Z</updated>
     
     <content type="html"><![CDATA[<h2 id="iOS开发之App转让"><a href="#iOS开发之App转让" class="headerlink" title="iOS开发之App转让"></a>iOS开发之App转让</h2><h3 id="1-前提"><a href="#1-前提" class="headerlink" title="1. 前提"></a>1. 前提</h3><ol>
 <li>必须是两个账号的账号持有者（主账号）进行操作。</li>
