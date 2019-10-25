@@ -316,6 +316,30 @@
   </entry>
   
   <entry>
+    <title>任新霞你看到木有</title>
+    <link href="https://cyruschang.github.io/2018/02/27/%E7%9C%8B%E5%88%B0%E6%9C%A8%E6%9C%89/"/>
+    <id>https://cyruschang.github.io/2018/02/27/看到木有/</id>
+    <published>2018-02-27T00:58:25.000Z</published>
+    <updated>2019-10-25T09:31:40.992Z</updated>
+    
+    <content type="html"><![CDATA[<p>看到木有看到木有看到木有~~~</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;看到木有看到木有看到木有~~~&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
+    
+    
+      <category term="随想" scheme="https://cyruschang.github.io/tags/essay/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS开发之一个workspace多个项目</title>
     <link href="https://cyruschang.github.io/2017/12/14/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E4%B8%80%E4%B8%AAworkspace%E5%A4%9A%E4%B8%AA%E9%A1%B9%E7%9B%AE/"/>
     <id>https://cyruschang.github.io/2017/12/14/iOS开发之一个workspace多个项目/</id>
@@ -633,40 +657,6 @@
     
     
       <category term="村上春树" scheme="https://cyruschang.github.io/tags/MurakamiHaruki/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS开发之苹果警告邮件</title>
-    <link href="https://cyruschang.github.io/2017/03/08/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%8B%B9%E6%9E%9C%E8%AD%A6%E5%91%8A%E9%82%AE%E4%BB%B6/"/>
-    <id>https://cyruschang.github.io/2017/03/08/iOS开发之苹果警告邮件/</id>
-    <published>2017-03-08T08:30:01.000Z</published>
-    <updated>2017-03-08T10:58:43.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>&#8194;&#8194;&#8194;&#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。</p>
-<blockquote>
-<p>2017年3月8日 上午6:20<br>发件人 Apple<br>Dear Developer,</p>
-<p>Your app, extension, and/or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with section 3.3.2 of the Apple Developer Program License Agreement and App Store Review Guideline 2.5.2. This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes. </p>
-<p>This includes any code which passes arbitrary parameters to dynamic methods such as dlopen(), dlsym(), respondsToSelector:, performSelector:, method_exchangeImplementations(), and running remote scripts in order to change app behavior or call SPI, based on the contents of the downloaded script. Even if the remote resource is not intentionally malicious, it could easily be hijacked via a Man In The Middle (MiTM) attack, which can pose a serious security vulnerability to users of your app.</p>
-<p>Please perform an in-depth review of your app and remove any code, frameworks, or SDKs that fall in line with the functionality described above before submitting the next update for your app for review.</p>
-<p>Best regards,</p>
-<p>App Store Review</p>
-</blockquote>
-<p>&#8194;&#8194;&#8194;&#8194;随后发现各大论坛和iOS开发群都已经炸开了锅，甚至都上了今日头条。<a href="http://www.toutiao.com/i6394988770789163521/?tt_from=mobile_qq&amp;utm_campaign=client_share&amp;app=news_article&amp;utm_source=mobile_qq&amp;iid=7713776056&amp;utm_medium=toutiao_ios" target="_blank" rel="external">【链接】iOS原生开发迎来第二春jspathRNweexgg了</a>,开发者一致地把矛头指向了JSpatch, Reactive Native, Weex等热更新框架。然而我的内心OS是这样：苹果爸爸毕竟是苹果爸爸呀，最近七八次的上线审核都很顺利，以至于我认为上线-审核-通过，就是顺理成章的事情。苹果却实力打脸。毕竟在苹果的生态环境下，他就是老大，还是有着说一不二的分量的。对于广大原生开发者来说，这是一个好事情吧。<br>&#8194;&#8194;&#8194;&#8194;不好的方面也许就是：开发者更依赖苹果和苹果的AppStore了。<br>&#8194;&#8194;&#8194;&#8194;结合我之前的经验得到的一个技术结论：原生的效果还是最好的。混合编译毕竟不能相媲美。前阵子用OC和swift混编，连ipa包都大了一个量级。<br>谨以此记录今天苹果的邮件事件吧~</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;#8194;&amp;#8194;&amp;#8194;&amp;#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2017年3月8日 上午6:20&lt;br&gt;发件人 Apple&lt;
-    
-    </summary>
-    
-      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
-    
-    
-      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
     
   </entry>
   
