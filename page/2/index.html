@@ -99,63 +99,6 @@
         
           <section id="main">
   
-    <article id="post-iOS开发之模拟经纬度"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/12/07/iOS开发之模拟经纬度/">iOS开发之添加模拟器经纬度</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/12/07/iOS开发之模拟经纬度/" class="article-date">
-	  <time datetime="2017-12-07T06:36:15.000Z" itemprop="datePublished">December 7, 2017</time>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。</p>
-<ol>
-<li><p><strong>直接为模拟器添加经纬度</strong></p>
-<p> 如下图所示：<br><img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
-</li>
-</ol>
-<p><img src="https://i.loli.net/2017/12/07/5a28dff564109.jpg" alt=""></p>
-<ol>
-<li><p><strong>通过创建gpx文件模拟经纬度</strong></p>
-<p> 如下图所示:<br><img src="https://i.loli.net/2017/12/07/5a28e10b58eca.jpg" alt=""></p>
-</li>
-</ol>
-<p>将文件里的经纬度坐标修改，放到工程中，打开Xcode后就可以愉快的使用自己定义的位置了。</p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/programming/">编程</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
     <article id="post-iOS开发之视频格式转换"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -603,6 +546,60 @@
 <!-- Table of Contents -->
 
   
+    <article id="post-iOS开发之苹果警告邮件"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2017/03/08/iOS开发之苹果警告邮件/">iOS开发之苹果警告邮件</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2017/03/08/iOS开发之苹果警告邮件/" class="article-date">
+	  <time datetime="2017-03-08T08:30:01.000Z" itemprop="datePublished">March 8, 2017</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#8194;&#8194;&#8194;&#8194;今早醒来看到手机软件Connect推送了一条苹果开发者中心的警告消息，到了公司在苹果开发者中心后台看到了具体的内容。</p>
+<blockquote>
+<p>2017年3月8日 上午6:20<br>发件人 Apple<br>Dear Developer,</p>
+<p>Your app, extension, and/or linked framework appears to contain code designed explicitly with the capability to change your app’s behavior or functionality after App Review approval, which is not in compliance with section 3.3.2 of the Apple Developer Program License Agreement and App Store Review Guideline 2.5.2. This code, combined with a remote resource, can facilitate significant changes to your app’s behavior compared to when it was initially reviewed for the App Store. While you may not be using this functionality currently, it has the potential to load private frameworks, private methods, and enable future feature changes. </p>
+<p>This includes any code which passes arbitrary parameters to dynamic methods such as dlopen(), dlsym(), respondsToSelector:, performSelector:, method_exchangeImplementations(), and running remote scripts in order to change app behavior or call SPI, based on the contents of the downloaded script. Even if the remote resource is not intentionally malicious, it could easily be hijacked via a Man In The Middle (MiTM) attack, which can pose a serious security vulnerability to users of your app.</p>
+<p>Please perform an in-depth review of your app and remove any code, frameworks, or SDKs that fall in line with the functionality described above before submitting the next update for your app for review.</p>
+<p>Best regards,</p>
+<p>App Store Review</p>
+</blockquote>
+<p>&#8194;&#8194;&#8194;&#8194;随后发现各大论坛和iOS开发群都已经炸开了锅，甚至都上了今日头条。<a href="http://www.toutiao.com/i6394988770789163521/?tt_from=mobile_qq&amp;utm_campaign=client_share&amp;app=news_article&amp;utm_source=mobile_qq&amp;iid=7713776056&amp;utm_medium=toutiao_ios" target="_blank" rel="external">【链接】iOS原生开发迎来第二春jspathRNweexgg了</a>,开发者一致地把矛头指向了JSpatch, Reactive Native, Weex等热更新框架。然而我的内心OS是这样：苹果爸爸毕竟是苹果爸爸呀，最近七八次的上线审核都很顺利，以至于我认为上线-审核-通过，就是顺理成章的事情。苹果却实力打脸。毕竟在苹果的生态环境下，他就是老大，还是有着说一不二的分量的。对于广大原生开发者来说，这是一个好事情吧。<br>&#8194;&#8194;&#8194;&#8194;不好的方面也许就是：开发者更依赖苹果和苹果的AppStore了。<br>&#8194;&#8194;&#8194;&#8194;结合我之前的经验得到的一个技术结论：原生的效果还是最好的。混合编译毕竟不能相媲美。前阵子用OC和swift混编，连ipa包都大了一个量级。<br>谨以此记录今天苹果的邮件事件吧~</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
 
 
   <nav id="page-nav">
@@ -701,18 +698,6 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2019/10/25/任新霞你看到木有/">任新霞你看到木有</a></h6>
-              <span>October 25, 2019</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
               <h6 style="margin: 0;"><a href="/2019/03/07/iOS开发之App转让/">iOS开发之App转让</a></h6>
               <span>March 7, 2019</span>
             </div>
@@ -767,6 +752,18 @@
 
           </li>
         
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/03/12/了不起的麦瑟尔夫人/">了不起的麦瑟尔夫人</a></h6>
+              <span>March 12, 2018</span>
+            </div>
+
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -776,7 +773,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/emotion/">情感</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">9</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/emotion/">情感</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -786,7 +783,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/essay/">随想</a><span class="tag-list-count">4</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a><span class="tag-list-count">12</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/stupid/">二货</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MurakamiHaruki/">村上春树</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bestfeel/">美好的</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/essay/">随想</a><span class="tag-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -806,7 +803,7 @@
     <h3 class="widget-title">Archiv</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">October 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
