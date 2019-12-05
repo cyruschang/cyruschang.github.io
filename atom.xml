@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2019-12-05T06:23:32.794Z</updated>
+  <updated>2019-12-05T06:33:10.588Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -16,35 +16,82 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总</title>
     <link href="https://cyruschang.github.io/2019/12/05/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA%EF%BC%88Jenkins+fastlane+%E8%92%B2%E5%85%AC%E8%8B%B1%EF%BC%89%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB/"/>
     <id>https://cyruschang.github.io/2019/12/05/iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总/</id>
     <published>2019-12-05T01:18:44.731Z</published>
-    <updated>2019-12-05T06:23:32.794Z</updated>
+    <updated>2019-12-05T06:33:10.588Z</updated>
     
-    <content type="html"><![CDATA[<hr>
-<p>title:iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总<br>comment:false<br>tags:iOS</p>
-<h2 id="categories-编程"><a href="#categories-编程" class="headerlink" title="categories:编程"></a>categories:编程</h2><h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><h3 id="Multiple-schemes-found-but-you-haven’t-specified-one-Since-this-is-a-CI-please-pass-one-using-the-“scheme”-option"><a href="#Multiple-schemes-found-but-you-haven’t-specified-one-Since-this-is-a-CI-please-pass-one-using-the-“scheme”-option" class="headerlink" title="Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option"></a>Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</h3><p>解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时脚本显示指定scheme。</p>
-<h3 id="Code-Signing-Error-No-certificate-for-team-‘JJ6JH6RKQ5’-matching-‘iPhone-Developer-ZUXQ5B2W9Z-’-found-Select-a-different-signing-certificate-for-CODE-SIGN-IDENTITY-a-team-that-matches-your-selected-certificate-or-switch-to-automatic-provisioning"><a href="#Code-Signing-Error-No-certificate-for-team-‘JJ6JH6RKQ5’-matching-‘iPhone-Developer-ZUXQ5B2W9Z-’-found-Select-a-different-signing-certificate-for-CODE-SIGN-IDENTITY-a-team-that-matches-your-selected-certificate-or-switch-to-automatic-provisioning" class="headerlink" title="Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: * (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning."></a>Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: <em>*</em> (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</h3><p>解决方案：手动选择签名和描述文件时，需要配置正确的。或者转换为自动签名和描述证书。</p>
-<h3 id="PGYER-Plugin-Error-error-installType"><a href="#PGYER-Plugin-Error-error-installType" class="headerlink" title="PGYER Plugin Error: error installType"></a>PGYER Plugin Error: error installType</h3><p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。<br><code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
-<h3 id="bundler-failed-to-load-command-pod-usr-local-bin-pod-Bundler-GemNotFound-Could-not-find-fastlane-plugin-pgyer-0-2-1-in-any-of-the-sources"><a href="#bundler-failed-to-load-command-pod-usr-local-bin-pod-Bundler-GemNotFound-Could-not-find-fastlane-plugin-pgyer-0-2-1-in-any-of-the-sources" class="headerlink" title="bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources"></a>bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</h3><p>解决方案：不使用bundler加载，脚本如下<br><code>cocoapods(repo_update: false, use_bundle_exec: false)</code>。</p>
-<h3 id="error-unable-to-parse-contents-of-file-list-‘-Users-city-jenkins-workspace-ios-22city-supply-beta-original-supply-Pods-Target-Support-Files-Pods-supply-beta-Pods-supply-beta-frameworks-Debug-input-files-xcfilelist’"><a href="#error-unable-to-parse-contents-of-file-list-‘-Users-city-jenkins-workspace-ios-22city-supply-beta-original-supply-Pods-Target-Support-Files-Pods-supply-beta-Pods-supply-beta-frameworks-Debug-input-files-xcfilelist’" class="headerlink" title="error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’"></a>error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</h3><p>解决方案：如果指定了cocoapods版本，则这个文件可以删除掉。同时需要注意Xcode的版本与swift版本。打包机器最好能与开发机器版本一致，这样不至于容易出问题。</p>
-<h3 id="error-RPC-failed-curl-56-LibreSSL-SSL-read-SSL-ERROR-SYSCALL-errno-54。fatal-The-remote-end-hung-up-unexpectedly。-fatal-early-EOF。-fatal-index-pack-failed"><a href="#error-RPC-failed-curl-56-LibreSSL-SSL-read-SSL-ERROR-SYSCALL-errno-54。fatal-The-remote-end-hung-up-unexpectedly。-fatal-early-EOF。-fatal-index-pack-failed" class="headerlink" title="error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54。fatal: The remote end hung up unexpectedly。 fatal: early EOF。 fatal: index-pack failed"></a>error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54。fatal: The remote end hung up unexpectedly。 fatal: early EOF。 fatal: index-pack failed</h3><p>解决方案：这个一般是网络问题，最好设置gem源为<code>https://gems.ruby-china.com</code>并且确保只有一个，保证网络条件良好状态下打包。</p>
-<h3 id="fatal-unable-to-access-‘https-github-com-CocoaPods-Specs-git-‘-transfer-closed-with-outstanding-read-data-remaining"><a href="#fatal-unable-to-access-‘https-github-com-CocoaPods-Specs-git-‘-transfer-closed-with-outstanding-read-data-remaining" class="headerlink" title="fatal: unable to access ‘https://github.com/CocoaPods/Specs.git/‘: transfer closed with outstanding read data remaining"></a>fatal: unable to access ‘<a href="https://github.com/CocoaPods/Specs.git/" target="_blank" rel="external">https://github.com/CocoaPods/Specs.git/</a>‘: transfer closed with outstanding read data remaining</h3><p>同上</p>
-<h3 id="Failed-to-connect-to-GitHub-to-update-the-CocoaPods-Specs-specs-repo-Please-check-if-you-are-offline-or-that-GitHub-is-down"><a href="#Failed-to-connect-to-GitHub-to-update-the-CocoaPods-Specs-specs-repo-Please-check-if-you-are-offline-or-that-GitHub-is-down" class="headerlink" title="Failed to connect to GitHub to update the CocoaPods/Specs specs repo - Please check if you are offline, or that GitHub is down"></a>Failed to connect to GitHub to update the CocoaPods/Specs specs repo - Please check if you are offline, or that GitHub is down</h3><p>同上</p>
-<h3 id="fatal-Authentication-failed-for-‘http-git-hualala-com-22city-ios-supply-git-‘"><a href="#fatal-Authentication-failed-for-‘http-git-hualala-com-22city-ios-supply-git-‘" class="headerlink" title="fatal: Authentication failed for ‘http://git.hualala.com/22city_ios/supply.git/‘"></a>fatal: Authentication failed for ‘<a href="http://git.hualala.com/22city_ios/supply.git/" target="_blank" rel="external">http://git.hualala.com/22city_ios/supply.git/</a>‘</h3><p>解决方案：确认自己的代码仓库授权，使用正确的。</p>
-<h3 id="错误如下图"><a href="#错误如下图" class="headerlink" title="错误如下图"></a>错误如下图</h3><p> <img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></p>
-<p> 原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。<br> 解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
+    <content type="html"><![CDATA[<h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><ul>
+<li>Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</li>
+</ul>
+<blockquote>
+<p>解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时脚本显示指定scheme。</p>
+</blockquote>
+<ul>
+<li>Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: <em>*</em> (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
+</ul>
+<blockquote>
+<p>解决方案：手动选择签名和描述文件时，需要配置正确的。或者转换为自动签名和描述证书。</p>
+</blockquote>
+<ul>
+<li>PGYER Plugin Error: error installType</li>
+</ul>
+<blockquote>
+<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。<br><code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
+</blockquote>
+<ul>
+<li>bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</li>
+</ul>
+<blockquote>
+<p>解决方案：不使用bundler加载，脚本如下<code>cocoapods(repo_update: false, use_bundle_exec: false)</code>。</p>
+</blockquote>
+<ul>
+<li>error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</li>
+</ul>
+<blockquote>
+<p>解决方案：如果指定了cocoapods版本，则这个文件可以删除掉。同时需要注意Xcode的版本与swift版本。打包机器最好能与开发机器版本一致，这样不至于容易出问题。</p>
+</blockquote>
+<ul>
+<li>error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54。fatal: The remote end hung up unexpectedly。 fatal: early EOF。 fatal: index-pack failed</li>
+</ul>
+<p>解决方案：这个一般是网络问题，最好设置gem源为<code>https://gems.ruby-china.com</code>并且确保只有一个，保证网络条件良好状态下打包。</p>
+<ul>
+<li>fatal: unable to access ‘<a href="https://github.com/CocoaPods/Specs.git/" target="_blank" rel="external">https://github.com/CocoaPods/Specs.git/</a>‘: transfer closed with outstanding read data remaining</li>
+</ul>
+<blockquote>
+<p>同上</p>
+</blockquote>
+<ul>
+<li>Failed to connect to GitHub to update the CocoaPods/Specs specs repo - Please check if you are offline, or that GitHub is down</li>
+</ul>
+<blockquote>
+<p>同上</p>
+</blockquote>
+<ul>
+<li>fatal: Authentication failed for ‘<a href="http://git.hualala.com/22city_ios/supply.git/" target="_blank" rel="external">http://git.hualala.com/22city_ios/supply.git/</a>‘</li>
+</ul>
+<blockquote>
+<p>解决方案：确认自己的代码仓库授权，使用正确的。</p>
+</blockquote>
+<ul>
+<li>错误如下图<br><img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
+</ul>
+<blockquote>
+<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。<br> 解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
+</blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title:iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总&lt;br&gt;comment:false&lt;br&gt;tags:iOS&lt;/p&gt;
-&lt;h2 id=&quot;categories-编程&quot;&gt;&lt;a href=&quot;#categories-编程&quot; class=&quot;h
+      &lt;h1 id=&quot;Jenkins-fastlane打包上传蒲公英错误汇总&quot;&gt;&lt;a href=&quot;#Jenkins-fastlane打包上传蒲公英错误汇总&quot; class=&quot;headerlink&quot; title=&quot;Jenkins+fastlane打包上传蒲公英错误汇总&quot;&gt;&lt;/a&gt;Jenki
     
     </summary>
     
+      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+    
+    
+      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
     
   </entry>
   
