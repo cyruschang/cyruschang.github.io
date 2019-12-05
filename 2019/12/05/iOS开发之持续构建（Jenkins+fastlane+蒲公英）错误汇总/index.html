@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cyruschang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
+  
+  
+  
+  
+  <meta name="description" content="title:iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总comment:falsetags:iOS
+categories:编程Jenkins+fastlane打包上传蒲公英错误汇总Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cyruschang">
+<meta property="og:url" content="https://cyruschang.github.io/2019/12/05/iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总/index.html">
+<meta property="og:site_name" content="cyruschang">
+<meta property="og:description" content="title:iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总comment:falsetags:iOS
+categories:编程Jenkins+fastlane打包上传蒲公英错误汇总Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using">
+<meta property="og:image" content="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg">
+<meta property="og:updated_time" content="2019-12-05T06:23:32.794Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cyruschang">
+<meta name="twitter:description" content="title:iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总comment:falsetags:iOS
+categories:编程Jenkins+fastlane打包上传蒲公英错误汇总Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using">
+<meta name="twitter:image" content="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
+    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <script src="/js/jquery-3.1.1.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/hiero.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
+
+</head>
+
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
+
+
+  <header id="allheader" class="site-header" role="banner">
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
+            
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="124px" height="124px" alt="Hike News" src=" /avatar.jpg">
+              </a>
+            
+          </h1>
+
+          
+            <div class="site-description">天若有情天亦老，月如无恨月长圆。</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+            <div class="clearfix sf-menu">
+
+              <ul id="main-nav" class="nmenu sf-js-enabled">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+
+      </div>
+  </div>
+</header>
+
+
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
+        
+          <section id="main" style="float:none;"><article id="post-iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2019/12/05/iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总/" class="article-date">
+	  <time datetime="2019-12-05T01:18:44.731Z" itemprop="datePublished">December 5, 2019</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title:iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总<br>comment:false<br>tags:iOS</p>
+<h2 id="categories-编程"><a href="#categories-编程" class="headerlink" title="categories:编程"></a>categories:编程</h2><h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><h3 id="Multiple-schemes-found-but-you-haven’t-specified-one-Since-this-is-a-CI-please-pass-one-using-the-“scheme”-option"><a href="#Multiple-schemes-found-but-you-haven’t-specified-one-Since-this-is-a-CI-please-pass-one-using-the-“scheme”-option" class="headerlink" title="Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option"></a>Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</h3><p>解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时脚本显示指定scheme。</p>
+<h3 id="Code-Signing-Error-No-certificate-for-team-‘JJ6JH6RKQ5’-matching-‘iPhone-Developer-ZUXQ5B2W9Z-’-found-Select-a-different-signing-certificate-for-CODE-SIGN-IDENTITY-a-team-that-matches-your-selected-certificate-or-switch-to-automatic-provisioning"><a href="#Code-Signing-Error-No-certificate-for-team-‘JJ6JH6RKQ5’-matching-‘iPhone-Developer-ZUXQ5B2W9Z-’-found-Select-a-different-signing-certificate-for-CODE-SIGN-IDENTITY-a-team-that-matches-your-selected-certificate-or-switch-to-automatic-provisioning" class="headerlink" title="Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: * (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning."></a>Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: <em>*</em> (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</h3><p>解决方案：手动选择签名和描述文件时，需要配置正确的。或者转换为自动签名和描述证书。</p>
+<h3 id="PGYER-Plugin-Error-error-installType"><a href="#PGYER-Plugin-Error-error-installType" class="headerlink" title="PGYER Plugin Error: error installType"></a>PGYER Plugin Error: error installType</h3><p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。<br><code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
+<h3 id="bundler-failed-to-load-command-pod-usr-local-bin-pod-Bundler-GemNotFound-Could-not-find-fastlane-plugin-pgyer-0-2-1-in-any-of-the-sources"><a href="#bundler-failed-to-load-command-pod-usr-local-bin-pod-Bundler-GemNotFound-Could-not-find-fastlane-plugin-pgyer-0-2-1-in-any-of-the-sources" class="headerlink" title="bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources"></a>bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</h3><p>解决方案：不使用bundler加载，脚本如下<br><code>cocoapods(repo_update: false, use_bundle_exec: false)</code>。</p>
+<h3 id="error-unable-to-parse-contents-of-file-list-‘-Users-city-jenkins-workspace-ios-22city-supply-beta-original-supply-Pods-Target-Support-Files-Pods-supply-beta-Pods-supply-beta-frameworks-Debug-input-files-xcfilelist’"><a href="#error-unable-to-parse-contents-of-file-list-‘-Users-city-jenkins-workspace-ios-22city-supply-beta-original-supply-Pods-Target-Support-Files-Pods-supply-beta-Pods-supply-beta-frameworks-Debug-input-files-xcfilelist’" class="headerlink" title="error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’"></a>error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</h3><p>解决方案：如果指定了cocoapods版本，则这个文件可以删除掉。同时需要注意Xcode的版本与swift版本。打包机器最好能与开发机器版本一致，这样不至于容易出问题。</p>
+<h3 id="error-RPC-failed-curl-56-LibreSSL-SSL-read-SSL-ERROR-SYSCALL-errno-54。fatal-The-remote-end-hung-up-unexpectedly。-fatal-early-EOF。-fatal-index-pack-failed"><a href="#error-RPC-failed-curl-56-LibreSSL-SSL-read-SSL-ERROR-SYSCALL-errno-54。fatal-The-remote-end-hung-up-unexpectedly。-fatal-early-EOF。-fatal-index-pack-failed" class="headerlink" title="error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54。fatal: The remote end hung up unexpectedly。 fatal: early EOF。 fatal: index-pack failed"></a>error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54。fatal: The remote end hung up unexpectedly。 fatal: early EOF。 fatal: index-pack failed</h3><p>解决方案：这个一般是网络问题，最好设置gem源为<code>https://gems.ruby-china.com</code>并且确保只有一个，保证网络条件良好状态下打包。</p>
+<h3 id="fatal-unable-to-access-‘https-github-com-CocoaPods-Specs-git-‘-transfer-closed-with-outstanding-read-data-remaining"><a href="#fatal-unable-to-access-‘https-github-com-CocoaPods-Specs-git-‘-transfer-closed-with-outstanding-read-data-remaining" class="headerlink" title="fatal: unable to access ‘https://github.com/CocoaPods/Specs.git/‘: transfer closed with outstanding read data remaining"></a>fatal: unable to access ‘<a href="https://github.com/CocoaPods/Specs.git/" target="_blank" rel="external">https://github.com/CocoaPods/Specs.git/</a>‘: transfer closed with outstanding read data remaining</h3><p>同上</p>
+<h3 id="Failed-to-connect-to-GitHub-to-update-the-CocoaPods-Specs-specs-repo-Please-check-if-you-are-offline-or-that-GitHub-is-down"><a href="#Failed-to-connect-to-GitHub-to-update-the-CocoaPods-Specs-specs-repo-Please-check-if-you-are-offline-or-that-GitHub-is-down" class="headerlink" title="Failed to connect to GitHub to update the CocoaPods/Specs specs repo - Please check if you are offline, or that GitHub is down"></a>Failed to connect to GitHub to update the CocoaPods/Specs specs repo - Please check if you are offline, or that GitHub is down</h3><p>同上</p>
+<h3 id="fatal-Authentication-failed-for-‘http-git-hualala-com-22city-ios-supply-git-‘"><a href="#fatal-Authentication-failed-for-‘http-git-hualala-com-22city-ios-supply-git-‘" class="headerlink" title="fatal: Authentication failed for ‘http://git.hualala.com/22city_ios/supply.git/‘"></a>fatal: Authentication failed for ‘<a href="http://git.hualala.com/22city_ios/supply.git/" target="_blank" rel="external">http://git.hualala.com/22city_ios/supply.git/</a>‘</h3><p>解决方案：确认自己的代码仓库授权，使用正确的。</p>
+<h3 id="错误如下图"><a href="#错误如下图" class="headerlink" title="错误如下图"></a>错误如下图</h3><p> <img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></p>
+<p> 原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。<br> 解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/11/25/抄来的诗，生日快乐<1>/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">抄来的诗，生日快乐&lt;1&gt;</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+<!-- Table of Contents -->
+
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
+    
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#categories-编程"><span class="nav-number">1.</span> <span class="nav-text">categories:编程</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Jenkins-fastlane打包上传蒲公英错误汇总"><span class="nav-number"></span> <span class="nav-text">Jenkins+fastlane打包上传蒲公英错误汇总</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Multiple-schemes-found-but-you-haven’t-specified-one-Since-this-is-a-CI-please-pass-one-using-the-“scheme”-option"><span class="nav-number">0.1.</span> <span class="nav-text">Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code-Signing-Error-No-certificate-for-team-‘JJ6JH6RKQ5’-matching-‘iPhone-Developer-ZUXQ5B2W9Z-’-found-Select-a-different-signing-certificate-for-CODE-SIGN-IDENTITY-a-team-that-matches-your-selected-certificate-or-switch-to-automatic-provisioning"><span class="nav-number">0.2.</span> <span class="nav-text">Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: * (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PGYER-Plugin-Error-error-installType"><span class="nav-number">0.3.</span> <span class="nav-text">PGYER Plugin Error: error installType</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#bundler-failed-to-load-command-pod-usr-local-bin-pod-Bundler-GemNotFound-Could-not-find-fastlane-plugin-pgyer-0-2-1-in-any-of-the-sources"><span class="nav-number">0.4.</span> <span class="nav-text">bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error-unable-to-parse-contents-of-file-list-‘-Users-city-jenkins-workspace-ios-22city-supply-beta-original-supply-Pods-Target-Support-Files-Pods-supply-beta-Pods-supply-beta-frameworks-Debug-input-files-xcfilelist’"><span class="nav-number">0.5.</span> <span class="nav-text">error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#error-RPC-failed-curl-56-LibreSSL-SSL-read-SSL-ERROR-SYSCALL-errno-54。fatal-The-remote-end-hung-up-unexpectedly。-fatal-early-EOF。-fatal-index-pack-failed"><span class="nav-number">0.6.</span> <span class="nav-text">error: RPC failed; curl 56 LibreSSL SSL_read: SSL_ERROR_SYSCALL, errno 54。fatal: The remote end hung up unexpectedly。 fatal: early EOF。 fatal: index-pack failed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fatal-unable-to-access-‘https-github-com-CocoaPods-Specs-git-‘-transfer-closed-with-outstanding-read-data-remaining"><span class="nav-number">0.7.</span> <span class="nav-text">fatal: unable to access ‘https://github.com/CocoaPods/Specs.git/‘: transfer closed with outstanding read data remaining</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Failed-to-connect-to-GitHub-to-update-the-CocoaPods-Specs-specs-repo-Please-check-if-you-are-offline-or-that-GitHub-is-down"><span class="nav-number">0.8.</span> <span class="nav-text">Failed to connect to GitHub to update the CocoaPods/Specs specs repo - Please check if you are offline, or that GitHub is down</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fatal-Authentication-failed-for-‘http-git-hualala-com-22city-ios-supply-git-‘"><span class="nav-number">0.9.</span> <span class="nav-text">fatal: Authentication failed for ‘http://git.hualala.com/22city_ios/supply.git/‘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#错误如下图"><span class="nav-number">0.10.</span> <span class="nav-text">错误如下图</span></a></li></ol></li></ol>
+    
+    </div>
+  </aside>
+</section>
+        
+      </div>
+      <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2019 cyruschang All Rights Reserved.
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hiero" target="_blank">hiero</a>
+      </div>
+  </div>
+</footer>
+
+
+<!-- min height -->
+
+<script>
+    var contentdiv = document.getElementById("content");
+
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+</script>
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
+  
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+</body>
+</html>
