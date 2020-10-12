@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2019-12-05T06:33:10.588Z</updated>
+  <updated>2020-10-12T08:54:45.395Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -14,6 +14,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Be With You</title>
+    <link href="https://cyruschang.github.io/2020/10/12/Be%20With%20You/"/>
+    <id>https://cyruschang.github.io/2020/10/12/Be With You/</id>
+    <published>2020-10-12T08:51:31.372Z</published>
+    <updated>2020-10-12T08:54:45.395Z</updated>
+    
+    <content type="html"><![CDATA[<p>When I am with you<br>I feel happy and peace<br>Just like a cache to drink wine for many years<br>Let me slightly tipsy</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;When I am with you&lt;br&gt;I feel happy and peace&lt;br&gt;Just like a cache to drink wine for many years&lt;br&gt;Let me slightly tipsy&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="情感" scheme="https://cyruschang.github.io/categories/emotion/"/>
+    
+    
+      <category term="美好的" scheme="https://cyruschang.github.io/tags/bestfeel/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总</title>
@@ -682,29 +706,6 @@
     
     
       <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一条无助的狗</title>
-    <link href="https://cyruschang.github.io/2017/03/28/%E4%B8%80%E6%9D%A1%E6%97%A0%E5%8A%A9%E7%9A%84%E7%8B%97/"/>
-    <id>https://cyruschang.github.io/2017/03/28/一条无助的狗/</id>
-    <published>2017-03-28T07:25:20.000Z</published>
-    <updated>2017-03-29T10:26:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。<br>车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜去，不时有刺耳的喇叭声想起。忽然一辆车在那狗面前停下了，就那么静静地等着，也顾不上后方车辆的急促喇叭声了。站台上的人们议论纷纷。<br>一个老爷子蹒跚着走到了狗的身边，准备将它抱起。可是那狗却钻过路中间的栅栏，到对面的车道不知所措了……</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;清晨我在公交站台，一条无助的黑狗闯入了我的视线。眼神如此惊恐而慌乱。想必是哪家假的喜爱宠物人瞧这狗生病就丢了罢，抑或是无良的狗贩子随意丢弃。六道车辆宽的马路，那狗就痴痴地站着，也不知道走。&lt;br&gt;车辆越发的多了，站台的人也越来越多，想必公交车就要来了。狗在车流中惊恐地窜来窜
-    
-    </summary>
-    
-      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
-    
-    
-      <category term="随想" scheme="https://cyruschang.github.io/tags/essay/"/>
     
   </entry>
   

@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title><![CDATA[Be With You]]></title>
+      <url>https://cyruschang.github.io/2020/10/12/Be%20With%20You/</url>
+      <content type="html"><![CDATA[<p>When I am with you<br>I feel happy and peace<br>Just like a cache to drink wine for many years<br>Let me slightly tipsy</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 情感 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 美好的 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总]]></title>
       <url>https://cyruschang.github.io/2019/12/05/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA%EF%BC%88Jenkins+fastlane+%E8%92%B2%E5%85%AC%E8%8B%B1%EF%BC%89%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB/</url>
       <content type="html"><![CDATA[<h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><ul>
