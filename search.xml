@@ -539,6 +539,40 @@
     </entry>
     
     <entry>
+      <title><![CDATA[iOS开发之账号续费]]></title>
+      <url>https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%B4%A6%E5%8F%B7%E7%BB%AD%E8%B4%B9/</url>
+      <content type="html"><![CDATA[<p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。<br><img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
+<p>根据从网上查询的资料，现在总结如下。</p>
+<ol>
+<li>新注册的账号缴费审核会比较严格，这个新，起码早到2019.2.21日，因为公司的开发者账号是这个日期开通的。</li>
+<li>续费的时候，选择<strong>第一次开通账号缴费的信用卡</strong>，不会失败。（2次续费都是如此）。</li>
+<li>续费成功后，会先在所留的邮箱发一张电子收据，这个无法被当做报销凭据的。</li>
+<li>续费成功后，隔一个工作日会发送电子发票，用这个报销就好了。</li>
+<li>要获取所购产品的发票副本，请访问 Apple 网站 (<a href="">http://www.apple.com/cn</a>)，并执行以下步骤：<blockquote>
+<pre><code>a. 从“购物袋”菜单（显示为一个购物袋图标）中选取“订单”。
+b. 使用您用于购买产品的 Apple ID 登录。
+c. 点按“您的订单”页面上的“打印发票”链接。如果您需要验证普通发票的递送状态，请致电 400-666-8800 联系中国 Apple Store 在线商店。向客服代表提供您的网络订单号
+</code></pre></blockquote>
+</li>
+</ol>
+]]></content>
+      
+        <categories>
+            
+            <category> 编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[iOS开发之UITextView粘贴出现空白]]></title>
       <url>https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8BUITextView%E7%B2%98%E8%B4%B4%E5%87%BA%E7%8E%B0%E7%A9%BA%E7%99%BD/</url>
       <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>

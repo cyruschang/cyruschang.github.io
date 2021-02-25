@@ -19,7 +19,7 @@
     <title>Be With You</title>
     <link href="https://cyruschang.github.io/2020/10/12/Be%20With%20You/"/>
     <id>https://cyruschang.github.io/2020/10/12/Be With You/</id>
-    <published>2020-10-12T08:51:31.372Z</published>
+    <published>2020-10-12T08:51:31.373Z</published>
     <updated>2020-10-12T08:54:45.395Z</updated>
     
     <content type="html"><![CDATA[<p>When I am with you<br>I feel happy and peace<br>Just like a cache to drink wine for many years<br>Let me slightly tipsy</p>
@@ -43,7 +43,7 @@
     <title>iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总</title>
     <link href="https://cyruschang.github.io/2019/12/05/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E6%8C%81%E7%BB%AD%E6%9E%84%E5%BB%BA%EF%BC%88Jenkins+fastlane+%E8%92%B2%E5%85%AC%E8%8B%B1%EF%BC%89%E9%94%99%E8%AF%AF%E6%B1%87%E6%80%BB/"/>
     <id>https://cyruschang.github.io/2019/12/05/iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总/</id>
-    <published>2019-12-05T01:18:44.731Z</published>
+    <published>2019-12-05T01:18:44.732Z</published>
     <updated>2019-12-05T06:33:10.588Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><ul>
@@ -124,7 +124,7 @@
     <link href="https://cyruschang.github.io/2019/11/25/%E6%8A%84%E6%9D%A5%E7%9A%84%E8%AF%97%3C1%3E/"/>
     <id>https://cyruschang.github.io/2019/11/25/抄来的诗&lt;1&gt;/</id>
     <published>2019-11-25T09:22:57.182Z</published>
-    <updated>2020-10-12T08:48:09.492Z</updated>
+    <updated>2020-10-12T08:48:09.493Z</updated>
     
     <content type="html"><![CDATA[<p><strong>What can I hold you with?</strong><br>    <em>Jorge Luis Borges</em></p>
 <p>I offer you lean streets,<br>desperate sunsets,<br>the moon of the jagged suburbs.</p>
@@ -156,8 +156,8 @@
     <title>抄来的诗&lt;2&gt;</title>
     <link href="https://cyruschang.github.io/2019/11/25/%E6%8A%84%E6%9D%A5%E7%9A%84%E8%AF%97%3C2%3E/"/>
     <id>https://cyruschang.github.io/2019/11/25/抄来的诗&lt;2&gt;/</id>
-    <published>2019-11-25T09:18:52.361Z</published>
-    <updated>2020-10-12T08:48:26.896Z</updated>
+    <published>2019-11-25T09:18:52.362Z</published>
+    <updated>2020-10-12T08:48:26.897Z</updated>
     
     <content type="html"><![CDATA[<p><strong>I Like For You To Be Still</strong><br>        <em>Pablo Neruda</em></p>
 <p>I like for you to be still<br>It is as though you are absent<br>And you hear me from far away<br>And my voice does not touch you</p>
@@ -186,7 +186,7 @@
     <title>iOS开发之App转让</title>
     <link href="https://cyruschang.github.io/2019/03/07/iOS%E5%BC%80%E5%8F%91%E4%B9%8BApp%E8%BD%AC%E8%AE%A9/"/>
     <id>https://cyruschang.github.io/2019/03/07/iOS开发之App转让/</id>
-    <published>2019-03-07T15:49:59.246Z</published>
+    <published>2019-03-07T15:49:59.247Z</published>
     <updated>2019-03-07T16:03:09.085Z</updated>
     
     <content type="html"><![CDATA[<h2 id="iOS开发之App转让"><a href="#iOS开发之App转让" class="headerlink" title="iOS开发之App转让"></a>iOS开发之App转让</h2><h3 id="1-前提"><a href="#1-前提" class="headerlink" title="1. 前提"></a>1. 前提</h3><ol>
@@ -289,8 +289,8 @@
     <title>iOS开发之Swift学习笔记</title>
     <link href="https://cyruschang.github.io/2018/11/13/iOS%E5%BC%80%E5%8F%91%E4%B9%8BSwift%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>https://cyruschang.github.io/2018/11/13/iOS开发之Swift学习笔记/</id>
-    <published>2018-11-13T13:40:18.948Z</published>
-    <updated>2018-11-13T13:50:43.873Z</updated>
+    <published>2018-11-13T13:40:18.949Z</published>
+    <updated>2018-11-13T13:50:43.874Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Swift学习笔记"><a href="#Swift学习笔记" class="headerlink" title="Swift学习笔记"></a>Swift学习笔记</h1><h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ul>
 <li>定义数字变量的时候，如果数字很大，可以把数字用下划线隔开</li>
@@ -596,6 +596,42 @@
   </entry>
   
   <entry>
+    <title>iOS开发之账号续费</title>
+    <link href="https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%B4%A6%E5%8F%B7%E7%BB%AD%E8%B4%B9/"/>
+    <id>https://cyruschang.github.io/2017/07/27/iOS开发之账号续费/</id>
+    <published>2017-07-27T08:58:11.000Z</published>
+    <updated>2021-02-25T03:46:24.196Z</updated>
+    
+    <content type="html"><![CDATA[<p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。<br><img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
+<p>根据从网上查询的资料，现在总结如下。</p>
+<ol>
+<li>新注册的账号缴费审核会比较严格，这个新，起码早到2019.2.21日，因为公司的开发者账号是这个日期开通的。</li>
+<li>续费的时候，选择<strong>第一次开通账号缴费的信用卡</strong>，不会失败。（2次续费都是如此）。</li>
+<li>续费成功后，会先在所留的邮箱发一张电子收据，这个无法被当做报销凭据的。</li>
+<li>续费成功后，隔一个工作日会发送电子发票，用这个报销就好了。</li>
+<li>要获取所购产品的发票副本，请访问 Apple 网站 (<a href="">http://www.apple.com/cn</a>)，并执行以下步骤：<blockquote>
+<pre><code>a. 从“购物袋”菜单（显示为一个购物袋图标）中选取“订单”。
+b. 使用您用于购买产品的 Apple ID 登录。
+c. 点按“您的订单”页面上的“打印发票”链接。如果您需要验证普通发票的递送状态，请致电 400-666-8800 联系中国 Apple Store 在线商店。向客服代表提供您的网络订单号
+</code></pre></blockquote>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png&quot; alt=&quot;&quot;&gt;&lt;/p
+    
+    </summary>
+    
+      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+    
+    
+      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>iOS开发之UITextView粘贴出现空白</title>
     <link href="https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8BUITextView%E7%B2%98%E8%B4%B4%E5%87%BA%E7%8E%B0%E7%A9%BA%E7%99%BD/"/>
     <id>https://cyruschang.github.io/2017/07/27/iOS开发之UITextView粘贴出现空白/</id>
@@ -673,39 +709,6 @@
     
     
       <category term="随想" scheme="https://cyruschang.github.io/tags/essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS开发int和NSInteger的区别</title>
-    <link href="https://cyruschang.github.io/2017/03/30/iOS%E5%BC%80%E5%8F%91%E4%B9%8Bint%E5%92%8CNSInteger%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
-    <id>https://cyruschang.github.io/2017/03/30/iOS开发之int和NSInteger的区别/</id>
-    <published>2017-03-30T09:18:17.000Z</published>
-    <updated>2017-03-30T09:18:17.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>总会遇到用int还是用NSInteger，而且总是忘了为什么。今天索性查完资料记下来。在苹果的源文件中，NSInteger是这样定义的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">#if __LP64__ || (TARGET_OS_EMBEDDED &amp;&amp; !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64</div><div class="line">typedef long NSInteger;</div><div class="line">typedef unsigned long NSUInteger;</div><div class="line">#else</div><div class="line">typedef int NSInteger;</div><div class="line">typedef unsigned int NSUInteger;</div><div class="line">#endif</div></pre></td></tr></table></figure>
-<p>这个宏定义是什么意思呢？</p>
-<ul>
-<li><code>__LP64__</code>表示指针长度为64位</li>
-<li><code>(TARGET_OS_EMBEDDED &amp;&amp; !TARGET_OS_IPHONE)</code>嵌入式环境并且不是iPhone</li>
-<li><code>TARGET_OS_WIN32</code>32位Windows环境</li>
-<li><code>NS_BUILD_32_LIKE_64</code>以64位编译</li>
-</ul>
-<p>概括起来就是，苹果会选择较大的那种类型作为NSInteger，在32位环境上就是int，在64位环境上就是long。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;总会遇到用int还是用NSInteger，而且总是忘了为什么。今天索性查完资料记下来。在苹果的源文件中，NSInteger是这样定义的：&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;p
-    
-    </summary>
-    
-      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
-    
-    
-      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
     
   </entry>
   
