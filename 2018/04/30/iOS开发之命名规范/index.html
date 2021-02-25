@@ -11,25 +11,22 @@
   
   
   
-  <meta name="description" content="做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
-问题如下:
+  <meta name="description" content="做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。问题如下:
 1Property follows Cocoa naming convention for returning &amp;apos;owned&amp;apos; objects
-OC中属性命名不能以关键字开头。嗯，改个">
+OC中属性命名不能以关键字开头。嗯，改个符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS开发之命名规范">
 <meta property="og:url" content="https://cyruschang.github.io/2018/04/30/iOS开发之命名规范/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
-问题如下:
+<meta property="og:description" content="做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。问题如下:
 1Property follows Cocoa naming convention for returning &amp;apos;owned&amp;apos; objects
-OC中属性命名不能以关键字开头。嗯，改个">
+OC中属性命名不能以关键字开头。嗯，改个符">
 <meta property="og:updated_time" content="2018-11-13T14:11:35.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS开发之命名规范">
-<meta name="twitter:description" content="做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
-问题如下:
+<meta name="twitter:description" content="做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。问题如下:
 1Property follows Cocoa naming convention for returning &amp;apos;owned&amp;apos; objects
-OC中属性命名不能以关键字开头。嗯，改个">
+OC中属性命名不能以关键字开头。嗯，改个符">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -130,24 +127,18 @@ OC中属性命名不能以关键字开头。嗯，改个">
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
-问题如下:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure></p>
+        <p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。<br>问题如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure>
 <p>OC中属性命名不能以关键字开头。嗯，改个符合规范的命名即可。</p>
-<p>（本文会继续完善规范……）
-2018年08月11日12:21:40
-距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
-<h4>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4>
-<h4>变量命名</h4>
-<ol>
+<p>（本文会继续完善规范……）<br>2018年08月11日12:21:40<br>距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
+<h4 id="Cocoa代码编写命名指南-基本是翻译过来加上自己的理解"><a href="#Cocoa代码编写命名指南-基本是翻译过来加上自己的理解" class="headerlink" title="Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)"></a>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4><h4 id="变量命名"><a href="#变量命名" class="headerlink" title="变量命名"></a>变量命名</h4><ol>
 <li><strong>词要达意</strong>（新东家的命名指南有一条说是要用美式英语而不是英式英语，这一条印象深刻。比如用<code>color</code>而不是<code>colour</code>，毕竟美帝还是这个星球最牛逼的国家）</li>
 <li><strong>不要用缩写，即使它很长。</strong>（这条苹果考虑了不同文化背景的编程人员，贴心。但是一些历史悠久的缩写比如Alt-alternate， Ctrl-control还是可以使用的，这个界定的关键也不好说，苹果列出了一些缩写词语，真正还要自己把握）</li>
 <li><strong>保留二字前缀</strong>（代码使用前缀很好很重要。两个字母的前缀少用，以免未来与苹果发生冲突，最好使用仨字母的那种）</li>
 <li><strong>变量不要指代自己本身</strong>（比如命名一个<code>NSString</code>,就不要命名为某某String之类的）</li>
 <li><strong>避免冲突</strong>（比如<code>tag</code>，这个变量在很多<code>UIKit</code>的控件都有，不要使用）</li>
 </ol>
-<h4>类和协议命名</h4>
-<ol>
+<h4 id="类和协议命名"><a href="#类和协议命名" class="headerlink" title="类和协议命名"></a>类和协议命名</h4><ol>
 <li>类的命名要包括一个名词明确的指代代表什么，有合理的前缀。苹果的代码就是最好的示例。比如<code>NSDate</code>,<code>NSSring</code>等等。</li>
 <li>协议的命名需要根据一组共同的行为来确定。为了避免与类名冲突，最好的解决方法是加<code>ing</code>。比如<code>NSLocking</code>协议和类<code>NSLock</code>。不过大部分是加一个<code>Delegate</code>完事儿……</li>
 </ol>
@@ -171,7 +162,7 @@ OC中属性命名不能以关键字开头。嗯，改个">
 <nav id="article-nav">
   
     <a href="/2018/11/13/iOS开发之Swift学习笔记/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
+      <strong class="article-nav-caption">Neuer</strong>
       <div class="article-nav-title">
         
           iOS开发之Swift学习笔记
@@ -181,7 +172,7 @@ OC中属性命名不能以关键字开头。嗯，改个">
   
   
     <a href="/2018/03/13/电脑实用——超大号字体打印/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Älter</strong>
       <div class="article-nav-title">电脑实用——超大号字体打印</div>
     </a>
   
@@ -196,7 +187,7 @@ OC中属性命名不能以关键字开头。嗯，改个">
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">变量命名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">类和协议命名</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Cocoa代码编写命名指南-基本是翻译过来加上自己的理解"><span class="nav-number">1.</span> <span class="nav-text">Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量命名"><span class="nav-number">2.</span> <span class="nav-text">变量命名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类和协议命名"><span class="nav-number">3.</span> <span class="nav-text">类和协议命名</span></a></li></ol>
     
     </div>
   </aside>

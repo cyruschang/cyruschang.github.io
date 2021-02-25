@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2021-02-25T03:50:42.717Z</updated>
+  <updated>2021-02-25T03:55:02.126Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -20,31 +20,29 @@
     <link href="https://cyruschang.github.io/2021/02/25/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%B4%A6%E5%8F%B7%E7%BB%AD%E8%B4%B9/"/>
     <id>https://cyruschang.github.io/2021/02/25/iOS开发之账号续费/</id>
     <published>2021-02-25T03:50:38.895Z</published>
-    <updated>2021-02-25T03:50:42.717Z</updated>
+    <updated>2021-02-25T03:55:02.126Z</updated>
     
-    <content type="html"><![CDATA[<p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。
-<img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
+    <content type="html"><![CDATA[<p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。<br><img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
 <p>根据从网上查询的资料，现在总结如下。</p>
 <ol>
 <li>新注册的账号缴费审核会比较严格，这个新，起码早到2019.2.21日，因为公司的开发者账号是这个日期开通的。</li>
 <li>续费的时候，选择<strong>第一次开通账号缴费的信用卡</strong>，不会失败。（2次续费都是如此）。</li>
 <li>续费成功后，会先在所留的邮箱发一张电子收据，这个无法被当做报销凭据的。</li>
 <li>续费成功后，隔一个工作日会发送电子发票，用这个报销就好了。</li>
-<li>要获取所购产品的发票副本，请访问 Apple 网站 (<a href="">http://www.apple.com/cn</a>)，并执行以下步骤：</li>
+<li>要获取所购产品的发票副本，请访问 Apple 网站 (<a href="">http://www.apple.com/cn</a>)，并执行以下步骤：<blockquote>
+<ol>
+<li>从“购物袋”菜单（显示为一个购物袋图标）中选取“订单”。</li>
+<li>使用您用于购买产品的 Apple ID 登录。</li>
+<li>点按“您的订单”页面上的“打印发票”链接。如果您需要验证普通发票的递送状态，请致电 400-666-8800 联系中国 Apple Store 在线商店。向客服代表提供您的网络订单号</li>
 </ol>
-<blockquote>
-<pre><code>a. 从“购物袋”菜单（显示为一个购物袋图标）中选取“订单”。
-b. 使用您用于购买产品的 Apple ID 登录。
-c. 点按“您的订单”页面上的“打印发票”链接。如果您需要验证普通发票的递送状态，请致电 400-666-8800 联系中国 Apple Store 在线商店。向客服代表提供您的网络订单号
-</code></pre>
 </blockquote>
+</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。
-&lt;img src=&quot;https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;
+      &lt;p&gt;给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png&quot; alt=&quot;&quot;&gt;&lt;/p
     
     </summary>
     
@@ -62,18 +60,12 @@ c. 点按“您的订单”页面上的“打印发票”链接。如果您需�
     <published>2020-10-12T08:51:31.373Z</published>
     <updated>2020-10-12T08:54:45.395Z</updated>
     
-    <content type="html"><![CDATA[<p>When I am with you
-I feel happy and peace
-Just like a cache to drink wine for many years
-Let me slightly tipsy</p>
+    <content type="html"><![CDATA[<p>When I am with you<br>I feel happy and peace<br>Just like a cache to drink wine for many years<br>Let me slightly tipsy</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;When I am with you
-I feel happy and peace
-Just like a cache to drink wine for many years
-Let me slightly tipsy&lt;/p&gt;
+      &lt;p&gt;When I am with you&lt;br&gt;I feel happy and peace&lt;br&gt;Just like a cache to drink wine for many years&lt;br&gt;Let me slightly tipsy&lt;/p&gt;
 
     
     </summary>
@@ -92,15 +84,14 @@ Let me slightly tipsy&lt;/p&gt;
     <published>2019-12-05T01:18:44.732Z</published>
     <updated>2019-12-05T06:33:10.588Z</updated>
     
-    <content type="html"><![CDATA[<h1>Jenkins+fastlane打包上传蒲公英错误汇总</h1>
-<ul>
-<li>Multiple schemes found but you haven't specified one, Since this is a CI, please pass one using the &quot;scheme&quot; option</li>
+    <content type="html"><![CDATA[<h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><ul>
+<li>Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</li>
 </ul>
 <blockquote>
 <p>解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时脚本显示指定scheme。</p>
 </blockquote>
 <ul>
-<li>Code Signing Error: No certificate for team 'JJ6JH6RKQ5' matching 'iPhone Developer: *** (ZUXQ5B2W9Z)' found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
+<li>Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: <em>*</em> (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
 </ul>
 <blockquote>
 <p>解决方案：手动选择签名和描述文件时，需要配置正确的。或者转换为自动签名和描述证书。</p>
@@ -109,8 +100,7 @@ Let me slightly tipsy&lt;/p&gt;
 <li>PGYER Plugin Error: error installType</li>
 </ul>
 <blockquote>
-<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。
-<code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
+<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。<br><code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
 </blockquote>
 <ul>
 <li>bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</li>
@@ -119,7 +109,7 @@ Let me slightly tipsy&lt;/p&gt;
 <p>解决方案：不使用bundler加载，脚本如下<code>cocoapods(repo_update: false, use_bundle_exec: false)</code>。</p>
 </blockquote>
 <ul>
-<li>error: unable to parse contents of file list '/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist'</li>
+<li>error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</li>
 </ul>
 <blockquote>
 <p>解决方案：如果指定了cocoapods版本，则这个文件可以删除掉。同时需要注意Xcode的版本与swift版本。打包机器最好能与开发机器版本一致，这样不至于容易出问题。</p>
@@ -129,7 +119,7 @@ Let me slightly tipsy&lt;/p&gt;
 </ul>
 <p>解决方案：这个一般是网络问题，最好设置gem源为<code>https://gems.ruby-china.com</code>并且确保只有一个，保证网络条件良好状态下打包。</p>
 <ul>
-<li>fatal: unable to access 'https://github.com/CocoaPods/Specs.git/': transfer closed with outstanding read data remaining</li>
+<li>fatal: unable to access ‘<a href="https://github.com/CocoaPods/Specs.git/" target="_blank" rel="external">https://github.com/CocoaPods/Specs.git/</a>‘: transfer closed with outstanding read data remaining</li>
 </ul>
 <blockquote>
 <p>同上</p>
@@ -141,26 +131,22 @@ Let me slightly tipsy&lt;/p&gt;
 <p>同上</p>
 </blockquote>
 <ul>
-<li>fatal: Authentication failed for 'http://git.hualala.com/22city_ios/supply.git/'</li>
+<li>fatal: Authentication failed for ‘<a href="http://git.hualala.com/22city_ios/supply.git/" target="_blank" rel="external">http://git.hualala.com/22city_ios/supply.git/</a>‘</li>
 </ul>
 <blockquote>
 <p>解决方案：确认自己的代码仓库授权，使用正确的。</p>
 </blockquote>
 <ul>
-<li>错误如下图
-<img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
+<li>错误如下图<br><img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
 </ul>
 <blockquote>
-<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。
-解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
+<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。<br> 解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
 </blockquote>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h1&gt;Jenkins+fastlane打包上传蒲公英错误汇总&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;Multiple schemes found but you haven&#39;t specified one, Since this is a CI, please pass one usin
+      &lt;h1 id=&quot;Jenkins-fastlane打包上传蒲公英错误汇总&quot;&gt;&lt;a href=&quot;#Jenkins-fastlane打包上传蒲公英错误汇总&quot; class=&quot;headerlink&quot; title=&quot;Jenkins+fastlane打包上传蒲公英错误汇总&quot;&gt;&lt;/a&gt;Jenki
     
     </summary>
     
@@ -178,45 +164,22 @@ Let me slightly tipsy&lt;/p&gt;
     <published>2019-11-25T09:22:57.182Z</published>
     <updated>2020-10-12T08:48:09.493Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>What can I hold you with?</strong>
-<em>Jorge Luis Borges</em></p>
-<p>I offer you lean streets,
-desperate sunsets,
-the moon of the jagged suburbs.</p>
-<p>I offer you the bitterness of a man who has looked long and long at the lonely moon.
-I offer you my ancestors, my dead men,
-the ghosts that living men have honoured in marble:</p>
-<p>my father's father killed in the frontier of Buenos Aires,
-two bullets through his lungs,
-bearded and dead,
-wrapped by his soldiers in the hide of a cow;</p>
-<p>my mother's grandfather
--just twentyfour-
-heading a charge of three hundred men in Peru,
-now ghosts on vanished horses.</p>
-<p>I offer you whatever insight my books may hold.
-whatever manliness or humour my life.</p>
-<p>I offer you the loyalty of a man who has never been loyal.
-I offer you that kernel of myself that I have saved somehow -the central heart
-that deals not in words, traffics not with dreams
-and is untouched by time, by joy, by adversities.</p>
-<p>I offer you the memory of a yellow rose seen at sunset, years before you were born.
-I offer you explanationsof yourself,
-theories about yourself,
-authentic and surprising news of yourself.</p>
-<p>I can give you my loneliness,
-my darkness,
-the hunger of my heart;</p>
+    <content type="html"><![CDATA[<p><strong>What can I hold you with?</strong><br>    <em>Jorge Luis Borges</em></p>
+<p>I offer you lean streets,<br>desperate sunsets,<br>the moon of the jagged suburbs.</p>
+<p>I offer you the bitterness of a man who has looked long and long at the lonely moon.<br>I offer you my ancestors, my dead men,<br>the ghosts that living men have honoured in marble:</p>
+<p>my father’s father killed in the frontier of Buenos Aires,<br>two bullets through his lungs,<br>bearded and dead,<br>wrapped by his soldiers in the hide of a cow;</p>
+<p>my mother’s grandfather<br>-just twentyfour-<br>heading a charge of three hundred men in Peru,<br>now ghosts on vanished horses.</p>
+<p>I offer you whatever insight my books may hold.<br>whatever manliness or humour my life.</p>
+<p>I offer you the loyalty of a man who has never been loyal.<br>I offer you that kernel of myself that I have saved somehow -the central heart<br>that deals not in words, traffics not with dreams<br>and is untouched by time, by joy, by adversities.</p>
+<p>I offer you the memory of a yellow rose seen at sunset, years before you were born.<br>I offer you explanationsof yourself,<br>theories about yourself,<br>authentic and surprising news of yourself.</p>
+<p>I can give you my loneliness,<br>my darkness,<br>the hunger of my heart;</p>
 <p>I am trying to bribe you with uncertainty, with danger, with defeat.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;What can I hold you with?&lt;/strong&gt;
-&lt;em&gt;Jorge Luis Borges&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I offer you lean streets,
-desperate sunsets,
-the moon of the
+      &lt;p&gt;&lt;strong&gt;What can I hold you with?&lt;/strong&gt;&lt;br&gt;    &lt;em&gt;Jorge Luis Borges&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I offer you lean streets,&lt;br&gt;desperate sunsets,&lt;br&gt;th
     
     </summary>
     
@@ -234,50 +197,19 @@ the moon of the
     <published>2019-11-25T09:18:52.362Z</published>
     <updated>2020-10-12T08:48:26.897Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>I Like For You To Be Still</strong>
-<em>Pablo Neruda</em></p>
-<p>I like for you to be still
-It is as though you are absent
-And you hear me from far away
-And my voice does not touch you</p>
-<p>It seems as though your eyes had flown away
-And it seems that a kiss had sealed your mouth
-As all things are filled with my soul
-You emerge from the things
-Filled with my soul
-You are like my soul
-A butterfly of dream
-And you are like the word: Melancholy</p>
-<p>I like for you to be still
-And you seem far away
-It sounds as though you are lamenting
-A butterfly cooing like a dove
-And you hear me from far away
-And my voice does not reach you</p>
-<p>Let me come to be still in your silence
-And let me talk to you with your silence
-That is bright as a lamp
-Simple, as a ring</p>
-<p>You are like the night
-With its stillness and constellations
-Your silence is that of a star
-As remote and candid</p>
-<p>I like for you to be still
-It is as though you are absent
-Distant and full of sorrow
-So you would've died
-One word then,
-One smile is enough And I'm happy
-Happy that it's not true</p>
+    <content type="html"><![CDATA[<p><strong>I Like For You To Be Still</strong><br>        <em>Pablo Neruda</em></p>
+<p>I like for you to be still<br>It is as though you are absent<br>And you hear me from far away<br>And my voice does not touch you</p>
+<p>It seems as though your eyes had flown away<br>And it seems that a kiss had sealed your mouth<br>As all things are filled with my soul<br>You emerge from the things<br>Filled with my soul<br>You are like my soul<br>A butterfly of dream<br>And you are like the word: Melancholy</p>
+<p>I like for you to be still<br>And you seem far away<br>It sounds as though you are lamenting<br>A butterfly cooing like a dove<br>And you hear me from far away<br>And my voice does not reach you</p>
+<p>Let me come to be still in your silence<br>And let me talk to you with your silence<br>That is bright as a lamp<br>Simple, as a ring</p>
+<p>You are like the night<br>With its stillness and constellations<br>Your silence is that of a star<br>As remote and candid</p>
+<p>I like for you to be still<br>It is as though you are absent<br>Distant and full of sorrow<br>So you would’ve died<br>One word then,<br>One smile is enough And I’m happy<br>Happy that it’s not true</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;I Like For You To Be Still&lt;/strong&gt;
-&lt;em&gt;Pablo Neruda&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I like for you to be still
-It is as though you are absent
-And yo
+      &lt;p&gt;&lt;strong&gt;I Like For You To Be Still&lt;/strong&gt;&lt;br&gt;        &lt;em&gt;Pablo Neruda&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I like for you to be still&lt;br&gt;It is as though you are
     
     </summary>
     
@@ -295,84 +227,54 @@ And yo
     <published>2019-03-07T15:49:59.247Z</published>
     <updated>2019-03-07T16:03:09.085Z</updated>
     
-    <content type="html"><![CDATA[<h2>iOS开发之App转让</h2>
-<h3>1. 前提</h3>
-<ol>
-<li>
-<p>必须是两个账号的账号持有者（主账号）进行操作。</p>
-</li>
-<li>
-<p>转让者的App信息栏里，需要删除TestFlight中所有的构建版本。删除方法：针对某一构建版本,将其设置为过期即可。如图所示：</p>
+    <content type="html"><![CDATA[<h2 id="iOS开发之App转让"><a href="#iOS开发之App转让" class="headerlink" title="iOS开发之App转让"></a>iOS开发之App转让</h2><h3 id="1-前提"><a href="#1-前提" class="headerlink" title="1. 前提"></a>1. 前提</h3><ol>
+<li>必须是两个账号的账号持有者（主账号）进行操作。</li>
+<li><p>转让者的App信息栏里，需要删除TestFlight中所有的构建版本。删除方法：针对某一构建版本,将其设置为过期即可。如图所示：</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f937d7e795.jpg" alt=""></p>
 </blockquote>
 </li>
-<li>
-<p>需要删除App信息-测试信息里的所有相关字段。包括测试员的信息也需要删除。</p>
+<li><p>需要删除App信息-测试信息里的所有相关字段。包括测试员的信息也需要删除。</p>
 <blockquote>
 <p>注意：需要登录那一栏，需要点开看看是否填写了测试登录账号和密码，需要登录本身勾选不勾选都可以。</p>
-</blockquote>
-<blockquote>
 <p>注意：测试信息语言那一栏，需要点开看看是否还有其他的语言信息，有的话删除。（这一步很重要，不然弄半天TestFlight那一栏就是不给你显示绿色的✅）。</p>
 </blockquote>
 </li>
 </ol>
-<h3>2. 转让者操作</h3>
-<ol>
-<li>
-<p>主账号登录，到我的App里查看，显示如下。（非主账号不显示<strong>转让App</strong>）</p>
+<h3 id="2-转让者操作"><a href="#2-转让者操作" class="headerlink" title="2. 转让者操作"></a>2. 转让者操作</h3><ol>
+<li><p>主账号登录，到我的App里查看，显示如下。（非主账号不显示<strong>转让App</strong>）</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f92ce68da0.jpg" alt=""></p>
 </blockquote>
 </li>
-<li>
-<p>点击转让App</p>
+<li><p>点击转让App</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f9327434c0.jpg" alt=""></p>
-</blockquote>
-<blockquote>
 <p>按照1中给的前提，将数据信息清除。点击蓝色<strong>继续</strong>按钮，如图所示：</p>
-</blockquote>
-<blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f9420ac672.jpg" alt=""></p>
 </blockquote>
 </li>
-<li>
-<p>需要填写接收App的账号（Apple ID），和团队ID，填写完毕后点击继续即可。如图所示：</p>
+<li><p>需要填写接收App的账号（Apple ID），和团队ID，填写完毕后点击继续即可。如图所示：</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f947d8498d.jpg" alt=""></p>
 </blockquote>
 </li>
 </ol>
-<h3>3. 接收者操作</h3>
-<ol>
-<li>
-<p>登录开发者账号，到我的App主页，会有个黄色的提醒Bar（图示如下）,里面有银行税务提醒的链接，点击这个链接，做一些接收的设置。然后再接受即可。
-<img src="https://i.loli.net/2019/03/06/5c7f95e0135b5.jpg" alt=""></p>
+<h3 id="3-接收者操作"><a href="#3-接收者操作" class="headerlink" title="3. 接收者操作"></a>3. 接收者操作</h3><ol>
+<li><p>登录开发者账号，到我的App主页，会有个黄色的提醒Bar（图示如下）,里面有银行税务提醒的链接，点击这个链接，做一些接收的设置。然后再接受即可。<br> <img src="https://i.loli.net/2019/03/06/5c7f95e0135b5.jpg" alt=""></p>
 <blockquote>
-<p>注意：当前接受者填写信息的时候，地址不能过长，不然会被标红。</p>
+<p> 注意：当前接受者填写信息的时候，地址不能过长，不然会被标红。</p>
 </blockquote>
 </li>
 </ol>
-<h3>4. 其他影响</h3>
-<ol>
-<li>
-<p>内购（暂未知）</p>
-</li>
-<li>
-<p>推送通知（不受影响，AppID都不会变，会变前缀，这个下面说）</p>
-</li>
-<li>
-<p>转移后的提交</p>
+<h3 id="4-其他影响"><a href="#4-其他影响" class="headerlink" title="4. 其他影响"></a>4. 其他影响</h3><ol>
+<li>内购（暂未知）</li>
+<li>推送通知（不受影响，AppID都不会变，会变前缀，这个下面说）</li>
+<li><p>转移后的提交</p>
 <blockquote>
 <p>需要重新生成开发整数和发布整数，重新配置描述文件</p>
-</blockquote>
-<blockquote>
 <p>转以后打包提交会收到警告（ITMS-90076）如图所示：大意是TEAM ID前缀发生变化，可能会造成keychain Access数据的丢失</p>
-</blockquote>
-<blockquote>
-<p><img src="https://i.loli.net/2019/03/06/5c7f992c6a203.jpg" alt="">
-经查找资料得知，转移后的App第一次提交都会发生此警告，<a href="https://developer.apple.com/library/archive/qa/qa1726/_index.html" target="_blank" rel="external">相关链接</a>，解决方案正在找。</p>
+<p><img src="https://i.loli.net/2019/03/06/5c7f992c6a203.jpg" alt=""><br>经查找资料得知，转移后的App第一次提交都会发生此警告，<a href="https://developer.apple.com/library/archive/qa/qa1726/_index.html" target="_blank" rel="external">相关链接</a>，解决方案正在找。</p>
 </blockquote>
 </li>
 </ol>
@@ -380,14 +282,7 @@ And yo
     
     <summary type="html">
     
-      &lt;h2&gt;iOS开发之App转让&lt;/h2&gt;
-&lt;h3&gt;1. 前提&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;必须是两个账号的账号持有者（主账号）进行操作。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;转让者的App信息栏里，需要删除TestFlight中所有的构建版本。删除方法：针对某一构建版本,
+      &lt;h2 id=&quot;iOS开发之App转让&quot;&gt;&lt;a href=&quot;#iOS开发之App转让&quot; class=&quot;headerlink&quot; title=&quot;iOS开发之App转让&quot;&gt;&lt;/a&gt;iOS开发之App转让&lt;/h2&gt;&lt;h3 id=&quot;1-前提&quot;&gt;&lt;a href=&quot;#1-前提&quot; class=&quot;
     
     </summary>
     
@@ -409,9 +304,7 @@ And yo
 <p>每个人都有一片属于自己的森林，迷失的人迷失了，相逢的人还会再相逢。</p>
 <p>值此18年末，有必要给自己总结一下了。</p>
 <p>自工作后，最大的困惑不是来自于职场，却来自内心。受困于幻想的美好爱情，却在真实的生活里迷失自我了。我想有王小波那样的爱情，求而不得。如果能够正视自己，应该会好过很多吧。</p>
-<p>朋友没有交很多，但有能说知心话的。我很满足。
-工作繁忙，但是很有成就感。
-没房没车，正在努力奋斗之。</p>
+<p>朋友没有交很多，但有能说知心话的。我很满足。<br>工作繁忙，但是很有成就感。<br>没房没车，正在努力奋斗之。</p>
 <p>19年最大的心愿就是能够找到她，去走完一生。就像开篇，我真希望拥有真爱。可是生活像捉弄人似的，越是想得到的，越是抓不住。需要强大自己的内心，整理好自己的仪容。才能放射最灿烂的光芒。要学着开朗，内心是最深的桎梏，敞开胸怀，去接纳。</p>
 <p>马上要上手一个新App了，努力把它做好，做完美。</p>
 <p>2019你来吧，我准备好了。</p>
@@ -437,12 +330,10 @@ And yo
     <published>2018-11-13T13:40:18.949Z</published>
     <updated>2018-11-13T13:50:43.874Z</updated>
     
-    <content type="html"><![CDATA[<h1>Swift学习笔记</h1>
-<h2>变量与常量</h2>
-<ul>
+    <content type="html"><![CDATA[<h1 id="Swift学习笔记"><a href="#Swift学习笔记" class="headerlink" title="Swift学习笔记"></a>Swift学习笔记</h1><h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ul>
 <li>定义数字变量的时候，如果数字很大，可以把数字用下划线隔开</li>
 </ul>
-<p><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure>
 <ul>
 <li>可以用中文甚至emoji来作为变量名</li>
 </ul>
@@ -450,12 +341,7 @@ And yo
     
     <summary type="html">
     
-      &lt;h1&gt;Swift学习笔记&lt;/h1&gt;
-&lt;h2&gt;变量与常量&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;定义数字变量的时候，如果数字很大，可以把数字用下划线隔开&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;figure class=&quot;highlight swift&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;
+      &lt;h1 id=&quot;Swift学习笔记&quot;&gt;&lt;a href=&quot;#Swift学习笔记&quot; class=&quot;headerlink&quot; title=&quot;Swift学习笔记&quot;&gt;&lt;/a&gt;Swift学习笔记&lt;/h1&gt;&lt;h2 id=&quot;变量与常量&quot;&gt;&lt;a href=&quot;#变量与常量&quot; class=&quot;header
     
     </summary>
     
@@ -473,24 +359,18 @@ And yo
     <published>2018-04-30T03:32:49.361Z</published>
     <updated>2018-11-13T14:11:35.489Z</updated>
     
-    <content type="html"><![CDATA[<p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
-问题如下:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。<br>问题如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure>
 <p>OC中属性命名不能以关键字开头。嗯，改个符合规范的命名即可。</p>
-<p>（本文会继续完善规范……）
-2018年08月11日12:21:40
-距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
-<h4>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4>
-<h4>变量命名</h4>
-<ol>
+<p>（本文会继续完善规范……）<br>2018年08月11日12:21:40<br>距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
+<h4 id="Cocoa代码编写命名指南-基本是翻译过来加上自己的理解"><a href="#Cocoa代码编写命名指南-基本是翻译过来加上自己的理解" class="headerlink" title="Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)"></a>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4><h4 id="变量命名"><a href="#变量命名" class="headerlink" title="变量命名"></a>变量命名</h4><ol>
 <li><strong>词要达意</strong>（新东家的命名指南有一条说是要用美式英语而不是英式英语，这一条印象深刻。比如用<code>color</code>而不是<code>colour</code>，毕竟美帝还是这个星球最牛逼的国家）</li>
 <li><strong>不要用缩写，即使它很长。</strong>（这条苹果考虑了不同文化背景的编程人员，贴心。但是一些历史悠久的缩写比如Alt-alternate， Ctrl-control还是可以使用的，这个界定的关键也不好说，苹果列出了一些缩写词语，真正还要自己把握）</li>
 <li><strong>保留二字前缀</strong>（代码使用前缀很好很重要。两个字母的前缀少用，以免未来与苹果发生冲突，最好使用仨字母的那种）</li>
 <li><strong>变量不要指代自己本身</strong>（比如命名一个<code>NSString</code>,就不要命名为某某String之类的）</li>
 <li><strong>避免冲突</strong>（比如<code>tag</code>，这个变量在很多<code>UIKit</code>的控件都有，不要使用）</li>
 </ol>
-<h4>类和协议命名</h4>
-<ol>
+<h4 id="类和协议命名"><a href="#类和协议命名" class="headerlink" title="类和协议命名"></a>类和协议命名</h4><ol>
 <li>类的命名要包括一个名词明确的指代代表什么，有合理的前缀。苹果的代码就是最好的示例。比如<code>NSDate</code>,<code>NSSring</code>等等。</li>
 <li>协议的命名需要根据一组共同的行为来确定。为了避免与类名冲突，最好的解决方法是加<code>ing</code>。比如<code>NSLocking</code>协议和类<code>NSLock</code>。不过大部分是加一个<code>Delegate</code>完事儿……</li>
 </ol>
@@ -498,9 +378,8 @@ And yo
     
     <summary type="html">
     
-      &lt;p&gt;做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
-问题如下:&lt;/p&gt;
-&lt;p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;
+      &lt;p&gt;做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。&lt;br&gt;问题如下:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;
     
     </summary>
     
@@ -518,22 +397,13 @@ And yo
     <published>2018-03-13T07:16:57.000Z</published>
     <updated>2018-03-13T07:28:35.000Z</updated>
     
-    <content type="html"><![CDATA[<p>今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。
-既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。
-如图：
-<img src="https://i.loli.net/2018/03/13/5aa77cb5d9ceb.jpg" alt=""></p>
-<p>而且，四个字横着放最能完全使用一张A4纸，所以打印的时候，在“文件”-&gt;“页面设置…”中选择打印方向为横向即可。
-如图：
-<img src="https://i.loli.net/2018/03/13/5aa77d77e43f0.jpg" alt="">
-大功告成！</p>
+    <content type="html"><![CDATA[<p>今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。<br>既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。<br>如图：<br><img src="https://i.loli.net/2018/03/13/5aa77cb5d9ceb.jpg" alt=""></p>
+<p>而且，四个字横着放最能完全使用一张A4纸，所以打印的时候，在“文件”-&gt;“页面设置…”中选择打印方向为横向即可。<br>如图：<br><img src="https://i.loli.net/2018/03/13/5aa77d77e43f0.jpg" alt=""><br>大功告成！</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。
-既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。
-如图：
-&lt;img src=&quot;https://i.loli.net
+      &lt;p&gt;今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。&lt;br&gt;既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。&lt;br&gt;如图：&lt;br&gt;&lt;img src=&quot;https://i
     
     </summary>
     
@@ -551,38 +421,24 @@ And yo
     <published>2018-03-12T03:22:17.000Z</published>
     <updated>2018-03-12T03:39:05.000Z</updated>
     
-    <content type="html"><![CDATA[<p>昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。
-地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。
-随便说说第一集的感想吧。</p>
+    <content type="html"><![CDATA[<p>昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。<br>地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。<br>随便说说第一集的感想吧。</p>
 <ul>
-<li>
-<p>犹太人对世界的认知很深刻呢！也难怪世界舞台有他们一席。
-<img src="https://i.loli.net/2018/03/12/5aa5f403caca4.jpg" alt=""></p>
+<li><p>犹太人对世界的认知很深刻呢！也难怪世界舞台有他们一席。<br><img src="https://i.loli.net/2018/03/12/5aa5f403caca4.jpg" alt=""></p>
 </li>
-<li>
-<p>麦瑟尔自己身上上演的悲剧放到舞台上以后，在别人眼里就是活生生的喜剧~看了有点难过。
-<img src="https://i.loli.net/2018/03/12/5aa5f46585497.jpg" alt=""></p>
+<li><p>麦瑟尔自己身上上演的悲剧放到舞台上以后，在别人眼里就是活生生的喜剧~看了有点难过。<br><img src="https://i.loli.net/2018/03/12/5aa5f46585497.jpg" alt=""></p>
 </li>
-<li>
-<p>很好奇在剧场干了8年的那个女人，看起来很有故事。不知道她会和女主发生些什么有趣的故事。</p>
+<li><p>很好奇在剧场干了8年的那个女人，看起来很有故事。不知道她会和女主发生些什么有趣的故事。</p>
 </li>
-<li>
-<p>有个细节。麦瑟尔在他丈夫入睡之后化妆，阳光照进屋子丈夫还没醒的时候卸妆。以前貌似在某个博主的文下看过这个桥段，博主说他妈妈也是如此。后面验证。</p>
-</li>
-<li>
-<p>我还没有经历婚姻，也许这剧会刷新我的婚姻的认知。</p>
-</li>
+<li>有个细节。麦瑟尔在他丈夫入睡之后化妆，阳光照进屋子丈夫还没醒的时候卸妆。以前貌似在某个博主的文下看过这个桥段，博主说他妈妈也是如此。后面验证。</li>
+<li>我还没有经历婚姻，也许这剧会刷新我的婚姻的认知。</li>
 </ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。
-地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。
-随便说说第一集的感想吧。&lt;/p&gt;
+      &lt;p&gt;昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。&lt;br&gt;地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。&lt;br&gt;随便说说第一集的感想吧。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p
+&lt;
     
     </summary>
     
@@ -607,8 +463,7 @@ And yo
 <li><code>svn commit -m&quot;提交描述&quot;</code>提交改动到服务器，简化为<code>svn ci -m</code></li>
 <li><code>svn update</code>更新本地到当前最新，简化为<code>svn up</code></li>
 <li><code>svn delete 文件名</code>删除文件。之后需要使用<code>svn commit</code>提交到服务器。可简化为<code>svn del 文件名</code></li>
-<li><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：
-<ul>
+<li><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：<ul>
 <li>M 有修改</li>
 <li>C 有冲突</li>
 <li>D 有删除</li>
@@ -701,18 +556,14 @@ And yo
     
     <content type="html"><![CDATA[<p>现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。</p>
 <ol>
-<li>
-<p><strong>直接为模拟器添加经纬度</strong></p>
-<p>如下图所示：
-<img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
+<li><p><strong>直接为模拟器添加经纬度</strong></p>
+<p> 如下图所示：<br><img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
 </li>
 </ol>
 <p><img src="https://i.loli.net/2017/12/07/5a28dff564109.jpg" alt=""></p>
-<ol start="2">
-<li>
-<p><strong>通过创建gpx文件模拟经纬度</strong></p>
-<p>如下图所示:
-<img src="https://i.loli.net/2017/12/07/5a28e10b58eca.jpg" alt=""></p>
+<ol>
+<li><p><strong>通过创建gpx文件模拟经纬度</strong></p>
+<p> 如下图所示:<br><img src="https://i.loli.net/2017/12/07/5a28e10b58eca.jpg" alt=""></p>
 </li>
 </ol>
 <p>将文件里的经纬度坐标修改，放到工程中，打开Xcode后就可以愉快的使用自己定义的位置了。</p>
@@ -722,10 +573,8 @@ And yo
     
       &lt;p&gt;现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;直接为模拟器添加经纬度&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如下图所示：
-&lt;img 
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;直接为模拟器添加经纬度&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; 如下图所示：&lt;br&gt;&lt;i
     
     </summary>
     
@@ -743,14 +592,12 @@ And yo
     <published>2017-08-01T00:17:49.000Z</published>
     <updated>2017-08-01T00:23:21.000Z</updated>
     
-    <content type="html"><![CDATA[<p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+    <content type="html"><![CDATA[<p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码
-&lt;figure class=&quot;highlight objc&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;
+      &lt;p&gt;iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码&lt;br&gt;&lt;figure class=&quot;highlight objc&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div clas
     
     </summary>
     
@@ -769,8 +616,7 @@ And yo
     <updated>2017-07-28T15:47:16.000Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://ac-HSNl7zbI.clouddn.com/zlKPsbXoGeJpjdwBdPqsH6y7wYJ3H48RDkaiIMea.jpg" alt=""></p>
-<p>A special day after a long time in Beijing,
-So I remember the day in my life.</p>
+<p>A special day after a long time in Beijing,<br>So I remember the day in my life.</p>
 ]]></content>
     
     <summary type="html">
@@ -794,13 +640,11 @@ So I remember the day in my life.</p>
     <published>2017-07-27T08:58:11.000Z</published>
     <updated>2017-07-27T09:03:11.000Z</updated>
     
-    <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
-最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+    <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
 <blockquote>
 <p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
 </blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。
-所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
 ]]></content>
     
     <summary type="html">
@@ -828,7 +672,7 @@ So I remember the day in my life.</p>
 <li>存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。</li>
 <li>插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：</li>
 </ol>
-<p><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>未完待续……</p>
 ]]></content>
     
@@ -854,20 +698,12 @@ So I remember the day in my life.</p>
     <published>2017-04-08T02:32:03.000Z</published>
     <updated>2017-08-05T01:11:31.000Z</updated>
     
-    <content type="html"><![CDATA[<p>雪莱曾说：冬天到了，春天还会远吗？
-今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！
-清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。
-那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。
-如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。
-毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
+    <content type="html"><![CDATA[<p>雪莱曾说：冬天到了，春天还会远吗？<br>今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！<br>清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。<br>那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。<br>如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。<br>毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;雪莱曾说：冬天到了，春天还会远吗？
-今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！
-清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。
-那时我还年少，大学里懵懵懂
+      &lt;p&gt;雪莱曾说：冬天到了，春天还会远吗？&lt;br&gt;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！&lt;br&gt;清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。&lt;br&gt;那时我还
     
     </summary>
     
