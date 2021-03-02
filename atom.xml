@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2021-02-25T03:55:02.126Z</updated>
+  <updated>2021-03-02T07:43:34.917Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mac下使用Charles抓包(https)</title>
+    <link href="https://cyruschang.github.io/2021/03/02/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8Charles%E6%8A%93%E5%8C%85/"/>
+    <id>https://cyruschang.github.io/2021/03/02/Mac下使用Charles抓包/</id>
+    <published>2021-03-02T07:34:48.988Z</published>
+    <updated>2021-03-02T07:43:34.917Z</updated>
+    
+    <content type="html"><![CDATA[<ol>
+<li>首先电脑上装有Charles，下载安装方法不多赘述。</li>
+<li>打开Charles，先设置如何手机抓包。</li>
+<li>前提：手机与电脑需要在同一网络下。</li>
+<li>给电脑装根证书。<img src="https://i.loli.net/2021/03/02/93oxZFVXCbYuJ45.png" alt=""></li>
+<li>电脑上信任证书。<img src="https://i.loli.net/2021/03/02/Vm9PEok7dLY64ys.png" alt=""></li>
+<li>手机安装证书。<img src="https://i.loli.net/2021/03/02/d8y9nHBhRGWEivV.png" alt=""></li>
+<li>手机上信任证书。<img src="https://i.loli.net/2021/03/02/RsIAqNSQJgpzCrO.png" alt=""></li>
+<li>电脑上Charles进行设置。<img src="https://i.loli.net/2021/03/02/EqrgdMGB7sWfOCN.png" alt=""></li>
+<li><img src="https://i.loli.net/2021/03/02/8UydwRcBAO24QJX.png" alt=""></li>
+<li>然后就可以愉快的使用了。在模拟器上的用法大同小异。对于开发调试来说方便很多。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;首先电脑上装有Charles，下载安装方法不多赘述。&lt;/li&gt;
+&lt;li&gt;打开Charles，先设置如何手机抓包。&lt;/li&gt;
+&lt;li&gt;前提：手机与电脑需要在同一网络下。&lt;/li&gt;
+&lt;li&gt;给电脑装根证书。&lt;img src=&quot;https://i.loli.net/2
+    
+    </summary>
+    
+      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+    
+    
+      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS开发之账号续费</title>
@@ -688,29 +726,6 @@
     
     
       <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>夏日回忆</title>
-    <link href="https://cyruschang.github.io/2017/04/08/%E5%A4%8F%E6%97%A5%E5%9B%9E%E5%BF%86/"/>
-    <id>https://cyruschang.github.io/2017/04/08/夏日回忆/</id>
-    <published>2017-04-08T02:32:03.000Z</published>
-    <updated>2017-08-05T01:11:31.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>雪莱曾说：冬天到了，春天还会远吗？<br>今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！<br>清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。<br>那时我还年少，大学里懵懵懂懂地读书。友人说，学音乐的哥哥业已毕业，去网络上听听他的作品吧。当我听到《忘不了》的时候，心为之一震。不太懂音乐，也不知道什么术语。只感觉到前部分此恨绵绵，后部分欢快绝伦。这是一种怎样的情感啊！友人哥哥的事情，也略知一二，我觉得全都浓缩在这音乐里了。忘不了什么呢？少年时的羞涩、求学之艰难、爱情的甜蜜吗？我谓之有。<br>如今几年一晃而过，浏览器还忠实地为我保存了那记忆。当我再次听起，眼泪就要潸然。那是一种怎样的情感啊！纵然时过境迁、纵然沧海桑田，不变的是初心，不变的还是《忘不了》。<br>毕业了，友人天南海北各一方。我忘不了你们，我们还会再聚首，还会唱起一首歌，还会把盏一杯酒，还会行走在这时光里！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;雪莱曾说：冬天到了，春天还会远吗？&lt;br&gt;今天到立夏不到一月有余，我却总以为这是夏日，姑且标题为夏日回忆吧！&lt;br&gt;清明雨后，时光总是懒懒散散。我足不出户，却在微博、朋友圈看到各式各样的风景。祖国之大，风光令我心向往之。闲来浏览网络，脑海里浮起了久违的回忆。&lt;br&gt;那时我还
-    
-    </summary>
-    
-      <category term="生活" scheme="https://cyruschang.github.io/categories/life/"/>
-    
-    
-      <category term="随想" scheme="https://cyruschang.github.io/tags/essay/"/>
     
   </entry>
   

@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title><![CDATA[Mac下使用Charles抓包(https)]]></title>
+      <url>https://cyruschang.github.io/2021/03/02/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8Charles%E6%8A%93%E5%8C%85/</url>
+      <content type="html"><![CDATA[<ol>
+<li>首先电脑上装有Charles，下载安装方法不多赘述。</li>
+<li>打开Charles，先设置如何手机抓包。</li>
+<li>前提：手机与电脑需要在同一网络下。</li>
+<li>给电脑装根证书。<img src="https://i.loli.net/2021/03/02/93oxZFVXCbYuJ45.png" alt=""></li>
+<li>电脑上信任证书。<img src="https://i.loli.net/2021/03/02/Vm9PEok7dLY64ys.png" alt=""></li>
+<li>手机安装证书。<img src="https://i.loli.net/2021/03/02/d8y9nHBhRGWEivV.png" alt=""></li>
+<li>手机上信任证书。<img src="https://i.loli.net/2021/03/02/RsIAqNSQJgpzCrO.png" alt=""></li>
+<li>电脑上Charles进行设置。<img src="https://i.loli.net/2021/03/02/EqrgdMGB7sWfOCN.png" alt=""></li>
+<li><img src="https://i.loli.net/2021/03/02/8UydwRcBAO24QJX.png" alt=""></li>
+<li>然后就可以愉快的使用了。在模拟器上的用法大同小异。对于开发调试来说方便很多。</li>
+</ol>
+]]></content>
+      
+        <categories>
+            
+            <category> 编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> iOS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[iOS开发之账号续费]]></title>
       <url>https://cyruschang.github.io/2021/02/25/iOS%E5%BC%80%E5%8F%91%E4%B9%8B%E8%B4%A6%E5%8F%B7%E7%BB%AD%E8%B4%B9/</url>
       <content type="html"><![CDATA[<p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。<br><img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
