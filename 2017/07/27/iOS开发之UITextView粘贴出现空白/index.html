@@ -11,16 +11,19 @@
   
   
   
-  <meta name="description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrol">
+  <meta name="description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
+最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScro">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS开发之UITextView粘贴出现空白">
 <meta property="og:url" content="https://cyruschang.github.io/2017/07/27/iOS开发之UITextView粘贴出现空白/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrol">
+<meta property="og:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
+最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScro">
 <meta property="og:updated_time" content="2017-07-27T09:03:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS开发之UITextView粘贴出现空白">
-<meta name="twitter:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrol">
+<meta name="twitter:description" content="公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴大量的文本后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
+最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScro">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -121,11 +124,13 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
+最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
 <blockquote>
 <p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
 </blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。
+所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
 
       
     </div>

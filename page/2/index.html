@@ -122,18 +122,24 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。<br>问题如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure>
+        <p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。
+问题如下:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure></p>
 <p>OC中属性命名不能以关键字开头。嗯，改个符合规范的命名即可。</p>
-<p>（本文会继续完善规范……）<br>2018年08月11日12:21:40<br>距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
-<h4 id="Cocoa代码编写命名指南-基本是翻译过来加上自己的理解"><a href="#Cocoa代码编写命名指南-基本是翻译过来加上自己的理解" class="headerlink" title="Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)"></a>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4><h4 id="变量命名"><a href="#变量命名" class="headerlink" title="变量命名"></a>变量命名</h4><ol>
+<p>（本文会继续完善规范……）
+2018年08月11日12:21:40
+距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
+<h4>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4>
+<h4>变量命名</h4>
+<ol>
 <li><strong>词要达意</strong>（新东家的命名指南有一条说是要用美式英语而不是英式英语，这一条印象深刻。比如用<code>color</code>而不是<code>colour</code>，毕竟美帝还是这个星球最牛逼的国家）</li>
 <li><strong>不要用缩写，即使它很长。</strong>（这条苹果考虑了不同文化背景的编程人员，贴心。但是一些历史悠久的缩写比如Alt-alternate， Ctrl-control还是可以使用的，这个界定的关键也不好说，苹果列出了一些缩写词语，真正还要自己把握）</li>
 <li><strong>保留二字前缀</strong>（代码使用前缀很好很重要。两个字母的前缀少用，以免未来与苹果发生冲突，最好使用仨字母的那种）</li>
 <li><strong>变量不要指代自己本身</strong>（比如命名一个<code>NSString</code>,就不要命名为某某String之类的）</li>
 <li><strong>避免冲突</strong>（比如<code>tag</code>，这个变量在很多<code>UIKit</code>的控件都有，不要使用）</li>
 </ol>
-<h4 id="类和协议命名"><a href="#类和协议命名" class="headerlink" title="类和协议命名"></a>类和协议命名</h4><ol>
+<h4>类和协议命名</h4>
+<ol>
 <li>类的命名要包括一个名词明确的指代代表什么，有合理的前缀。苹果的代码就是最好的示例。比如<code>NSDate</code>,<code>NSSring</code>等等。</li>
 <li>协议的命名需要根据一组共同的行为来确定。为了避免与类名冲突，最好的解决方法是加<code>ing</code>。比如<code>NSLocking</code>协议和类<code>NSLock</code>。不过大部分是加一个<code>Delegate</code>完事儿……</li>
 </ol>
@@ -181,8 +187,14 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。<br>既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。<br>如图：<br><img src="https://i.loli.net/2018/03/13/5aa77cb5d9ceb.jpg" alt=""></p>
-<p>而且，四个字横着放最能完全使用一张A4纸，所以打印的时候，在“文件”-&gt;“页面设置…”中选择打印方向为横向即可。<br>如图：<br><img src="https://i.loli.net/2018/03/13/5aa77d77e43f0.jpg" alt=""><br>大功告成！</p>
+        <p>今儿早在公司，清洁阿姨请求让帮忙打印一个“货运出租”的招牌，想着这还不小事儿一桩，可是急的抓耳挠腮还是百度后才晓得。现记录之。
+既然是招牌，字体当然要大，在Word里直接选字号是不行的，应该输入一个数字即可。
+如图：
+<img src="https://i.loli.net/2018/03/13/5aa77cb5d9ceb.jpg" alt=""></p>
+<p>而且，四个字横着放最能完全使用一张A4纸，所以打印的时候，在“文件”-&gt;“页面设置…”中选择打印方向为横向即可。
+如图：
+<img src="https://i.loli.net/2018/03/13/5aa77d77e43f0.jpg" alt="">
+大功告成！</p>
 
       
     </div>
@@ -227,16 +239,27 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。<br>地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。<br>随便说说第一集的感想吧。</p>
+        <p>昨天第一次听说这个剧。豆瓣评分有8.8呢。剧荒半年了，记得上次看剧还是《大明王朝1566》。这个名字让我立马想到《了不起的盖茨比》。赶紧下载观之。
+地铁上看了第一集，很吸引人。第一集就甩出个大矛盾——“他离开了”。
+随便说说第一集的感想吧。</p>
 <ul>
-<li><p>犹太人对世界的认知很深刻呢！也难怪世界舞台有他们一席。<br><img src="https://i.loli.net/2018/03/12/5aa5f403caca4.jpg" alt=""></p>
+<li>
+<p>犹太人对世界的认知很深刻呢！也难怪世界舞台有他们一席。
+<img src="https://i.loli.net/2018/03/12/5aa5f403caca4.jpg" alt=""></p>
 </li>
-<li><p>麦瑟尔自己身上上演的悲剧放到舞台上以后，在别人眼里就是活生生的喜剧~看了有点难过。<br><img src="https://i.loli.net/2018/03/12/5aa5f46585497.jpg" alt=""></p>
+<li>
+<p>麦瑟尔自己身上上演的悲剧放到舞台上以后，在别人眼里就是活生生的喜剧~看了有点难过。
+<img src="https://i.loli.net/2018/03/12/5aa5f46585497.jpg" alt=""></p>
 </li>
-<li><p>很好奇在剧场干了8年的那个女人，看起来很有故事。不知道她会和女主发生些什么有趣的故事。</p>
+<li>
+<p>很好奇在剧场干了8年的那个女人，看起来很有故事。不知道她会和女主发生些什么有趣的故事。</p>
 </li>
-<li>有个细节。麦瑟尔在他丈夫入睡之后化妆，阳光照进屋子丈夫还没醒的时候卸妆。以前貌似在某个博主的文下看过这个桥段，博主说他妈妈也是如此。后面验证。</li>
-<li>我还没有经历婚姻，也许这剧会刷新我的婚姻的认知。</li>
+<li>
+<p>有个细节。麦瑟尔在他丈夫入睡之后化妆，阳光照进屋子丈夫还没醒的时候卸妆。以前貌似在某个博主的文下看过这个桥段，博主说他妈妈也是如此。后面验证。</p>
+</li>
+<li>
+<p>我还没有经历婚姻，也许这剧会刷新我的婚姻的认知。</p>
+</li>
 </ul>
 
       
@@ -289,7 +312,8 @@
 <li><code>svn commit -m&quot;提交描述&quot;</code>提交改动到服务器，简化为<code>svn ci -m</code></li>
 <li><code>svn update</code>更新本地到当前最新，简化为<code>svn up</code></li>
 <li><code>svn delete 文件名</code>删除文件。之后需要使用<code>svn commit</code>提交到服务器。可简化为<code>svn del 文件名</code></li>
-<li><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：<ul>
+<li><code>svn status 目录</code>查看当前目录下的状态。如果有改动，终端会标记。命令可以简化为<code>svn st 目录</code>各种标记如下：
+<ul>
 <li>M 有修改</li>
 <li>C 有冲突</li>
 <li>D 有删除</li>
@@ -445,14 +469,18 @@
       
         <p>现在许多iOS的App基于位置服务，有时候调试的时候身边没有真机怎么办？下面的方法可以在模拟器上方便的添加经纬度，从而直接用模拟器来进行调试。</p>
 <ol>
-<li><p><strong>直接为模拟器添加经纬度</strong></p>
-<p> 如下图所示：<br><img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
+<li>
+<p><strong>直接为模拟器添加经纬度</strong></p>
+<p>如下图所示：
+<img src="https://i.loli.net/2017/12/07/5a28df64d105f.jpg" alt=""></p>
 </li>
 </ol>
 <p><img src="https://i.loli.net/2017/12/07/5a28dff564109.jpg" alt=""></p>
-<ol>
-<li><p><strong>通过创建gpx文件模拟经纬度</strong></p>
-<p> 如下图所示:<br><img src="https://i.loli.net/2017/12/07/5a28e10b58eca.jpg" alt=""></p>
+<ol start="2">
+<li>
+<p><strong>通过创建gpx文件模拟经纬度</strong></p>
+<p>如下图所示:
+<img src="https://i.loli.net/2017/12/07/5a28e10b58eca.jpg" alt=""></p>
 </li>
 </ol>
 <p>将文件里的经纬度坐标修改，放到工程中，打开Xcode后就可以愉快的使用自己定义的位置了。</p>
@@ -500,7 +528,8 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码<br><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
+        <p>iOS开发将MOV格式的视频文件转换成mp4格式的视频文件相关代码
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *url = [<span class="built_in">NSTemporaryDirectory</span>() stringByAppendingPathComponent:<span class="string">@"sourceVideo.mov"</span>];</div><div class="line">        <span class="built_in">NSURL</span> *sourceUrl = [<span class="built_in">NSURL</span> fileURLWithPath:url];</div><div class="line">        </div><div class="line">        <span class="built_in">AVURLAsset</span> *avAsset = [<span class="built_in">AVURLAsset</span> URLAssetWithURL:sourceUrl options:<span class="literal">nil</span>];</div><div class="line">        <span class="built_in">NSArray</span> *compatiblePresets = [<span class="built_in">AVAssetExportSession</span> exportPresetsCompatibleWithAsset:avAsset];</div><div class="line">        </div><div class="line">        <span class="keyword">if</span> ([compatiblePresets containsObject:<span class="built_in">AVAssetExportPreset640x480</span>]) &#123;</div><div class="line">            </div><div class="line">            <span class="built_in">AVAssetExportSession</span> *exportSession = [[<span class="built_in">AVAssetExportSession</span> alloc] initWithAsset:avAsset presetName:<span class="built_in">AVAssetExportPreset640x480</span>];</div><div class="line">            <span class="comment">// 转换后的视频本地路径</span></div><div class="line">            exportSession.outputURL = [<span class="built_in">NSURL</span> fileURLWithPath:outputPath];</div><div class="line">            <span class="comment">// 转换的目的视频格式</span></div><div class="line">            exportSession.outputFileType = <span class="built_in">AVFileTypeMPEG4</span>;</div><div class="line">            <span class="comment">// 网络使用时最优化</span></div><div class="line">            exportSession.shouldOptimizeForNetworkUse = <span class="literal">YES</span>;</div><div class="line">            <span class="comment">// 开始异步转换视频</span></div><div class="line">            [exportSession exportAsynchronouslyWithCompletionHandler:^(<span class="keyword">void</span>) &#123;</div><div class="line">                </div><div class="line">                <span class="keyword">switch</span> (exportSession.status) &#123;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusUnknown</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusWaiting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusExporting</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCompleted</span>:</div><div class="line">                    <span class="comment">// 转换成功</span></div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                        </div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusFailed</span>:</div><div class="line">                        <span class="keyword">break</span>;</div><div class="line">                    <span class="keyword">case</span> <span class="built_in">AVAssetExportSessionStatusCancelled</span>:</div><div class="line">                    <span class="keyword">break</span>;  </div><div class="line">                &#125;</div><div class="line">            &#125;];</div><div class="line">        &#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -546,7 +575,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="http://ac-HSNl7zbI.clouddn.com/zlKPsbXoGeJpjdwBdPqsH6y7wYJ3H48RDkaiIMea.jpg" alt=""></p>
-<p>A special day after a long time in Beijing,<br>So I remember the day in my life.</p>
+<p>A special day after a long time in Beijing,
+So I remember the day in my life.</p>
 
       
     </div>
@@ -591,11 +621,13 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
+        <p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。
+最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
 <blockquote>
 <p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
 </blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
+<p>大概意思就是在内部滚动，使range处的第一个字符可见。
+所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
 
       
     </div>
