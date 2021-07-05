@@ -99,6 +99,65 @@
         
           <section id="main">
   
+    <article id="post-iOS开发之命名规范"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/04/30/iOS开发之命名规范/">iOS开发之命名规范</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	Posted on <a href="/2018/04/30/iOS开发之命名规范/" class="article-date">
+	  <time datetime="2018-04-30T03:32:49.361Z" itemprop="datePublished">April 30, 2018</time>
+	</a>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>做开发的知道每种语言都有自己的命名规范，比如C语言的变量下划线式命名等等。iOS开发中用Objective-C语言开发，今天在开发中遇到一个命名的问题，看来又得熟读OC的命名规范了。<br>问题如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Property follows Cocoa naming convention for returning &apos;owned&apos; objects</div></pre></td></tr></table></figure>
+<p>OC中属性命名不能以关键字开头。嗯，改个符合规范的命名即可。</p>
+<p>（本文会继续完善规范……）<br>2018年08月11日12:21:40<br>距离上次已经很久了，今天又看了苹果coding naming guidelines，收获良多。根据原文大概总结一下于此。</p>
+<h4 id="Cocoa代码编写命名指南-基本是翻译过来加上自己的理解"><a href="#Cocoa代码编写命名指南-基本是翻译过来加上自己的理解" class="headerlink" title="Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)"></a>Cocoa代码编写命名指南(基本是翻译过来加上自己的理解)</h4><h4 id="变量命名"><a href="#变量命名" class="headerlink" title="变量命名"></a>变量命名</h4><ol>
+<li><strong>词要达意</strong>（新东家的命名指南有一条说是要用美式英语而不是英式英语，这一条印象深刻。比如用<code>color</code>而不是<code>colour</code>，毕竟美帝还是这个星球最牛逼的国家）</li>
+<li><strong>不要用缩写，即使它很长。</strong>（这条苹果考虑了不同文化背景的编程人员，贴心。但是一些历史悠久的缩写比如Alt-alternate， Ctrl-control还是可以使用的，这个界定的关键也不好说，苹果列出了一些缩写词语，真正还要自己把握）</li>
+<li><strong>保留二字前缀</strong>（代码使用前缀很好很重要。两个字母的前缀少用，以免未来与苹果发生冲突，最好使用仨字母的那种）</li>
+<li><strong>变量不要指代自己本身</strong>（比如命名一个<code>NSString</code>,就不要命名为某某String之类的）</li>
+<li><strong>避免冲突</strong>（比如<code>tag</code>，这个变量在很多<code>UIKit</code>的控件都有，不要使用）</li>
+</ol>
+<h4 id="类和协议命名"><a href="#类和协议命名" class="headerlink" title="类和协议命名"></a>类和协议命名</h4><ol>
+<li>类的命名要包括一个名词明确的指代代表什么，有合理的前缀。苹果的代码就是最好的示例。比如<code>NSDate</code>,<code>NSSring</code>等等。</li>
+<li>协议的命名需要根据一组共同的行为来确定。为了避免与类名冲突，最好的解决方法是加<code>ing</code>。比如<code>NSLocking</code>协议和类<code>NSLock</code>。不过大部分是加一个<code>Delegate</code>完事儿……</li>
+</ol>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+      
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-电脑实用——超大号字体打印"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -558,62 +617,11 @@
 <!-- Table of Contents -->
 
   
-    <article id="post-iOS开发之数据库存储"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2017/05/18/iOS开发之数据库存储/">iOS开发之数据库存储(fmdb)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	Posted on <a href="/2017/05/18/iOS开发之数据库存储/" class="article-date">
-	  <time datetime="2017-05-18T15:40:13.000Z" itemprop="datePublished">May 18, 2017</time>
-	</a>
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>iOS开发常用的数据库存储的第三方库当属<a href="https://github.com/ccgus/fmdb" target="_blank" rel="external">fmdb</a>了,特将最近遇到的问题总结如下：</p>
-<ol>
-<li>存储大量数据时，使用事务处理更快捷。一般写的时候用try-catch语句。</li>
-<li>插入带有特殊符号的文本时，要经过处理，不然在sqlite3下是无法插入到数据库的。在这提供一个方法入下：</li>
-</ol>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">NSString</span> *)replaceSymbolString:(<span class="built_in">NSString</span> *)originalString &#123;</div><div class="line">    <span class="keyword">return</span> [originalString stringByReplacingOccurrencesOfString:<span class="string">@"\'"</span>withString:<span class="string">@"\'\'"</span>];</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>未完待续……</p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/programming/">编程</a>
-
-      
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
-
-      
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
 
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next</a>
+    <a class="extend prev" rel="prev" href="/">zurück</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">weiter</a>
   </nav>
 
 </section>
@@ -625,9 +633,9 @@
     <form class="search-form">
         <label style="width: 75%;">
             <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" Search…" value="" name="s" title="Search for:">
+            <input type="search" class="search-field" style="height: 42px;" placeholder=" Suche…" value="" name="s" title="Search for:">
         </label>
-        <input type="submit" class="search-form-submit" value="Search">
+        <input type="submit" class="search-form-submit" value="Suche">
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
@@ -696,10 +704,22 @@
     
   <div class="widget_athemes_tabs">
     <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>Recent Posts</a></li>
+      <li class="active"><a>letzter Beitrag</a></li>
     </ul>
     <div class="widget">
       <ul>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2021/07/05/iOS开发之Tips（一）/">(no title)</a></h6>
+              <span>July 5, 2021</span>
+            </div>
+
+          </li>
         
           <li class="clearfix">
 
@@ -761,18 +781,6 @@
 
           </li>
         
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2019/11/25/抄来的诗<2>/">抄来的诗&lt;2&gt;</a></h6>
-              <span>November 25, 2019</span>
-            </div>
-
-          </li>
-        
       </ul>
     </div>
   </div>
@@ -780,7 +788,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Kategorien</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/emotion/">情感</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/life/">生活</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">编程</a><span class="category-list-count">15</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reading/">读书</a><span class="category-list-count">1</span></li></ul>
     </div>
@@ -809,10 +817,10 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archiv</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">July 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">February 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">October 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 

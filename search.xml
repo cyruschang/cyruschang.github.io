@@ -4,6 +4,83 @@
   
     
     <entry>
+      <title></title>
+      <url>https://cyruschang.github.io/2021/07/05/iOS%E5%BC%80%E5%8F%91%E4%B9%8BTips%EF%BC%88%E4%B8%80%EF%BC%89/</url>
+      <content type="html"><![CDATA[<ul>
+<li><p><del>快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，<code>UILabel</code>的属性都可以设置</del>。现在已经不支持这样做了，会崩溃。记录一下。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[_searchTextField setValue:[<span class="built_in">UIColor</span> blackColor] forKeyPath:<span class="string">@"_placeholderLabel.textColor"</span>];</div><div class="line">[_searchTextField setValue:[<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">12</span>] forKeyPath:<span class="string">@"_placeholderLabel.font"</span>];</div><div class="line">[_searchTextField setValue:<span class="built_in">NSTextAlignmentCenter</span> forKeyPath:<span class="string">@"_placeholderLabel.textAlignment"</span>];</div></pre></td></tr></table></figure>
+</li>
+<li><p>在<code>UIButton</code>内部做图片和文字约束，可以起到设置图片和文字位置的效果。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[button.imageView mas_makeConstraints:^(MASConstraintMake *make)&#123;</div><div class="line">    make.left.top.bottom.equalTo(button);</div><div class="line">    make.size.equalTo(@(<span class="built_in">CGSizeMake</span>(<span class="number">18</span>, <span class="number">18</span>)));</div><div class="line">    make.right.equalTo(button.titleLabel.mas_left).offset(<span class="number">-5</span>);</div><div class="line">&#125;];</div></pre></td></tr></table></figure>
+</li>
+<li><p>UITextView文本变化监听的三种方式</p>
+<p>  1.代理方法回调<br>  <code>- (void)textViewDidChange:(UITextView *)textView;</code></p>
+<p>  2.通知。监听名为<code>UITextViewDidChangeNotification</code>的通知。</p>
+<p>  3.KVO监听@”text”属性。</p>
+</li>
+<li><p>使用第三方库<code>Masonry</code>注意的点</p>
+<ol>
+<li>做约束之前必须添加到父view上，子类之间相互约束需要有共同的父view。</li>
+<li>数值类多使用<code>mas_equal</code>，属性类多使用<code>equal</code></li>
+</ol>
+</li>
+<li><p>更高效的判断是否是奇数偶数</p>
+</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> a = <span class="number">9</span>;</div><div class="line"><span class="built_in">NSInteger</span> b = <span class="number">4</span>;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%ld, %ld"</span>, a &amp; <span class="number">1</span>, b &amp; <span class="number">1</span>);</div><div class="line">输出结果：<span class="number">1</span>， <span class="number">0</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>同或运算。我们知道，整数转化为二进制数后，末位为1就是奇数，末位是0就是偶数。同或运算的规则是相同则为真，不同则为假。让数字与1做同或运算，即可得到整数是奇数还是偶数。且效率比除2去余数要快。</p>
+</blockquote>
+<ul>
+<li>同或运算真值表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>a⊙b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>一个有趣的计算</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;UI设计中常常会碰到互斥按钮，如果互斥按钮的个数有两个，就可以试试这个有趣的计算。</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;在iOS中， <code>UIView</code>类控件都可以设置tag值，此时我们可以给其中一个设置tag为1，另一个设置为2，他们拥有共同的父view。那么我们如何通过其中一个view访问另一个view呢？下面这个式子就可以了。</p>
+  <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> tag = tagOne;</div><div class="line"><span class="built_in">NSInteger</span> otherTag = !(tagOne - <span class="number">1</span>) + <span class="number">1</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<pre><code>这样，无论`tagOne`是1还是2，都可以得到它的对方，也就是2和1。
+
+附上一个demo：[RadioButton](https://github.com/cyruschang/RadioButtonWithTwoOptions)
+</code></pre>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Mac下使用Charles抓包(https)]]></title>
       <url>https://cyruschang.github.io/2021/03/02/Mac%E4%B8%8B%E4%BD%BF%E7%94%A8Charles%E6%8A%93%E5%8C%85/</url>
       <content type="html"><![CDATA[<ol>

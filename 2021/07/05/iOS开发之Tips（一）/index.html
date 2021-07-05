@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>2018年小结 | cyruschang</title>
+  <title>cyruschang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
@@ -11,16 +11,19 @@
   
   
   
-  <meta name="description" content="“我真希望拥有真爱，哪怕一回都好” “你想要什么样的真爱呢？” “比方说吧，我跟你说我想吃草莓蛋糕，你就立刻丢下一切，跑去给我买，接着气喘吁吁地把蛋糕递给我，然后我说‘我现在不想要了’，于是你二话不说就把蛋糕丢出窗外，这，就是我说的真爱。” “我觉得这跟真爱一点关系都没有嘛” “有啊，我希望对方答道‘知道了，都是我的错，我真是头没脑子的蠢驴，我再去给你买别的，你想要什么？巧克力慕 斯还是芝士蛋糕">
+  <meta name="description" content="快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
+123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;_placeholderLabel.textColor&quot;];[_searchTextField setValue:[UI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018年小结">
-<meta property="og:url" content="https://cyruschang.github.io/2018/12/07/2018年小结/index.html">
+<meta property="og:title" content="cyruschang">
+<meta property="og:url" content="https://cyruschang.github.io/2021/07/05/iOS开发之Tips（一）/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="“我真希望拥有真爱，哪怕一回都好” “你想要什么样的真爱呢？” “比方说吧，我跟你说我想吃草莓蛋糕，你就立刻丢下一切，跑去给我买，接着气喘吁吁地把蛋糕递给我，然后我说‘我现在不想要了’，于是你二话不说就把蛋糕丢出窗外，这，就是我说的真爱。” “我觉得这跟真爱一点关系都没有嘛” “有啊，我希望对方答道‘知道了，都是我的错，我真是头没脑子的蠢驴，我再去给你买别的，你想要什么？巧克力慕 斯还是芝士蛋糕">
-<meta property="og:updated_time" content="2018-12-07T15:48:18.247Z">
+<meta property="og:description" content="快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
+123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;_placeholderLabel.textColor&quot;];[_searchTextField setValue:[UI">
+<meta property="og:updated_time" content="2021-07-05T09:55:15.600Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018年小结">
-<meta name="twitter:description" content="“我真希望拥有真爱，哪怕一回都好” “你想要什么样的真爱呢？” “比方说吧，我跟你说我想吃草莓蛋糕，你就立刻丢下一切，跑去给我买，接着气喘吁吁地把蛋糕递给我，然后我说‘我现在不想要了’，于是你二话不说就把蛋糕丢出窗外，这，就是我说的真爱。” “我觉得这跟真爱一点关系都没有嘛” “有啊，我希望对方答道‘知道了，都是我的错，我真是头没脑子的蠢驴，我再去给你买别的，你想要什么？巧克力慕 斯还是芝士蛋糕">
+<meta name="twitter:title" content="cyruschang">
+<meta name="twitter:description" content="快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
+123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;_placeholderLabel.textColor&quot;];[_searchTextField setValue:[UI">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -98,49 +101,94 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-2018年小结" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-iOS开发之Tips（一）" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" class="article-title" itemprop="name">
-      2018年小结
-    </h1>
-  
-
-      </header>
-    
     <div class="article-meta">
       
-	Posted on <a href="/2018/12/07/2018年小结/" class="article-date">
-	  <time datetime="2018-12-07T15:48:18.247Z" itemprop="datePublished">December 7, 2018</time>
+	Posted on <a href="/2021/07/05/iOS开发之Tips（一）/" class="article-date">
+	  <time datetime="2021-07-05T09:55:15.600Z" itemprop="datePublished">July 5, 2021</time>
 	</a>
 
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>“我真希望拥有真爱，哪怕一回都好” “你想要什么样的真爱呢？” “比方说吧，我跟你说我想吃草莓蛋糕，你就立刻丢下一切，跑去给我买，接着气喘吁吁地把蛋糕递给我，然后我说‘我现在不想要了’，于是你二话不说就把蛋糕丢出窗外，这，就是我说的真爱。” “我觉得这跟真爱一点关系都没有嘛” “有啊，我希望对方答道‘知道了，都是我的错，我真是头没脑子的蠢驴，我再去给你买别的，你想要什么？巧克力慕 斯还是芝士蛋糕 ？’ ” “然后呢？” “然后我就好好爱他。” ——《挪威的森林》</p>
-<p>每个人都有一片属于自己的森林，迷失的人迷失了，相逢的人还会再相逢。</p>
-<p>值此18年末，有必要给自己总结一下了。</p>
-<p>自工作后，最大的困惑不是来自于职场，却来自内心。受困于幻想的美好爱情，却在真实的生活里迷失自我了。我想有王小波那样的爱情，求而不得。如果能够正视自己，应该会好过很多吧。</p>
-<p>朋友没有交很多，但有能说知心话的。我很满足。<br>工作繁忙，但是很有成就感。<br>没房没车，正在努力奋斗之。</p>
-<p>19年最大的心愿就是能够找到她，去走完一生。就像开篇，我真希望拥有真爱。可是生活像捉弄人似的，越是想得到的，越是抓不住。需要强大自己的内心，整理好自己的仪容。才能放射最灿烂的光芒。要学着开朗，内心是最深的桎梏，敞开胸怀，去接纳。</p>
-<p>马上要上手一个新App了，努力把它做好，做完美。</p>
-<p>2019你来吧，我准备好了。</p>
+        <ul>
+<li><p><del>快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，<code>UILabel</code>的属性都可以设置</del>。现在已经不支持这样做了，会崩溃。记录一下。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[_searchTextField setValue:[<span class="built_in">UIColor</span> blackColor] forKeyPath:<span class="string">@"_placeholderLabel.textColor"</span>];</div><div class="line">[_searchTextField setValue:[<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">12</span>] forKeyPath:<span class="string">@"_placeholderLabel.font"</span>];</div><div class="line">[_searchTextField setValue:<span class="built_in">NSTextAlignmentCenter</span> forKeyPath:<span class="string">@"_placeholderLabel.textAlignment"</span>];</div></pre></td></tr></table></figure>
+</li>
+<li><p>在<code>UIButton</code>内部做图片和文字约束，可以起到设置图片和文字位置的效果。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[button.imageView mas_makeConstraints:^(MASConstraintMake *make)&#123;</div><div class="line">    make.left.top.bottom.equalTo(button);</div><div class="line">    make.size.equalTo(@(<span class="built_in">CGSizeMake</span>(<span class="number">18</span>, <span class="number">18</span>)));</div><div class="line">    make.right.equalTo(button.titleLabel.mas_left).offset(<span class="number">-5</span>);</div><div class="line">&#125;];</div></pre></td></tr></table></figure>
+</li>
+<li><p>UITextView文本变化监听的三种方式</p>
+<p>  1.代理方法回调<br>  <code>- (void)textViewDidChange:(UITextView *)textView;</code></p>
+<p>  2.通知。监听名为<code>UITextViewDidChangeNotification</code>的通知。</p>
+<p>  3.KVO监听@”text”属性。</p>
+</li>
+<li><p>使用第三方库<code>Masonry</code>注意的点</p>
+<ol>
+<li>做约束之前必须添加到父view上，子类之间相互约束需要有共同的父view。</li>
+<li>数值类多使用<code>mas_equal</code>，属性类多使用<code>equal</code></li>
+</ol>
+</li>
+<li><p>更高效的判断是否是奇数偶数</p>
+</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> a = <span class="number">9</span>;</div><div class="line"><span class="built_in">NSInteger</span> b = <span class="number">4</span>;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%ld, %ld"</span>, a &amp; <span class="number">1</span>, b &amp; <span class="number">1</span>);</div><div class="line">输出结果：<span class="number">1</span>， <span class="number">0</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>同或运算。我们知道，整数转化为二进制数后，末位为1就是奇数，末位是0就是偶数。同或运算的规则是相同则为真，不同则为假。让数字与1做同或运算，即可得到整数是奇数还是偶数。且效率比除2去余数要快。</p>
+</blockquote>
+<ul>
+<li>同或运算真值表</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th>b</th>
+<th>a⊙b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><p>一个有趣的计算</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;UI设计中常常会碰到互斥按钮，如果互斥按钮的个数有两个，就可以试试这个有趣的计算。</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;在iOS中， <code>UIView</code>类控件都可以设置tag值，此时我们可以给其中一个设置tag为1，另一个设置为2，他们拥有共同的父view。那么我们如何通过其中一个view访问另一个view呢？下面这个式子就可以了。</p>
+  <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> tag = tagOne;</div><div class="line"><span class="built_in">NSInteger</span> otherTag = !(tagOne - <span class="number">1</span>) + <span class="number">1</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<pre><code>这样，无论`tagOne`是1还是2，都可以得到它的对方，也就是2和1。
 
+附上一个demo：[RadioButton](https://github.com/cyruschang/RadioButtonWithTwoOptions)
+</code></pre>
       
     </div>
     <footer class="entry-meta entry-footer">
       
-	<span class="ico-folder"></span>
-    <a class="article-category-link" href="/categories/emotion/">情感</a>
-
       
-  <span class="ico-tags"></span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bestfeel/">美好的</a></li></ul>
-
       
     </footer>
   </div>
@@ -148,19 +196,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/03/07/iOS开发之App转让/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          iOS开发之App转让
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/11/13/iOS开发之Swift学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2021/03/02/Mac下使用Charles抓包/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">iOS开发之Swift学习笔记</div>
+      <div class="article-nav-title">Mac下使用Charles抓包(https)</div>
     </a>
   
 </nav>
