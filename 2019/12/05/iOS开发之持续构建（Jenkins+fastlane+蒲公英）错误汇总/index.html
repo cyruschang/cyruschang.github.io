@@ -12,31 +12,28 @@
   
   
   <meta name="description" content="Jenkins+fastlane打包上传蒲公英错误汇总
+Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option
 
-Multiple schemes found but you haven&apos;t specified one, Since this is a CI, please pass one using the &amp;quot;scheme&amp;quot; option
 
-
-解决方案：Manage Schemes…选项点开，将target schemes设置为">
+解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总">
 <meta property="og:url" content="https://cyruschang.github.io/2019/12/05/iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总/index.html">
 <meta property="og:site_name" content="cyruschang">
 <meta property="og:description" content="Jenkins+fastlane打包上传蒲公英错误汇总
+Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option
 
-Multiple schemes found but you haven&apos;t specified one, Since this is a CI, please pass one using the &amp;quot;scheme&amp;quot; option
 
-
-解决方案：Manage Schemes…选项点开，将target schemes设置为">
+解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时">
 <meta property="og:image" content="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg">
 <meta property="og:updated_time" content="2019-12-05T06:33:10.588Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS开发之持续构建（Jenkins+fastlane+蒲公英）错误汇总">
 <meta name="twitter:description" content="Jenkins+fastlane打包上传蒲公英错误汇总
+Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option
 
-Multiple schemes found but you haven&apos;t specified one, Since this is a CI, please pass one using the &amp;quot;scheme&amp;quot; option
 
-
-解决方案：Manage Schemes…选项点开，将target schemes设置为">
+解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时">
 <meta name="twitter:image" content="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg">
   
   <link rel="icon" href="/css/images/favicon.ico">
@@ -138,15 +135,14 @@ Multiple schemes found but you haven&apos;t specified one, Since this is a CI, p
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1>Jenkins+fastlane打包上传蒲公英错误汇总</h1>
-<ul>
-<li>Multiple schemes found but you haven't specified one, Since this is a CI, please pass one using the &quot;scheme&quot; option</li>
+        <h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><ul>
+<li>Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</li>
 </ul>
 <blockquote>
 <p>解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时脚本显示指定scheme。</p>
 </blockquote>
 <ul>
-<li>Code Signing Error: No certificate for team 'JJ6JH6RKQ5' matching 'iPhone Developer: *** (ZUXQ5B2W9Z)' found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
+<li>Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: <em>*</em> (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
 </ul>
 <blockquote>
 <p>解决方案：手动选择签名和描述文件时，需要配置正确的。或者转换为自动签名和描述证书。</p>
@@ -155,8 +151,7 @@ Multiple schemes found but you haven&apos;t specified one, Since this is a CI, p
 <li>PGYER Plugin Error: error installType</li>
 </ul>
 <blockquote>
-<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。
-<code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
+<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。<br><code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
 </blockquote>
 <ul>
 <li>bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</li>
@@ -165,7 +160,7 @@ Multiple schemes found but you haven&apos;t specified one, Since this is a CI, p
 <p>解决方案：不使用bundler加载，脚本如下<code>cocoapods(repo_update: false, use_bundle_exec: false)</code>。</p>
 </blockquote>
 <ul>
-<li>error: unable to parse contents of file list '/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist'</li>
+<li>error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</li>
 </ul>
 <blockquote>
 <p>解决方案：如果指定了cocoapods版本，则这个文件可以删除掉。同时需要注意Xcode的版本与swift版本。打包机器最好能与开发机器版本一致，这样不至于容易出问题。</p>
@@ -175,7 +170,7 @@ Multiple schemes found but you haven&apos;t specified one, Since this is a CI, p
 </ul>
 <p>解决方案：这个一般是网络问题，最好设置gem源为<code>https://gems.ruby-china.com</code>并且确保只有一个，保证网络条件良好状态下打包。</p>
 <ul>
-<li>fatal: unable to access 'https://github.com/CocoaPods/Specs.git/': transfer closed with outstanding read data remaining</li>
+<li>fatal: unable to access ‘<a href="https://github.com/CocoaPods/Specs.git/" target="_blank" rel="external">https://github.com/CocoaPods/Specs.git/</a>‘: transfer closed with outstanding read data remaining</li>
 </ul>
 <blockquote>
 <p>同上</p>
@@ -187,18 +182,16 @@ Multiple schemes found but you haven&apos;t specified one, Since this is a CI, p
 <p>同上</p>
 </blockquote>
 <ul>
-<li>fatal: Authentication failed for 'http://git.hualala.com/22city_ios/supply.git/'</li>
+<li>fatal: Authentication failed for ‘<a href="http://git.hualala.com/22city_ios/supply.git/" target="_blank" rel="external">http://git.hualala.com/22city_ios/supply.git/</a>‘</li>
 </ul>
 <blockquote>
 <p>解决方案：确认自己的代码仓库授权，使用正确的。</p>
 </blockquote>
 <ul>
-<li>错误如下图
-<img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
+<li>错误如下图<br><img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
 </ul>
 <blockquote>
-<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。
-解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
+<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。<br> 解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
 </blockquote>
 
       
@@ -245,7 +238,7 @@ Multiple schemes found but you haven&apos;t specified one, Since this is a CI, p
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">Jenkins+fastlane打包上传蒲公英错误汇总</span></a></li></ol>
+      <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Jenkins-fastlane打包上传蒲公英错误汇总"><span class="nav-number">1.</span> <span class="nav-text">Jenkins+fastlane打包上传蒲公英错误汇总</span></a></li></ol>
     
     </div>
   </aside>

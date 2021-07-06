@@ -112,44 +112,36 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title: iOS开发之Swift学习笔记
-comment: false
-tags: iOS
-categories: 编程</p>
+        <p>title: iOS开发之Swift学习笔记<br>comment: false<br>tags: iOS<br>categories: 编程</p>
 <ul>
-<li>
-<p><s>快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，<code>UILabel</code>的属性都可以设置</s>。现在已经不支持这样做了，会崩溃。记录一下。
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[_searchTextField setValue:[<span class="built_in">UIColor</span> blackColor] forKeyPath:<span class="string">@"_placeholderLabel.textColor"</span>];</div><div class="line">[_searchTextField setValue:[<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">12</span>] forKeyPath:<span class="string">@"_placeholderLabel.font"</span>];</div><div class="line">[_searchTextField setValue:<span class="built_in">NSTextAlignmentCenter</span> forKeyPath:<span class="string">@"_placeholderLabel.textAlignment"</span>];</div></pre></td></tr></table></figure></p>
+<li><p><del>快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，<code>UILabel</code>的属性都可以设置</del>。现在已经不支持这样做了，会崩溃。记录一下。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[_searchTextField setValue:[<span class="built_in">UIColor</span> blackColor] forKeyPath:<span class="string">@"_placeholderLabel.textColor"</span>];</div><div class="line">[_searchTextField setValue:[<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">12</span>] forKeyPath:<span class="string">@"_placeholderLabel.font"</span>];</div><div class="line">[_searchTextField setValue:<span class="built_in">NSTextAlignmentCenter</span> forKeyPath:<span class="string">@"_placeholderLabel.textAlignment"</span>];</div></pre></td></tr></table></figure>
 </li>
-<li>
-<p>在<code>UIButton</code>内部做图片和文字约束，可以起到设置图片和文字位置的效果。
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[button.imageView mas_makeConstraints:^(MASConstraintMake *make)&#123;</div><div class="line">    make.left.top.bottom.equalTo(button);</div><div class="line">    make.size.equalTo(@(<span class="built_in">CGSizeMake</span>(<span class="number">18</span>, <span class="number">18</span>)));</div><div class="line">    make.right.equalTo(button.titleLabel.mas_left).offset(<span class="number">-5</span>);</div><div class="line">&#125;];</div></pre></td></tr></table></figure></p>
+<li><p>在<code>UIButton</code>内部做图片和文字约束，可以起到设置图片和文字位置的效果。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[button.imageView mas_makeConstraints:^(MASConstraintMake *make)&#123;</div><div class="line">    make.left.top.bottom.equalTo(button);</div><div class="line">    make.size.equalTo(@(<span class="built_in">CGSizeMake</span>(<span class="number">18</span>, <span class="number">18</span>)));</div><div class="line">    make.right.equalTo(button.titleLabel.mas_left).offset(<span class="number">-5</span>);</div><div class="line">&#125;];</div></pre></td></tr></table></figure>
 </li>
-<li>
-<p>UITextView文本变化监听的三种方式</p>
-<p>1.代理方法回调
-<code>- (void)textViewDidChange:(UITextView *)textView;</code></p>
-<p>2.通知。监听名为<code>UITextViewDidChangeNotification</code>的通知。</p>
-<p>3.KVO监听@&quot;text&quot;属性。</p>
+<li><p>UITextView文本变化监听的三种方式</p>
+<p>  1.代理方法回调<br>  <code>- (void)textViewDidChange:(UITextView *)textView;</code></p>
+<p>  2.通知。监听名为<code>UITextViewDidChangeNotification</code>的通知。</p>
+<p>  3.KVO监听@”text”属性。</p>
 </li>
-<li>
-<p>使用第三方库<code>Masonry</code>注意的点</p>
+<li><p>使用第三方库<code>Masonry</code>注意的点</p>
 <ol>
 <li>做约束之前必须添加到父view上，子类之间相互约束需要有共同的父view。</li>
 <li>数值类多使用<code>mas_equal</code>，属性类多使用<code>equal</code></li>
 </ol>
 </li>
-<li>
-<p>更高效的判断是否是奇数偶数</p>
+<li><p>更高效的判断是否是奇数偶数</p>
 </li>
 </ul>
-<p><figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> a = <span class="number">9</span>;</div><div class="line"><span class="built_in">NSInteger</span> b = <span class="number">4</span>;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%ld, %ld"</span>, a &amp; <span class="number">1</span>, b &amp; <span class="number">1</span>);</div><div class="line">输出结果：<span class="number">1</span>， <span class="number">0</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> a = <span class="number">9</span>;</div><div class="line"><span class="built_in">NSInteger</span> b = <span class="number">4</span>;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%ld, %ld"</span>, a &amp; <span class="number">1</span>, b &amp; <span class="number">1</span>);</div><div class="line">输出结果：<span class="number">1</span>， <span class="number">0</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>同或运算。我们知道，整数转化为二进制数后，末位为1就是奇数，末位是0就是偶数。同或运算的规则是相同则为真，不同则为假。让数字与1做同或运算，即可得到整数是奇数还是偶数。且效率比除2去余数要快。</p>
 </blockquote>
 <ul>
 <li>同或运算真值表</li>
 </ul>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -181,18 +173,18 @@ categories: 编程</p>
 </tr>
 </tbody>
 </table>
+</div>
 <ul>
-<li>
-<p>一个有趣的计算</p>
-<p>    UI设计中常常会碰到互斥按钮，如果互斥按钮的个数有两个，就可以试试这个有趣的计算。</p>
-<p>    在iOS中， <code>UIView</code>类控件都可以设置tag值，此时我们可以给其中一个设置tag为1，另一个设置为2，他们拥有共同的父view。那么我们如何通过其中一个view访问另一个view呢？下面这个式子就可以了。
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> tag = tagOne;</div><div class="line"><span class="built_in">NSInteger</span> otherTag = !(tagOne - <span class="number">1</span>) + <span class="number">1</span>;</div></pre></td></tr></table></figure></p>
+<li><p>一个有趣的计算</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;UI设计中常常会碰到互斥按钮，如果互斥按钮的个数有两个，就可以试试这个有趣的计算。</p>
+<p>  &nbsp;&nbsp;&nbsp;&nbsp;在iOS中， <code>UIView</code>类控件都可以设置tag值，此时我们可以给其中一个设置tag为1，另一个设置为2，他们拥有共同的父view。那么我们如何通过其中一个view访问另一个view呢？下面这个式子就可以了。</p>
+  <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSInteger</span> tag = tagOne;</div><div class="line"><span class="built_in">NSInteger</span> otherTag = !(tagOne - <span class="number">1</span>) + <span class="number">1</span>;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <pre><code>这样，无论`tagOne`是1还是2，都可以得到它的对方，也就是2和1。
 
-附上一个demo：[RadioButton](https://github.com/cyruschang/RadioButtonWithTwoOptions)</code></pre>
-
+附上一个demo：[RadioButton](https://github.com/cyruschang/RadioButtonWithTwoOptions)
+</code></pre>
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -286,23 +278,22 @@ categories: 编程</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。
-<img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
+        <p>给公司苹果开发者账号续费，上一次续费（2020.2.21）和本次续费（2021.2.24）都遇到了授权失败提示（如图所示）。<br><img src="https://i.loli.net/2021/02/25/3jJLeAP2KFIDG7u.png" alt=""></p>
 <p>根据从网上查询的资料，现在总结如下。</p>
 <ol>
 <li>新注册的账号缴费审核会比较严格，这个新，起码早到2019.2.21日，因为公司的开发者账号是这个日期开通的。</li>
 <li>续费的时候，选择<strong>第一次开通账号缴费的信用卡</strong>，不会失败。（2次续费都是如此）。</li>
 <li>续费成功后，会先在所留的邮箱发一张电子收据，这个无法被当做报销凭据的。</li>
 <li>续费成功后，隔一个工作日会发送电子发票，用这个报销就好了。</li>
-<li>要获取所购产品的发票副本，请访问 Apple 网站 (<a href="">http://www.apple.com/cn</a>)，并执行以下步骤：</li>
-</ol>
-<blockquote>
+<li>要获取所购产品的发票副本，请访问 Apple 网站 (<a href="">http://www.apple.com/cn</a>)，并执行以下步骤：<blockquote>
 <ol>
 <li>从“购物袋”菜单（显示为一个购物袋图标）中选取“订单”。</li>
 <li>使用您用于购买产品的 Apple ID 登录。</li>
 <li>点按“您的订单”页面上的“打印发票”链接。如果您需要验证普通发票的递送状态，请致电 400-666-8800 联系中国 Apple Store 在线商店。向客服代表提供您的网络订单号</li>
 </ol>
 </blockquote>
+</li>
+</ol>
 
       
     </div>
@@ -347,10 +338,7 @@ categories: 编程</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>When I am with you
-I feel happy and peace
-Just like a cache to drink wine for many years
-Let me slightly tipsy</p>
+        <p>When I am with you<br>I feel happy and peace<br>Just like a cache to drink wine for many years<br>Let me slightly tipsy</p>
 
       
     </div>
@@ -395,15 +383,14 @@ Let me slightly tipsy</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1>Jenkins+fastlane打包上传蒲公英错误汇总</h1>
-<ul>
-<li>Multiple schemes found but you haven't specified one, Since this is a CI, please pass one using the &quot;scheme&quot; option</li>
+        <h1 id="Jenkins-fastlane打包上传蒲公英错误汇总"><a href="#Jenkins-fastlane打包上传蒲公英错误汇总" class="headerlink" title="Jenkins+fastlane打包上传蒲公英错误汇总"></a>Jenkins+fastlane打包上传蒲公英错误汇总</h1><ul>
+<li>Multiple schemes found but you haven’t specified one, Since this is a CI, please pass one using the “scheme” option</li>
 </ul>
 <blockquote>
 <p>解决方案：Manage Schemes…选项点开，将target schemes设置为shared勾选。同时脚本显示指定scheme。</p>
 </blockquote>
 <ul>
-<li>Code Signing Error: No certificate for team 'JJ6JH6RKQ5' matching 'iPhone Developer: *** (ZUXQ5B2W9Z)' found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
+<li>Code Signing Error: No certificate for team ‘JJ6JH6RKQ5’ matching ‘iPhone Developer: <em>*</em> (ZUXQ5B2W9Z)’ found:  Select a different signing certificate for CODE_SIGN_IDENTITY, a team that matches your selected certificate, or switch to automatic provisioning.</li>
 </ul>
 <blockquote>
 <p>解决方案：手动选择签名和描述文件时，需要配置正确的。或者转换为自动签名和描述证书。</p>
@@ -412,8 +399,7 @@ Let me slightly tipsy</p>
 <li>PGYER Plugin Error: error installType</li>
 </ul>
 <blockquote>
-<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。
-<code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
+<p>解决方案：现在使用插件上传蒲公英时，需要增加参数，带上类型和密码。<br><code>pgyer(api_key: &quot;***&quot;, user_key: &quot;***&quot;, password: &quot;123&quot;, install_type: &quot;2&quot;)</code>。</p>
 </blockquote>
 <ul>
 <li>bundler: failed to load command: pod (/usr/local/bin/pod) Bundler::GemNotFound: Could not find fastlane-plugin-pgyer-0.2.1 in any of the sources</li>
@@ -422,7 +408,7 @@ Let me slightly tipsy</p>
 <p>解决方案：不使用bundler加载，脚本如下<code>cocoapods(repo_update: false, use_bundle_exec: false)</code>。</p>
 </blockquote>
 <ul>
-<li>error: unable to parse contents of file list '/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist'</li>
+<li>error: unable to parse contents of file list ‘/Users/city/.jenkins/workspace/ios-22city-supply-beta-original/supply/Pods/Target Support Files/Pods-supply_beta/Pods-supply_beta-frameworks-Debug-input-files.xcfilelist’</li>
 </ul>
 <blockquote>
 <p>解决方案：如果指定了cocoapods版本，则这个文件可以删除掉。同时需要注意Xcode的版本与swift版本。打包机器最好能与开发机器版本一致，这样不至于容易出问题。</p>
@@ -432,7 +418,7 @@ Let me slightly tipsy</p>
 </ul>
 <p>解决方案：这个一般是网络问题，最好设置gem源为<code>https://gems.ruby-china.com</code>并且确保只有一个，保证网络条件良好状态下打包。</p>
 <ul>
-<li>fatal: unable to access 'https://github.com/CocoaPods/Specs.git/': transfer closed with outstanding read data remaining</li>
+<li>fatal: unable to access ‘<a href="https://github.com/CocoaPods/Specs.git/" target="_blank" rel="external">https://github.com/CocoaPods/Specs.git/</a>‘: transfer closed with outstanding read data remaining</li>
 </ul>
 <blockquote>
 <p>同上</p>
@@ -444,18 +430,16 @@ Let me slightly tipsy</p>
 <p>同上</p>
 </blockquote>
 <ul>
-<li>fatal: Authentication failed for 'http://git.hualala.com/22city_ios/supply.git/'</li>
+<li>fatal: Authentication failed for ‘<a href="http://git.hualala.com/22city_ios/supply.git/" target="_blank" rel="external">http://git.hualala.com/22city_ios/supply.git/</a>‘</li>
 </ul>
 <blockquote>
 <p>解决方案：确认自己的代码仓库授权，使用正确的。</p>
 </blockquote>
 <ul>
-<li>错误如下图
-<img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
+<li>错误如下图<br><img src="https://i.loli.net/2019/12/05/G6omdx3N9u71tr2.jpg" alt=""></li>
 </ul>
 <blockquote>
-<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。
-解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
+<p>原因：本机开发时引入文件未勾选copy，导致引用本机别的位置的文件，在打包机上并没有此文件，因此找不到文件。<br> 解决方案：引入文件时，勾选copy，最好是将文件提前拷贝到目标目录，再手动拖入。</p>
 </blockquote>
 
       
@@ -501,35 +485,15 @@ Let me slightly tipsy</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>What can I hold you with?</strong>
-<em>Jorge Luis Borges</em></p>
-<p>I offer you lean streets,
-desperate sunsets,
-the moon of the jagged suburbs.</p>
-<p>I offer you the bitterness of a man who has looked long and long at the lonely moon.
-I offer you my ancestors, my dead men,
-the ghosts that living men have honoured in marble:</p>
-<p>my father's father killed in the frontier of Buenos Aires,
-two bullets through his lungs,
-bearded and dead,
-wrapped by his soldiers in the hide of a cow;</p>
-<p>my mother's grandfather
--just twentyfour-
-heading a charge of three hundred men in Peru,
-now ghosts on vanished horses.</p>
-<p>I offer you whatever insight my books may hold.
-whatever manliness or humour my life.</p>
-<p>I offer you the loyalty of a man who has never been loyal.
-I offer you that kernel of myself that I have saved somehow -the central heart
-that deals not in words, traffics not with dreams
-and is untouched by time, by joy, by adversities.</p>
-<p>I offer you the memory of a yellow rose seen at sunset, years before you were born.
-I offer you explanationsof yourself,
-theories about yourself,
-authentic and surprising news of yourself.</p>
-<p>I can give you my loneliness,
-my darkness,
-the hunger of my heart;</p>
+        <p><strong>What can I hold you with?</strong><br>    <em>Jorge Luis Borges</em></p>
+<p>I offer you lean streets,<br>desperate sunsets,<br>the moon of the jagged suburbs.</p>
+<p>I offer you the bitterness of a man who has looked long and long at the lonely moon.<br>I offer you my ancestors, my dead men,<br>the ghosts that living men have honoured in marble:</p>
+<p>my father’s father killed in the frontier of Buenos Aires,<br>two bullets through his lungs,<br>bearded and dead,<br>wrapped by his soldiers in the hide of a cow;</p>
+<p>my mother’s grandfather<br>-just twentyfour-<br>heading a charge of three hundred men in Peru,<br>now ghosts on vanished horses.</p>
+<p>I offer you whatever insight my books may hold.<br>whatever manliness or humour my life.</p>
+<p>I offer you the loyalty of a man who has never been loyal.<br>I offer you that kernel of myself that I have saved somehow -the central heart<br>that deals not in words, traffics not with dreams<br>and is untouched by time, by joy, by adversities.</p>
+<p>I offer you the memory of a yellow rose seen at sunset, years before you were born.<br>I offer you explanationsof yourself,<br>theories about yourself,<br>authentic and surprising news of yourself.</p>
+<p>I can give you my loneliness,<br>my darkness,<br>the hunger of my heart;</p>
 <p>I am trying to bribe you with uncertainty, with danger, with defeat.</p>
 
       
@@ -575,41 +539,13 @@ the hunger of my heart;</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>I Like For You To Be Still</strong>
-<em>Pablo Neruda</em></p>
-<p>I like for you to be still
-It is as though you are absent
-And you hear me from far away
-And my voice does not touch you</p>
-<p>It seems as though your eyes had flown away
-And it seems that a kiss had sealed your mouth
-As all things are filled with my soul
-You emerge from the things
-Filled with my soul
-You are like my soul
-A butterfly of dream
-And you are like the word: Melancholy</p>
-<p>I like for you to be still
-And you seem far away
-It sounds as though you are lamenting
-A butterfly cooing like a dove
-And you hear me from far away
-And my voice does not reach you</p>
-<p>Let me come to be still in your silence
-And let me talk to you with your silence
-That is bright as a lamp
-Simple, as a ring</p>
-<p>You are like the night
-With its stillness and constellations
-Your silence is that of a star
-As remote and candid</p>
-<p>I like for you to be still
-It is as though you are absent
-Distant and full of sorrow
-So you would've died
-One word then,
-One smile is enough And I'm happy
-Happy that it's not true</p>
+        <p><strong>I Like For You To Be Still</strong><br>        <em>Pablo Neruda</em></p>
+<p>I like for you to be still<br>It is as though you are absent<br>And you hear me from far away<br>And my voice does not touch you</p>
+<p>It seems as though your eyes had flown away<br>And it seems that a kiss had sealed your mouth<br>As all things are filled with my soul<br>You emerge from the things<br>Filled with my soul<br>You are like my soul<br>A butterfly of dream<br>And you are like the word: Melancholy</p>
+<p>I like for you to be still<br>And you seem far away<br>It sounds as though you are lamenting<br>A butterfly cooing like a dove<br>And you hear me from far away<br>And my voice does not reach you</p>
+<p>Let me come to be still in your silence<br>And let me talk to you with your silence<br>That is bright as a lamp<br>Simple, as a ring</p>
+<p>You are like the night<br>With its stillness and constellations<br>Your silence is that of a star<br>As remote and candid</p>
+<p>I like for you to be still<br>It is as though you are absent<br>Distant and full of sorrow<br>So you would’ve died<br>One word then,<br>One smile is enough And I’m happy<br>Happy that it’s not true</p>
 
       
     </div>
@@ -654,84 +590,54 @@ Happy that it's not true</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2>iOS开发之App转让</h2>
-<h3>1. 前提</h3>
-<ol>
-<li>
-<p>必须是两个账号的账号持有者（主账号）进行操作。</p>
-</li>
-<li>
-<p>转让者的App信息栏里，需要删除TestFlight中所有的构建版本。删除方法：针对某一构建版本,将其设置为过期即可。如图所示：</p>
+        <h2 id="iOS开发之App转让"><a href="#iOS开发之App转让" class="headerlink" title="iOS开发之App转让"></a>iOS开发之App转让</h2><h3 id="1-前提"><a href="#1-前提" class="headerlink" title="1. 前提"></a>1. 前提</h3><ol>
+<li>必须是两个账号的账号持有者（主账号）进行操作。</li>
+<li><p>转让者的App信息栏里，需要删除TestFlight中所有的构建版本。删除方法：针对某一构建版本,将其设置为过期即可。如图所示：</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f937d7e795.jpg" alt=""></p>
 </blockquote>
 </li>
-<li>
-<p>需要删除App信息-测试信息里的所有相关字段。包括测试员的信息也需要删除。</p>
+<li><p>需要删除App信息-测试信息里的所有相关字段。包括测试员的信息也需要删除。</p>
 <blockquote>
 <p>注意：需要登录那一栏，需要点开看看是否填写了测试登录账号和密码，需要登录本身勾选不勾选都可以。</p>
-</blockquote>
-<blockquote>
 <p>注意：测试信息语言那一栏，需要点开看看是否还有其他的语言信息，有的话删除。（这一步很重要，不然弄半天TestFlight那一栏就是不给你显示绿色的✅）。</p>
 </blockquote>
 </li>
 </ol>
-<h3>2. 转让者操作</h3>
-<ol>
-<li>
-<p>主账号登录，到我的App里查看，显示如下。（非主账号不显示<strong>转让App</strong>）</p>
+<h3 id="2-转让者操作"><a href="#2-转让者操作" class="headerlink" title="2. 转让者操作"></a>2. 转让者操作</h3><ol>
+<li><p>主账号登录，到我的App里查看，显示如下。（非主账号不显示<strong>转让App</strong>）</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f92ce68da0.jpg" alt=""></p>
 </blockquote>
 </li>
-<li>
-<p>点击转让App</p>
+<li><p>点击转让App</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f9327434c0.jpg" alt=""></p>
-</blockquote>
-<blockquote>
 <p>按照1中给的前提，将数据信息清除。点击蓝色<strong>继续</strong>按钮，如图所示：</p>
-</blockquote>
-<blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f9420ac672.jpg" alt=""></p>
 </blockquote>
 </li>
-<li>
-<p>需要填写接收App的账号（Apple ID），和团队ID，填写完毕后点击继续即可。如图所示：</p>
+<li><p>需要填写接收App的账号（Apple ID），和团队ID，填写完毕后点击继续即可。如图所示：</p>
 <blockquote>
 <p><img src="https://i.loli.net/2019/03/06/5c7f947d8498d.jpg" alt=""></p>
 </blockquote>
 </li>
 </ol>
-<h3>3. 接收者操作</h3>
-<ol>
-<li>
-<p>登录开发者账号，到我的App主页，会有个黄色的提醒Bar（图示如下）,里面有银行税务提醒的链接，点击这个链接，做一些接收的设置。然后再接受即可。
-<img src="https://i.loli.net/2019/03/06/5c7f95e0135b5.jpg" alt=""></p>
+<h3 id="3-接收者操作"><a href="#3-接收者操作" class="headerlink" title="3. 接收者操作"></a>3. 接收者操作</h3><ol>
+<li><p>登录开发者账号，到我的App主页，会有个黄色的提醒Bar（图示如下）,里面有银行税务提醒的链接，点击这个链接，做一些接收的设置。然后再接受即可。<br> <img src="https://i.loli.net/2019/03/06/5c7f95e0135b5.jpg" alt=""></p>
 <blockquote>
-<p>注意：当前接受者填写信息的时候，地址不能过长，不然会被标红。</p>
+<p> 注意：当前接受者填写信息的时候，地址不能过长，不然会被标红。</p>
 </blockquote>
 </li>
 </ol>
-<h3>4. 其他影响</h3>
-<ol>
-<li>
-<p>内购（暂未知）</p>
-</li>
-<li>
-<p>推送通知（不受影响，AppID都不会变，会变前缀，这个下面说）</p>
-</li>
-<li>
-<p>转移后的提交</p>
+<h3 id="4-其他影响"><a href="#4-其他影响" class="headerlink" title="4. 其他影响"></a>4. 其他影响</h3><ol>
+<li>内购（暂未知）</li>
+<li>推送通知（不受影响，AppID都不会变，会变前缀，这个下面说）</li>
+<li><p>转移后的提交</p>
 <blockquote>
 <p>需要重新生成开发整数和发布整数，重新配置描述文件</p>
-</blockquote>
-<blockquote>
 <p>转以后打包提交会收到警告（ITMS-90076）如图所示：大意是TEAM ID前缀发生变化，可能会造成keychain Access数据的丢失</p>
-</blockquote>
-<blockquote>
-<p><img src="https://i.loli.net/2019/03/06/5c7f992c6a203.jpg" alt="">
-经查找资料得知，转移后的App第一次提交都会发生此警告，<a href="https://developer.apple.com/library/archive/qa/qa1726/_index.html" target="_blank" rel="external">相关链接</a>，解决方案正在找。</p>
+<p><img src="https://i.loli.net/2019/03/06/5c7f992c6a203.jpg" alt=""><br>经查找资料得知，转移后的App第一次提交都会发生此警告，<a href="https://developer.apple.com/library/archive/qa/qa1726/_index.html" target="_blank" rel="external">相关链接</a>，解决方案正在找。</p>
 </blockquote>
 </li>
 </ol>
@@ -783,9 +689,7 @@ Happy that it's not true</p>
 <p>每个人都有一片属于自己的森林，迷失的人迷失了，相逢的人还会再相逢。</p>
 <p>值此18年末，有必要给自己总结一下了。</p>
 <p>自工作后，最大的困惑不是来自于职场，却来自内心。受困于幻想的美好爱情，却在真实的生活里迷失自我了。我想有王小波那样的爱情，求而不得。如果能够正视自己，应该会好过很多吧。</p>
-<p>朋友没有交很多，但有能说知心话的。我很满足。
-工作繁忙，但是很有成就感。
-没房没车，正在努力奋斗之。</p>
+<p>朋友没有交很多，但有能说知心话的。我很满足。<br>工作繁忙，但是很有成就感。<br>没房没车，正在努力奋斗之。</p>
 <p>19年最大的心愿就是能够找到她，去走完一生。就像开篇，我真希望拥有真爱。可是生活像捉弄人似的，越是想得到的，越是抓不住。需要强大自己的内心，整理好自己的仪容。才能放射最灿烂的光芒。要学着开朗，内心是最深的桎梏，敞开胸怀，去接纳。</p>
 <p>马上要上手一个新App了，努力把它做好，做完美。</p>
 <p>2019你来吧，我准备好了。</p>
@@ -833,12 +737,10 @@ Happy that it's not true</p>
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h1>Swift学习笔记</h1>
-<h2>变量与常量</h2>
-<ul>
+        <h1 id="Swift学习笔记"><a href="#Swift学习笔记" class="headerlink" title="Swift学习笔记"></a>Swift学习笔记</h1><h2 id="变量与常量"><a href="#变量与常量" class="headerlink" title="变量与常量"></a>变量与常量</h2><ul>
 <li>定义数字变量的时候，如果数字很大，可以把数字用下划线隔开</li>
 </ul>
-<p><figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="type">SpeedOfLight</span> = <span class="number">300_000</span> <span class="comment">// 数字比较大的时候，可以用下划线隔开</span></div></pre></td></tr></table></figure>
 <ul>
 <li>可以用中文甚至emoji来作为变量名</li>
 </ul>
