@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2021-07-05T09:58:30.236Z</updated>
+  <updated>2021-07-06T06:18:09.617Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -16,14 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>iOS开发之Tips（一）</title>
     <link href="https://cyruschang.github.io/2021/07/05/iOS%E5%BC%80%E5%8F%91%E4%B9%8BTips%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>https://cyruschang.github.io/2021/07/05/iOS开发之Tips（一）/</id>
     <published>2021-07-05T09:55:15.600Z</published>
-    <updated>2021-07-05T09:58:30.236Z</updated>
+    <updated>2021-07-06T06:18:09.617Z</updated>
     
-    <content type="html"><![CDATA[<p>title: iOS开发之Swift学习笔记<br>comment: false<br>tags: iOS<br>categories: 编程</p>
-<ul>
+    <content type="html"><![CDATA[<ul>
 <li><p><del>快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，<code>UILabel</code>的属性都可以设置</del>。现在已经不支持这样做了，会崩溃。记录一下。</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[_searchTextField setValue:[<span class="built_in">UIColor</span> blackColor] forKeyPath:<span class="string">@"_placeholderLabel.textColor"</span>];</div><div class="line">[_searchTextField setValue:[<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">12</span>] forKeyPath:<span class="string">@"_placeholderLabel.font"</span>];</div><div class="line">[_searchTextField setValue:<span class="built_in">NSTextAlignmentCenter</span> forKeyPath:<span class="string">@"_placeholderLabel.textAlignment"</span>];</div></pre></td></tr></table></figure>
 </li>
@@ -98,12 +97,16 @@
     
     <summary type="html">
     
-      &lt;p&gt;title: iOS开发之Swift学习笔记&lt;br&gt;comment: false&lt;br&gt;tags: iOS&lt;br&gt;categories: 编程&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;del&gt;快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，&lt;code&gt;U
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;del&gt;快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，&lt;code&gt;UILabel&lt;/code&gt;的属性都可以设置&lt;/del&gt;。现在已经不支持这样做了，会崩溃。记录一下。&lt;/p&gt;
+&lt;figure class=&quot;highlight 
     
     </summary>
     
+      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
+    
+    
+      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
     
   </entry>
   

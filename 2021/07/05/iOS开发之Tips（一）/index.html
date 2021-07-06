@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>cyruschang</title>
+  <title>ios开发之tips（一） | cyruschang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="iOS, 移动开发, 生活随笔" />
@@ -11,25 +11,19 @@
   
   
   
-  <meta name="description" content="title: iOS开发之Swift学习笔记comment: falsetags: iOScategories: 编程
-
-快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
-123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;">
+  <meta name="description" content="快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
+123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;_placeholderLabel.textColor&quot;];[_searchTextField setValue:[UI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cyruschang">
+<meta property="og:title" content="iOS开发之Tips（一）">
 <meta property="og:url" content="https://cyruschang.github.io/2021/07/05/iOS开发之Tips（一）/index.html">
 <meta property="og:site_name" content="cyruschang">
-<meta property="og:description" content="title: iOS开发之Swift学习笔记comment: falsetags: iOScategories: 编程
-
-快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
-123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;">
-<meta property="og:updated_time" content="2021-07-05T09:58:30.236Z">
+<meta property="og:description" content="快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
+123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;_placeholderLabel.textColor&quot;];[_searchTextField setValue:[UI">
+<meta property="og:updated_time" content="2021-07-06T06:18:09.617Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cyruschang">
-<meta name="twitter:description" content="title: iOS开发之Swift学习笔记comment: falsetags: iOScategories: 编程
-
-快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
-123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;">
+<meta name="twitter:title" content="iOS开发之Tips（一）">
+<meta name="twitter:description" content="快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，UILabel的属性都可以设置。现在已经不支持这样做了，会崩溃。记录一下。
+123[_searchTextField setValue:[UIColor blackColor] forKeyPath:@&quot;_placeholderLabel.textColor&quot;];[_searchTextField setValue:[UI">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -111,6 +105,16 @@
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      iOS开发之Tips（一）
+    </h1>
+  
+
+      </header>
+    
     <div class="article-meta">
       
 	Posted on <a href="/2021/07/05/iOS开发之Tips（一）/" class="article-date">
@@ -120,8 +124,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>title: iOS开发之Swift学习笔记<br>comment: false<br>tags: iOS<br>categories: 编程</p>
-<ul>
+        <ul>
 <li><p><del>快速设置UITextField的占位字符颜色和大小以及水平方向，由此观之，<code>UILabel</code>的属性都可以设置</del>。现在已经不支持这样做了，会崩溃。记录一下。</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[_searchTextField setValue:[<span class="built_in">UIColor</span> blackColor] forKeyPath:<span class="string">@"_placeholderLabel.textColor"</span>];</div><div class="line">[_searchTextField setValue:[<span class="built_in">UIFont</span> systemFontOfSize:<span class="number">12</span>] forKeyPath:<span class="string">@"_placeholderLabel.font"</span>];</div><div class="line">[_searchTextField setValue:<span class="built_in">NSTextAlignmentCenter</span> forKeyPath:<span class="string">@"_placeholderLabel.textAlignment"</span>];</div></pre></td></tr></table></figure>
 </li>
@@ -197,7 +200,13 @@
     </div>
     <footer class="entry-meta entry-footer">
       
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/programming/">编程</a>
+
       
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
       
     </footer>
   </div>
