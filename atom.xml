@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://cyruschang.github.io/"/>
-  <updated>2021-07-06T06:22:10.002Z</updated>
+  <updated>2021-09-03T17:30:41.424Z</updated>
   <id>https://cyruschang.github.io/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《认知觉醒》第一章读书笔记</title>
+    <link href="https://cyruschang.github.io/2021/09/04/%E3%80%8A%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E3%80%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>https://cyruschang.github.io/2021/09/04/《认知觉醒》第一章读书笔记/</id>
+    <published>2021-09-03T16:59:19.911Z</published>
+    <updated>2021-09-03T17:30:41.424Z</updated>
+    
+    <content type="html"><![CDATA[<p>作者简介了三重大脑、焦虑、和耐心。</p>
+<h1 id="三重大脑"><a href="#三重大脑" class="headerlink" title="三重大脑"></a>三重大脑</h1><ul>
+<li>本能脑：让优秀成为一种习惯，10000小时定律。</li>
+<li>情绪脑</li>
+<li>理智脑</li>
+</ul>
+<h1 id="焦虑和痛苦来源于对自己无能的愤怒"><a href="#焦虑和痛苦来源于对自己无能的愤怒" class="headerlink" title="焦虑和痛苦来源于对自己无能的愤怒"></a>焦虑和痛苦来源于对自己无能的愤怒</h1><ul>
+<li>我们当下活在焦虑的社会，比如各种信息流，比如摩拜单车的创始人胡玮炜高位套现，同龄人正在抛弃我们。</li>
+<li>各种商家、自媒体的焦虑贩卖……</li>
+</ul>
+<h1 id="耐心是如何养成的（得耐心者得天下）"><a href="#耐心是如何养成的（得耐心者得天下）" class="headerlink" title="耐心是如何养成的（得耐心者得天下）"></a>耐心是如何养成的（得耐心者得天下）</h1><ul>
+<li>延迟满足能力</li>
+<li>钓鱼佬一般很有耐心</li>
+<li>耐心和意志力</li>
+<li>分解一个个的小目标</li>
+</ul>
+<h1 id="一点感悟"><a href="#一点感悟" class="headerlink" title="一点感悟"></a>一点感悟</h1><p>第一章总体来说内容不多，但是很引人入胜，毕竟是第一章，让人有看下去的欲望。作者的一些观点，大部分我们应该接触过，但是没有去真正的实践过，比如如何去直面焦虑。每个人肯定有每个人的方法，但是肯定有一套科学的流程能够对抗焦虑。作者更像是抛出问题，然后在书中一一解答。</p>
+<p>苏格拉底名言说认识你自己，了解了自己，才不至于浑浑噩噩度日。比如我们认识了理智脑，就可以多运用理智脑去驱动本能脑和情绪脑为我们自己服务。给自己设立小目标，为了这个目标去达成的过程，也是我们意志力和耐力的体现过程。</p>
+<p>书还没看完，期待更多的分享。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作者简介了三重大脑、焦虑、和耐心。&lt;/p&gt;
+&lt;h1 id=&quot;三重大脑&quot;&gt;&lt;a href=&quot;#三重大脑&quot; class=&quot;headerlink&quot; title=&quot;三重大脑&quot;&gt;&lt;/a&gt;三重大脑&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本能脑：让优秀成为一种习惯，10000小时定律。&lt;/li&gt;
+&lt;
+    
+    </summary>
+    
+      <category term="情感" scheme="https://cyruschang.github.io/categories/emotion/"/>
+    
+    
+      <category term="美好的" scheme="https://cyruschang.github.io/tags/bestfeel/"/>
+    
+  </entry>
   
   <entry>
     <title>iOS开发之Tips（一）</title>
@@ -50,7 +94,6 @@
 <ul>
 <li>同或运算真值表</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -82,7 +125,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <ul>
 <li><p>一个有趣的计算</p>
 <p>  &nbsp;&nbsp;&nbsp;&nbsp;UI设计中常常会碰到互斥按钮，如果互斥按钮的个数有两个，就可以试试这个有趣的计算。</p>
@@ -763,33 +805,6 @@
     
     
       <category term="美好的" scheme="https://cyruschang.github.io/tags/bestfeel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iOS开发之UITextView粘贴出现空白</title>
-    <link href="https://cyruschang.github.io/2017/07/27/iOS%E5%BC%80%E5%8F%91%E4%B9%8BUITextView%E7%B2%98%E8%B4%B4%E5%87%BA%E7%8E%B0%E7%A9%BA%E7%99%BD/"/>
-    <id>https://cyruschang.github.io/2017/07/27/iOS开发之UITextView粘贴出现空白/</id>
-    <published>2017-07-27T08:58:11.000Z</published>
-    <updated>2017-07-27T09:03:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴<strong>大量的文本</strong>后，UITextView中会出现空白，通过界面调试发现，其contentView的size已经和本体的size差距非常大了，从而导致了显示真空。<br>最开始解决的方法是，在粘贴之后，强制设置其contentOffset，因为是继承自UIScrollView的，带来的新问题是，总是在粘贴之后滚动，体验非常之不友好。终极的解决方法是：UITextView中有一个<code>- (void)scrollRangeToVisible:(NSRange)range;</code>方法。对此方法苹果的开发文档释义为：</p>
-<blockquote>
-<p>Scrolls the receiver in its enclosing scroll view so the first characters of aRange are visible.</p>
-</blockquote>
-<p>大概意思就是在内部滚动，使range处的第一个字符可见。<br>所以，继承系统的UITextView，添加一个<code>UIMenuControllerDidHideMenuNotification</code>通知，点击粘贴后菜单栏隐藏会发送通知，收到通知后，将range设置在（0， self.text.length）处即可。烦人的空白和滚动就跑到九霄云外了。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;公司的App有一些UGC（User Generate Content）内容，势必要用到苹果的UITextView控件。最近碰到这么个问题，在一次性粘贴&lt;strong&gt;大量的文本&lt;/strong&gt;后，UITextView中会出现空白，通过界面调试发现，其contentView
-    
-    </summary>
-    
-      <category term="编程" scheme="https://cyruschang.github.io/categories/programming/"/>
-    
-    
-      <category term="iOS" scheme="https://cyruschang.github.io/tags/iOS/"/>
     
   </entry>
   

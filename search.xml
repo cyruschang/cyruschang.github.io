@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title><![CDATA[《认知觉醒》第一章读书笔记]]></title>
+      <url>https://cyruschang.github.io/2021/09/04/%E3%80%8A%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92%E3%80%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<p>作者简介了三重大脑、焦虑、和耐心。</p>
+<h1 id="三重大脑"><a href="#三重大脑" class="headerlink" title="三重大脑"></a>三重大脑</h1><ul>
+<li>本能脑：让优秀成为一种习惯，10000小时定律。</li>
+<li>情绪脑</li>
+<li>理智脑</li>
+</ul>
+<h1 id="焦虑和痛苦来源于对自己无能的愤怒"><a href="#焦虑和痛苦来源于对自己无能的愤怒" class="headerlink" title="焦虑和痛苦来源于对自己无能的愤怒"></a>焦虑和痛苦来源于对自己无能的愤怒</h1><ul>
+<li>我们当下活在焦虑的社会，比如各种信息流，比如摩拜单车的创始人胡玮炜高位套现，同龄人正在抛弃我们。</li>
+<li>各种商家、自媒体的焦虑贩卖……</li>
+</ul>
+<h1 id="耐心是如何养成的（得耐心者得天下）"><a href="#耐心是如何养成的（得耐心者得天下）" class="headerlink" title="耐心是如何养成的（得耐心者得天下）"></a>耐心是如何养成的（得耐心者得天下）</h1><ul>
+<li>延迟满足能力</li>
+<li>钓鱼佬一般很有耐心</li>
+<li>耐心和意志力</li>
+<li>分解一个个的小目标</li>
+</ul>
+<h1 id="一点感悟"><a href="#一点感悟" class="headerlink" title="一点感悟"></a>一点感悟</h1><p>第一章总体来说内容不多，但是很引人入胜，毕竟是第一章，让人有看下去的欲望。作者的一些观点，大部分我们应该接触过，但是没有去真正的实践过，比如如何去直面焦虑。每个人肯定有每个人的方法，但是肯定有一套科学的流程能够对抗焦虑。作者更像是抛出问题，然后在书中一一解答。</p>
+<p>苏格拉底名言说认识你自己，了解了自己，才不至于浑浑噩噩度日。比如我们认识了理智脑，就可以多运用理智脑去驱动本能脑和情绪脑为我们自己服务。给自己设立小目标，为了这个目标去达成的过程，也是我们意志力和耐力的体现过程。</p>
+<p>书还没看完，期待更多的分享。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 情感 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 美好的 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[iOS开发之Tips（一）]]></title>
       <url>https://cyruschang.github.io/2021/07/05/iOS%E5%BC%80%E5%8F%91%E4%B9%8BTips%EF%BC%88%E4%B8%80%EF%BC%89/</url>
       <content type="html"><![CDATA[<ul>
@@ -34,7 +73,6 @@
 <ul>
 <li>同或运算真值表</li>
 </ul>
-<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -66,7 +104,6 @@
 </tr>
 </tbody>
 </table>
-</div>
 <ul>
 <li><p>一个有趣的计算</p>
 <p>  &nbsp;&nbsp;&nbsp;&nbsp;UI设计中常常会碰到互斥按钮，如果互斥按钮的个数有两个，就可以试试这个有趣的计算。</p>
